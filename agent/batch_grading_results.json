@@ -1,0 +1,515 @@
+[
+  {
+    "filename": "Q1_variantA.jpeg",
+    "question_id": "Q1",
+    "variant": "A",
+    "top_retrieval_similarity": 0.5181596577167511,
+    "retrieved_chunk_ids": [
+      "5.2_newtons_first_law__chunk05",
+      "5.2_newtons_first_law__chunk01",
+      "5.2_newtons_first_law__chunk08"
+    ],
+    "grading_result": {
+      "question_id": "Q1",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q1_C1",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The student correctly states that an object at rest stays at rest and an object in motion continues at constant velocity unless acted on by a net external force, matching the definition in chunk 5.2_newtons_first_law__chunk05.",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk05"
+        },
+        {
+          "criterion_id": "Q1_C2",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The explanation that an inertial frame is one where Newton's first law holds (i.e., the frame is at rest or moves at constant velocity, not accelerating) aligns with the description in chunk 5.2_newtons_first_law__chunk05.",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk05"
+        },
+        {
+          "criterion_id": "Q1_C3",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The example of a ball on a table in a car moving at constant velocity correctly illustrates the law and the concept of an inertial frame, consistent with the discussion of inertial frames in chunk 5.2_newtons_first_law__chunk05.",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk05"
+        }
+      ],
+      "total_score": 4,
+      "total_max": 4,
+      "overall_justification": "The student provided a fully correct statement of Newton's first law, an accurate description of an inertial reference frame, and a relevant real-world example, earning full marks for each rubric criterion."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q1_variantB.jpeg",
+    "question_id": "Q1",
+    "variant": "B",
+    "top_retrieval_similarity": 0.44634974002838135,
+    "retrieved_chunk_ids": [
+      "5.2_newtons_first_law__chunk05",
+      "6.3_centripetal_force__chunk09",
+      "5.2_newtons_first_law__chunk01"
+    ],
+    "grading_result": {
+      "question_id": "Q1",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q1_C1",
+          "marks_awarded": 1,
+          "max_marks": 2,
+          "justification": "The student states the law as \"stay at rest or keep moving at the same speed unless a force acts on it,\" which captures the idea of no net force → no change in motion but omits the direction component of velocity, so only partial credit is given.",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk05"
+        },
+        {
+          "criterion_id": "Q1_C2",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "No explanation of an inertial reference frame is provided in the answer.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q1_C3",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The book‑sliding example correctly illustrates the law: with friction (a net force) the motion stops, and without it the book would continue indefinitely, satisfying the requirement for a real‑world example tied to the law.",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk05"
+        }
+      ],
+      "total_score": 2,
+      "total_max": 4,
+      "overall_justification": "The student gave a mostly correct but incomplete statement of Newton's first law and a suitable example, earning partial credit for the law and full credit for the example. No discussion of inertial frames was present, resulting in zero for that criterion."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q1_variantC.jpeg",
+    "question_id": "Q1",
+    "variant": "C",
+    "top_retrieval_similarity": 0.3025267720222473,
+    "retrieved_chunk_ids": [
+      "5.2_newtons_first_law__chunk05",
+      "5.2_newtons_first_law__chunk06",
+      "6.3_centripetal_force__chunk09"
+    ],
+    "grading_result": {
+      "question_id": "Q1",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q1_C1",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The student described F=ma, which is Newton's second law, not the law of inertia (no net force → no change in velocity).",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q1_C2",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "No explanation of an inertial reference frame was provided.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q1_C3",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "The example given relates to mass and force (second law) rather than illustrating the law of inertia.",
+          "cited_chunk_id": null
+        }
+      ],
+      "total_score": 0,
+      "total_max": 4,
+      "overall_justification": "The answer failed to state Newton's first law correctly, omitted any discussion of inertial frames, and provided an example unrelated to the law of inertia, resulting in zero marks for all criteria."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q2_variantA.jpeg",
+    "question_id": "Q2",
+    "variant": "A",
+    "top_retrieval_similarity": 0.32017046213150024,
+    "retrieved_chunk_ids": [
+      "5.4_mass_and_weight__chunk06",
+      "6.2_friction__chunk15",
+      "6.2_friction__chunk09"
+    ],
+    "grading_result": {
+      "question_id": "Q2",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q2_C1",
+          "marks_awarded": 1,
+          "max_marks": 2,
+          "justification": "The transcription lists the applied force (20 N), the weight (mg) and the normal force (N=mg), but does not show arrow directions; per the special rule, half credit is awarded.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        },
+        {
+          "criterion_id": "Q2_C2",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The student correctly writes the net-force equation as fnet = ma and applies it horizontally (20 N = 5 a), matching the textbook formulation of Newton's second law.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        },
+        {
+          "criterion_id": "Q2_C3",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "Substituting the numbers gives a = 4 m/s² with proper units, which is the expected answer.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        }
+      ],
+      "total_score": 5,
+      "total_max": 6,
+      "overall_justification": "The student correctly identified all forces and performed the proper Newton's‑second‑law calculation, earning full marks for the equation and numerical result. The free‑body diagram lacked explicit direction arrows, so only partial credit was given for that criterion."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q2_variantB.jpeg",
+    "question_id": "Q2",
+    "variant": "B",
+    "top_retrieval_similarity": 0.2558296322822571,
+    "retrieved_chunk_ids": [
+      "5.4_mass_and_weight__chunk06",
+      "6.2_friction__chunk09",
+      "6.2_friction__chunk15"
+    ],
+    "grading_result": {
+      "question_id": "Q2",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q2_C1",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The transcription contains no description of a free-body diagram, so no forces are shown.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q2_C2",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The student writes F = ma and correctly substitutes 20 = 5a, matching the horizontal net‑force equation described in the reference (see chunk 5.4_mass_and_weight__chunk06).",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        },
+        {
+          "criterion_id": "Q2_C3",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "Although the substitution 20 = 5a is correct, the final numeric answer is a = 10 m/s² instead of the required 4 m/s², so no credit is given.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        }
+      ],
+      "total_score": 2,
+      "total_max": 6,
+      "overall_justification": "The student omitted the free‑body diagram, correctly set up Newton's second law, but made an arithmetic error leading to an incorrect acceleration. Hence only the equation‑setup criterion is awarded marks."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q2_variantC.jpeg",
+    "question_id": "Q2",
+    "variant": "C",
+    "top_retrieval_similarity": 0.3355502486228943,
+    "retrieved_chunk_ids": [
+      "6.2_friction__chunk09",
+      "6.2_friction__chunk15",
+      "5.4_mass_and_weight__chunk06"
+    ],
+    "grading_result": {
+      "question_id": "Q2",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q2_C1",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The transcription contains no free-body diagram or any force labels (applied force, weight, normal), so no credit can be given.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q2_C2",
+          "marks_awarded": 1,
+          "max_marks": 2,
+          "justification": "The student used a = F/m, which is an algebraic rearrangement of F = ma, but did not explicitly state the net horizontal force equation as required; partial credit is given per chunk 6.2_friction__chunk09 which outlines the correct F=ma setup.",
+          "cited_chunk_id": "6.2_friction__chunk09"
+        },
+        {
+          "criterion_id": "Q2_C3",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "Although the student initially computed 20/5 = 4 m/s^2, they then multiplied by g and gave a final answer of 39.2 m/s^2, which does not match the required answer of 4 m/s^2 with units.",
+          "cited_chunk_id": null
+        }
+      ],
+      "total_score": 1,
+      "total_max": 6,
+      "overall_justification": "The answer lacks a free-body diagram, contains incorrect reasoning about gravity, and ends with the wrong final acceleration. Only a minimal use of Newton's second law earned partial credit."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q3_variantA.jpeg",
+    "question_id": "Q3",
+    "variant": "A",
+    "top_retrieval_similarity": 0.2404937744140625,
+    "retrieved_chunk_ids": [
+      "5.5_newtons_third_law__chunk01",
+      "5.5_newtons_third_law__chunk02",
+      "5.2_newtons_first_law__chunk08"
+    ],
+    "grading_result": {
+      "question_id": "Q3",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q3_C1",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The student correctly states that the forces are equal in magnitude and opposite in direction, matching the definition in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C2",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The answer accurately applies the law to the swimmer‑wall scenario, identifying the swimmer’s push on the wall as the action and the wall’s push on the swimmer as the reaction, as described in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C3",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The student explains that the forces act on different objects/systems, so they do not cancel, which aligns with the explanation in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        }
+      ],
+      "total_score": 4,
+      "total_max": 4,
+      "overall_justification": "The response fully meets all rubric criteria: correct statement of the law, proper application to the swimmer example, and correct reasoning about why the forces do not cancel."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q3_variantB.jpeg",
+    "question_id": "Q3",
+    "variant": "B",
+    "top_retrieval_similarity": 0.29896438121795654,
+    "retrieved_chunk_ids": [
+      "5.5_newtons_third_law__chunk01",
+      "5.5_newtons_third_law__chunk02",
+      "5.2_newtons_first_law__chunk08"
+    ],
+    "grading_result": {
+      "question_id": "Q3",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q3_C1",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The student correctly states that the forces are equal in magnitude and opposite in direction, matching the definition in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C2",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The answer correctly applies the law to the swimmer‑wall scenario and identifies the action‑reaction pair (swimmer pushes wall, wall pushes swimmer), as described in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C3",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "The student does not explain that the forces act on different objects/systems, so the explanation for why they do not cancel is missing.",
+          "cited_chunk_id": null
+        }
+      ],
+      "total_score": 3,
+      "total_max": 4,
+      "overall_justification": "The student earned full credit for stating Newton's third law and correctly identifying the action‑reaction pair in the swimmer example, but failed to explain that the forces act on separate systems, which is required for the final criterion."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q3_variantC.jpeg",
+    "question_id": "Q3",
+    "variant": "C",
+    "top_retrieval_similarity": 0.26188552379608154,
+    "retrieved_chunk_ids": [
+      "5.5_newtons_third_law__chunk01",
+      "5.2_newtons_first_law__chunk08",
+      "5.5_newtons_third_law__chunk02"
+    ],
+    "grading_result": {
+      "question_id": "Q3",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q3_C1",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "The student says forces \"balance out so nothing moves,\" which misstates Newton's third law; the law requires forces to be equal in magnitude and opposite in direction, not that they cancel on the same object (per chunk02).",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C2",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The answer does not identify the swimmer‑wall action‑reaction pair; it only mentions the swimmer being still, lacking the correct application of the law (per chunk02).",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C3",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "The student claims the forces \"balance out\" rather than explaining that they act on different systems, which is the reason they do not cancel (per chunk02).",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        }
+      ],
+      "total_score": 0,
+      "total_max": 4,
+      "overall_justification": "The response shows a fundamental misunderstanding of Newton's third law and provides no correct statement, example application, or explanation of why the forces do not cancel, resulting in zero marks."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q4_variantA.jpeg",
+    "question_id": "Q4",
+    "variant": "A",
+    "top_retrieval_similarity": 0.364457368850708,
+    "retrieved_chunk_ids": [
+      "6.2_friction__chunk08",
+      "5.3_newtons_second_law__chunk10",
+      "6.2_friction__chunk17"
+    ],
+    "grading_result": {
+      "question_id": "Q4",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q4_C1",
+          "marks_awarded": 1,
+          "max_marks": 2,
+          "justification": "The transcription lists the forces T, mg, and f but does not show a diagram or clearly state directions; per the special rule we award half credit.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q4_C2",
+          "marks_awarded": 1,
+          "max_marks": 2,
+          "justification": "The student writes the correct formula f = μN and uses μ = 0.2, but misstates N = mg as 9.8 N instead of 98 N, though the calculation uses the correct value; partial credit per chunk 6.2_friction__chunk08.",
+          "cited_chunk_id": "6.2_friction__chunk08"
+        },
+        {
+          "criterion_id": "Q4_C3",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The net‑force equation F_net = T - f is correctly stated and follows Newton's second law as shown in chunk 5.3_newtons_second_law__chunk10.",
+          "cited_chunk_id": "5.3_newtons_second_law__chunk10"
+        },
+        {
+          "criterion_id": "Q4_C4",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The final acceleration a = 2.04 m/s^2 is numerically correct and includes proper units, consistent with the calculations in chunk 5.3_newtons_second_law__chunk10.",
+          "cited_chunk_id": "5.3_newtons_second_law__chunk10"
+        }
+      ],
+      "total_score": 6,
+      "total_max": 8,
+      "overall_justification": "The student demonstrated correct application of friction and Newton's second law, yielding the right acceleration, but the free‑body diagram was not fully shown and the normal force calculation contained a numeric slip, resulting in partial credit for those parts."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q4_variantB.jpeg",
+    "question_id": "Q4",
+    "variant": "B",
+    "top_retrieval_similarity": 0.3455149531364441,
+    "retrieved_chunk_ids": [
+      "6.2_friction__chunk08",
+      "5.3_newtons_second_law__chunk10",
+      "6.2_friction__chunk15"
+    ],
+    "grading_result": {
+      "question_id": "Q4",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q4_C1",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The transcription lists force labels but shows friction arrow upward, which is an incorrect direction for friction opposing motion, so zero per rubric.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q4_C2",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "Student wrote f = μ × m instead of f = μ N (with N = mg), which is incorrect per the friction formula.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q4_C3",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The net force expression F_net = T - f is correctly stated, matching the form shown in the reference (e.g., P - f = m a_x).",
+          "cited_chunk_id": "6.2_friction__chunk08"
+        },
+        {
+          "criterion_id": "Q4_C4",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The computed acceleration 3.8 m/s^2 is incorrect; the correct value is 2.04 m/s^2.",
+          "cited_chunk_id": null
+        }
+      ],
+      "total_score": 2,
+      "total_max": 8,
+      "overall_justification": "The student provided a mislabeled free-body diagram and an incorrect friction formula, leading to a wrong numerical answer. Only the net force equation was correctly expressed, earning partial credit."
+    },
+    "status": "success"
+  },
+  {
+    "filename": "Q4_variantC.jpeg",
+    "question_id": "Q4",
+    "variant": "C",
+    "top_retrieval_similarity": 0.2828422784805298,
+    "retrieved_chunk_ids": [
+      "6.2_friction__chunk08",
+      "6.2_friction__chunk15",
+      "6.2_friction__chunk17"
+    ],
+    "grading_result": {
+      "question_id": "Q4",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q4_C1",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "No free-body diagram was provided; the transcription contains no force labels.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q4_C2",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The student did not write the friction expression f=μN; the correct formula is given in chunk 6.2_friction__chunk08.",
+          "cited_chunk_id": "6.2_friction__chunk08"
+        },
+        {
+          "criterion_id": "Q4_C3",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The net-force equation F_net = T‑f was not stated; the correct relation is shown in chunk 6.2_friction__chunk08.",
+          "cited_chunk_id": "6.2_friction__chunk08"
+        },
+        {
+          "criterion_id": "Q4_C4",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The computed acceleration 4 m/s² is incorrect; using f=μmg from chunk 6.2_friction__chunk08 gives a=2.04 m/s².",
+          "cited_chunk_id": "6.2_friction__chunk08"
+        }
+      ],
+      "total_score": 0,
+      "total_max": 8,
+      "overall_justification": "The student omitted the free-body diagram, did not give the friction formula or net-force equation, and calculated an incorrect acceleration, resulting in zero marks for all criteria."
+    },
+    "status": "success"
+  }
+]

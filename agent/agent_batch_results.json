@@ -1,0 +1,370 @@
+[
+  {
+    "filename": "Q1_variantA.jpeg",
+    "question_id": "Q1",
+    "initial_score": "4/4",
+    "final_score": "4/4",
+    "score_changed_by_self_check": false,
+    "citation_changed_by_self_check": false,
+    "self_check_notes": "Reviewed each criterion; the original grading correctly awarded full marks and citations are appropriate. No changes needed.",
+    "self_reported_confidence": "high",
+    "top_retrieval_similarity": 0.5181596577167511,
+    "flagged_for_review": false,
+    "flag_reason": null,
+    "full_final_grading": {
+      "question_id": "Q1",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q1_C1",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The student correctly states that an object at rest stays at rest and an object in motion continues at constant velocity unless acted on by a net external force, matching the definition in chunk 5.2_newtons_first_law__chunk05.",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk05"
+        },
+        {
+          "criterion_id": "Q1_C2",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The explanation that an inertial frame is one where Newton's first law holds (i.e., the frame is at rest or moves at constant velocity, not accelerating) aligns with the description in chunk 5.2_newtons_first_law__chunk05.",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk05"
+        },
+        {
+          "criterion_id": "Q1_C3",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The example of a ball on a table in a car moving at constant velocity correctly illustrates the law and the transition when the car brakes, tying the scenario to the concept of an inertial frame as discussed in chunk 5.2_newtons_first_law__chunk05.",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk05"
+        }
+      ],
+      "total_score": 4,
+      "total_max": 4,
+      "overall_justification": "All three criteria are fully satisfied: accurate law statement, correct explanation of inertial frame, and appropriate real-world example.",
+      "self_check_notes": "Reviewed each criterion; the original grading correctly awarded full marks and citations are appropriate. No changes needed.",
+      "self_reported_confidence": "high"
+    }
+  },
+  {
+    "filename": "Q1_variantB.jpeg",
+    "question_id": "Q1",
+    "initial_score": "3/4",
+    "final_score": "3/4",
+    "score_changed_by_self_check": false,
+    "citation_changed_by_self_check": false,
+    "self_check_notes": "Reviewed each criterion; found no discrepancies between the student's answer and the awarded marks. No changes needed.",
+    "self_reported_confidence": "high",
+    "top_retrieval_similarity": 0.44634974002838135,
+    "flagged_for_review": false,
+    "flag_reason": null,
+    "full_final_grading": {
+      "question_id": "Q1",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q1_C1",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The student correctly states that an object stays at rest or moves at the same speed unless a force acts on it, matching the definition of Newton's first law (no net force → no change in velocity).",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk05"
+        },
+        {
+          "criterion_id": "Q1_C2",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "The answer provides no explanation of what an inertial reference frame is.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q1_C3",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The student gives a real‑world example (a book sliding on a table) and correctly ties it to the law by noting that without the external friction force the book would continue moving forever.",
+          "cited_chunk_id": "5.2_newtons_first_law__chunk01"
+        }
+      ],
+      "total_score": 3,
+      "total_max": 4,
+      "overall_justification": "The grading correctly awards full marks for stating the law and providing an example, and correctly gives zero for the missing explanation of inertial frames.",
+      "self_check_notes": "Reviewed each criterion; found no discrepancies between the student's answer and the awarded marks. No changes needed.",
+      "self_reported_confidence": "high"
+    }
+  },
+  {
+    "filename": "Q1_variantC.jpeg",
+    "question_id": "Q1",
+    "initial_score": "0/4",
+    "final_score": "0/4",
+    "score_changed_by_self_check": false,
+    "citation_changed_by_self_check": false,
+    "self_check_notes": "Reviewed each criterion; the grading correctly awarded zero marks as the answer contains no correct statement of the first law, no inertial frame explanation, and an irrelevant example.",
+    "self_reported_confidence": "high",
+    "top_retrieval_similarity": 0.3025267720222473,
+    "flagged_for_review": false,
+    "flag_reason": null,
+    "full_final_grading": {
+      "question_id": "Q1",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q1_C1",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The student stated Newton's first law as \"force equals mass times acceleration,\" which is actually Newton's second law; no correct statement of the law of inertia was given.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q1_C2",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "The answer contains no explanation of an inertial reference frame.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q1_C3",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "The provided example (pushing a heavy box) relates to Newton's second law, not to the law of inertia, and is not tied to the concept asked for.",
+          "cited_chunk_id": null
+        }
+      ],
+      "total_score": 0,
+      "total_max": 4,
+      "overall_justification": "The student's response does not correctly state Newton's first law, fails to explain an inertial frame, and gives an example unrelated to the law of inertia, resulting in zero marks for all criteria.",
+      "self_check_notes": "Reviewed each criterion; the grading correctly awarded zero marks as the answer contains no correct statement of the first law, no inertial frame explanation, and an irrelevant example.",
+      "self_reported_confidence": "high"
+    }
+  },
+  {
+    "filename": "Q2_variantA.jpeg",
+    "question_id": "Q2",
+    "initial_score": "5/6",
+    "final_score": "5/6",
+    "score_changed_by_self_check": false,
+    "citation_changed_by_self_check": false,
+    "self_check_notes": "Reviewed each criterion; grading aligns with the student's correct reasoning and answer. No changes needed.",
+    "self_reported_confidence": "high",
+    "top_retrieval_similarity": 0.32017046213150024,
+    "flagged_for_review": false,
+    "flag_reason": null,
+    "full_final_grading": {
+      "question_id": "Q2",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q2_C1",
+          "marks_awarded": 1,
+          "max_marks": 2,
+          "justification": "The student lists the applied force (20 N), weight (mg) and mentions N = mg, but the transcription does not show arrow directions, so only half credit is given per the diagram rule.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        },
+        {
+          "criterion_id": "Q2_C2",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The student correctly writes the net-force equation fnet = ma and substitutes the horizontal force 20 N and mass 5 kg, matching the Newton's second‑law setup described in the reference.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        },
+        {
+          "criterion_id": "Q2_C3",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "Solving 20 = 5a gives a = 4 m/s² with correct units, which is the expected answer.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        }
+      ],
+      "total_score": 5,
+      "total_max": 6,
+      "overall_justification": "The student identified the correct forces and applied Newton's second law correctly, yielding the right numerical answer. The free‑body diagram lacks clear direction arrows, so only partial credit is given for that part.",
+      "self_check_notes": "Reviewed each criterion; grading aligns with the student's correct reasoning and answer. No changes needed.",
+      "self_reported_confidence": "high"
+    }
+  },
+  {
+    "filename": "Q2_variantB.jpeg",
+    "question_id": "Q2",
+    "initial_score": "3/6",
+    "final_score": "3/6",
+    "score_changed_by_self_check": false,
+    "citation_changed_by_self_check": false,
+    "self_check_notes": "Reviewed each criterion; the original grading aligns with the student's work and the reference material. No changes made.",
+    "self_reported_confidence": "medium",
+    "top_retrieval_similarity": 0.2558296322822571,
+    "flagged_for_review": false,
+    "flag_reason": null,
+    "full_final_grading": {
+      "question_id": "Q2",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q2_C1",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The student’s transcription contains no free‑body diagram or any force labels, so no credit can be given.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q2_C2",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The answer correctly writes the net‑force equation F=ma and substitutes the horizontal force and mass as 20 N = 5a, matching the Newton’s second‑law formulation in the reference.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        },
+        {
+          "criterion_id": "Q2_C3",
+          "marks_awarded": 1,
+          "max_marks": 2,
+          "justification": "The substitution 20 = 5a is correct, but the student’s arithmetic yields a = 10 m/s² instead of the correct a = 4 m/s²; partial credit is awarded for the correct setup but incorrect final numeric answer.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        }
+      ],
+      "total_score": 3,
+      "total_max": 6,
+      "overall_justification": "The grading correctly reflects that the student omitted a free‑body diagram (0/2), set up Newton’s second law properly (2/2), but made an arithmetic error in solving for acceleration (1/2). No adjustments needed.",
+      "self_check_notes": "Reviewed each criterion; the original grading aligns with the student's work and the reference material. No changes made.",
+      "self_reported_confidence": "medium"
+    }
+  },
+  {
+    "filename": "Q2_variantC.jpeg",
+    "question_id": "Q2",
+    "initial_score": "1/6",
+    "final_score": "1/6",
+    "score_changed_by_self_check": false,
+    "citation_changed_by_self_check": false,
+    "self_check_notes": "Reviewed each criterion; the original grading aligns with the student's work and the reference material. No changes needed.",
+    "self_reported_confidence": "high",
+    "top_retrieval_similarity": 0.3355502486228943,
+    "flagged_for_review": false,
+    "flag_reason": null,
+    "full_final_grading": {
+      "question_id": "Q2",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q2_C1",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "The transcription contains no free‑body diagram or any mention of the applied force, weight, and normal force, so no marks can be awarded.",
+          "cited_chunk_id": null
+        },
+        {
+          "criterion_id": "Q2_C2",
+          "marks_awarded": 1,
+          "max_marks": 2,
+          "justification": "The student used the relationship a = F/m, which derives from Newton's second law (ΣF = ma) as shown in the reference material (see chunk 5.4_mass_and_weight__chunk06). However, the reasoning includes an incorrect statement about gravity and does not explicitly write the horizontal net‑force equation, so only partial credit is given.",
+          "cited_chunk_id": "5.4_mass_and_weight__chunk06"
+        },
+        {
+          "criterion_id": "Q2_C3",
+          "marks_awarded": 0,
+          "max_marks": 2,
+          "justification": "Although the student initially computed 20/5 = 4 m/s², they then multiplied by g and gave a final answer of 39.2 m/s², which does not match the correct acceleration of 4 m/s² with proper units.",
+          "cited_chunk_id": null
+        }
+      ],
+      "total_score": 1,
+      "total_max": 6,
+      "overall_justification": "The answer lacks a free‑body diagram, only partially demonstrates the correct equation setup, and provides an incorrect final acceleration, resulting in a low overall score.",
+      "self_check_notes": "Reviewed each criterion; the original grading aligns with the student's work and the reference material. No changes needed.",
+      "self_reported_confidence": "high"
+    }
+  },
+  {
+    "filename": "Q3_variantA.jpeg",
+    "question_id": "Q3",
+    "initial_score": "4/4",
+    "final_score": "4/4",
+    "score_changed_by_self_check": false,
+    "citation_changed_by_self_check": false,
+    "self_check_notes": "Reviewed each criterion; citations are accurate and the student's reasoning is correct. No changes needed.",
+    "self_reported_confidence": "high",
+    "top_retrieval_similarity": 0.2404937744140625,
+    "flagged_for_review": false,
+    "flag_reason": null,
+    "full_final_grading": {
+      "question_id": "Q3",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q3_C1",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The student correctly states that the forces are equal in magnitude and opposite in direction, matching the definition in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C2",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The answer correctly applies the law to the swimmer–wall scenario, identifying the swimmer’s push on the wall as the action and the wall’s push on the swimmer as the reaction, as described in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C3",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The student explains that the forces act on different objects/systems, so they do not cancel, which aligns with the explanation in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        }
+      ],
+      "total_score": 4,
+      "total_max": 4,
+      "overall_justification": "The response fully meets all rubric criteria: it gives the correct statement of Newton's third law, accurately applies it to the swimmer–wall example, and explains why the forces do not cancel because they act on separate objects.",
+      "self_check_notes": "Reviewed each criterion; citations are accurate and the student's reasoning is correct. No changes needed.",
+      "self_reported_confidence": "high"
+    }
+  },
+  {
+    "filename": "Q3_variantB.jpeg",
+    "question_id": "Q3",
+    "initial_score": "3/4",
+    "final_score": "3/4",
+    "score_changed_by_self_check": false,
+    "citation_changed_by_self_check": false,
+    "self_check_notes": "Reviewed each criterion against the student's answer and reference material. All marks align with the rubric; no changes needed.",
+    "self_reported_confidence": "high",
+    "top_retrieval_similarity": 0.29896438121795654,
+    "flagged_for_review": false,
+    "flag_reason": null,
+    "full_final_grading": {
+      "question_id": "Q3",
+      "criteria_scores": [
+        {
+          "criterion_id": "Q3_C1",
+          "marks_awarded": 1,
+          "max_marks": 1,
+          "justification": "The student correctly states Newton's third law as an equal and opposite reaction, matching the definition in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C2",
+          "marks_awarded": 2,
+          "max_marks": 2,
+          "justification": "The answer identifies the swimmer's push on the wall and the wall's reaction on the swimmer as the action‑reaction pair, as described in chunk02.",
+          "cited_chunk_id": "5.5_newtons_third_law__chunk02"
+        },
+        {
+          "criterion_id": "Q3_C3",
+          "marks_awarded": 0,
+          "max_marks": 1,
+          "justification": "The student does not explain that the forces act on different objects/systems, which is required to show why they do not cancel.",
+          "cited_chunk_id": null
+        }
+      ],
+      "total_score": 3,
+      "total_max": 4,
+      "overall_justification": "Full credit for stating the law and identifying the action‑reaction pair, but no explanation of why the forces do not cancel, resulting in loss of one mark.",
+      "self_check_notes": "Reviewed each criterion against the student's answer and reference material. All marks align with the rubric; no changes needed.",
+      "self_reported_confidence": "high"
+    }
+  },
+  {
+    "filename": "Q3_variantC.jpeg",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0fkhd9zeeptcyj47t4029dq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199253, Requested 4065. Please try again in 23m53.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "filename": "Q4_variantA.jpeg",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0fkhd9zeeptcyj47t4029dq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199191, Requested 4078. Please try again in 23m32.207999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "filename": "Q4_variantB.jpeg",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0fkhd9zeeptcyj47t4029dq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199130, Requested 4246. Please try again in 24m18.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "filename": "Q4_variantC.jpeg",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m0fkhd9zeeptcyj47t4029dq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199065, Requested 4500. Please try again in 25m40.08s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  }
+]

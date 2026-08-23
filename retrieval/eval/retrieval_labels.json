@@ -1,0 +1,146 @@
+[
+  {
+    "question_id": "Q1",
+    "question": "State Newton's First Law of Motion and explain what is meant by an 'inertial frame of reference'.",
+    "correct_chunk_ids": ["5.2_newtons_first_law__chunk01", "5.2_newtons_first_law__chunk05"],
+    "note": "Rubric question. Law statement is in chunk01 (mislabeled 'Learning Objectives' due to missing source header); inertial frame definition is in chunk05."
+  },
+  {
+    "question_id": "Q2",
+    "question": "A block rests on a frictionless horizontal surface. A horizontal force is applied. Using Newton's Second Law, find the acceleration of the block.",
+    "correct_chunk_ids": ["5.3_newtons_second_law__chunk02", "6.1_solving_problems__chunk10"],
+    "note": "Rubric question. Core F=ma relationship in 5.3 chunk02; closest matching worked example (frictionless table, two attached blocks) in 6.1 chunk10."
+  },
+  {
+    "question_id": "Q3",
+    "question": "Explain Newton's Third Law using the example of a swimmer pushing off a wall. Why do the two forces not cancel out?",
+    "correct_chunk_ids": ["5.5_newtons_third_law__chunk02"],
+    "note": "Rubric question. Swimmer example and 'different systems' explanation are both in this chunk."
+  },
+  {
+    "question_id": "Q4",
+    "question": "A box is pulled along a rough horizontal floor by a rope with a known coefficient of kinetic friction. Find the acceleration.",
+    "correct_chunk_ids": ["6.2_friction__chunk05", "6.2_friction__chunk08"],
+    "note": "Rubric question. Kinetic friction formula in chunk05; closest worked example (crate on floor, static/kinetic friction) in chunk08."
+  },
+  {
+    "question_id": "E1",
+    "question": "What is the SI unit of force and how is it defined?",
+    "correct_chunk_ids": ["5.1_forces__chunk07"],
+    "note": "Extra — Vector Notation for Force section defines the newton."
+  },
+  {
+    "question_id": "E2",
+    "question": "What is a free-body diagram and what should and should not be included in one?",
+    "correct_chunk_ids": ["5.7_free_body_diagrams__chunk02"],
+    "note": "Extra — core free-body diagram construction rules."
+  },
+  {
+    "question_id": "E3",
+    "question": "What is the difference between mass and weight?",
+    "correct_chunk_ids": ["5.4_mass_and_weight__chunk04", "5.4_mass_and_weight__chunk05"],
+    "note": "Extra — corrected after eval run: the mass-vs-weight distinction is explained in parts 2-3 of Weight and Gravitational Force, not part 1 (which is the w=mg derivation)."
+  },
+  {
+    "question_id": "E4",
+    "question": "How do you calculate the weight of an object using its mass and gravitational acceleration?",
+    "correct_chunk_ids": ["5.4_mass_and_weight__chunk03"],
+    "note": "Extra — w = mg derivation."
+  },
+  {
+    "question_id": "E5",
+    "question": "What is the normal force and how is it calculated on an inclined surface?",
+    "correct_chunk_ids": ["5.6_common_forces__chunk02"],
+    "note": "Extra — Normal Force definition, includes incline formula."
+  },
+  {
+    "question_id": "E6",
+    "question": "What is tension and how is it calculated for a mass hanging at rest?",
+    "correct_chunk_ids": ["5.6_common_forces__chunk05"],
+    "note": "Extra — Tension section."
+  },
+  {
+    "question_id": "E7",
+    "question": "Calculate the tension in a wire supporting a tightrope walker given the sag angle.",
+    "correct_chunk_ids": ["5.6_common_forces__chunk06"],
+    "note": "Extra — worked example, tightrope tension."
+  },
+  {
+    "question_id": "E8",
+    "question": "What is Hooke's Law and how is spring force related to displacement?",
+    "correct_chunk_ids": ["5.6_common_forces__chunk07"],
+    "note": "Extra — Friction & Spring Force section."
+  },
+  {
+    "question_id": "E9",
+    "question": "What is the difference between a real force and a fictitious force?",
+    "correct_chunk_ids": ["5.6_common_forces__chunk08"],
+    "note": "Extra — Real Forces and Inertial Frames section."
+  },
+  {
+    "question_id": "E10",
+    "question": "How do you resolve the tension forces on a traffic light suspended from two wires at different angles?",
+    "correct_chunk_ids": ["6.1_solving_problems__chunk06"],
+    "note": "Extra — Example 6.1, two-wire tension problem."
+  },
+  {
+    "question_id": "E11",
+    "question": "What does a bathroom scale read when a person is in an accelerating elevator?",
+    "correct_chunk_ids": ["6.1_solving_problems__chunk09"],
+    "note": "Extra — Example 6.3, scale-in-elevator problem."
+  },
+  {
+    "question_id": "E12",
+    "question": "How do you solve an Atwood machine problem with two hanging masses connected by a pulley?",
+    "correct_chunk_ids": ["6.1_solving_problems__chunk11"],
+    "note": "Extra — Example 6.5, Atwood machine."
+  },
+  {
+    "question_id": "E13",
+    "question": "What is the formula for the maximum static friction force?",
+    "correct_chunk_ids": ["6.2_friction__chunk04"],
+    "note": "Extra — Magnitude of Static Friction section."
+  },
+  {
+    "question_id": "E14",
+    "question": "How do you find the acceleration of a skier going down a friction-affected slope?",
+    "correct_chunk_ids": ["6.2_friction__chunk11"],
+    "note": "Extra — Example 6.11, Downhill Skier."
+  },
+  {
+    "question_id": "E15",
+    "question": "What causes friction at the atomic/microscopic scale?",
+    "correct_chunk_ids": ["6.2_friction__chunk13"],
+    "note": "Extra — Atomic-Scale Explanations of Friction."
+  },
+  {
+    "question_id": "E16",
+    "question": "What coefficient of friction does a car need to safely go around a flat curve?",
+    "correct_chunk_ids": ["6.3_centripetal_force__chunk03"],
+    "note": "Extra — Example 6.15, friction on a flat curve."
+  },
+  {
+    "question_id": "E17",
+    "question": "How does banking the angle of a curve affect the required speed and friction for a car going around it?",
+    "correct_chunk_ids": ["6.3_centripetal_force__chunk05"],
+    "note": "Extra — Banked Curves section."
+  },
+  {
+    "question_id": "E18",
+    "question": "What is the Coriolis force and why does it appear only in rotating (noninertial) reference frames?",
+    "correct_chunk_ids": ["6.3_centripetal_force__chunk08", "6.3_centripetal_force__chunk12"],
+    "note": "Extra — corrected after eval run: this concept spans a 5-part section; chunk08 defines inertial/fictitious forces generally, chunk12 explicitly names the Coriolis force and ties it to noninertial frames."
+  },
+  {
+    "question_id": "E19",
+    "question": "What is terminal velocity and how is it reached by a falling object?",
+    "correct_chunk_ids": ["6.4_drag_terminal_speed__chunk04"],
+    "note": "Extra — Terminal Velocity section."
+  },
+  {
+    "question_id": "E20",
+    "question": "Calculate the terminal velocity of a skydiver given their mass and drag coefficient.",
+    "correct_chunk_ids": ["6.4_drag_terminal_speed__chunk05"],
+    "note": "Extra — Example 6.17, skydiver terminal velocity."
+  }
+]

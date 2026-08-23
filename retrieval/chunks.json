@@ -1,0 +1,874 @@
+[
+  {
+    "chunk_id": "5.1_forces__chunk01",
+    "source_file": "5.1_forces.md",
+    "chapter_title": "5.1 Forces",
+    "section": "Learning Objectives",
+    "text": "By the end of this section, you will be able to:\n- Distinguish between kinematics and dynamics\n- Understand the definition of force\n- Identify simple free-body diagrams\n- Define the SI unit of force, the newton\n- Describe force as a vector",
+    "word_count": 43
+  },
+  {
+    "chunk_id": "5.1_forces__chunk02",
+    "source_file": "5.1_forces.md",
+    "chapter_title": "5.1 Forces",
+    "section": "Kinematics vs. Dynamics",
+    "text": "The study of motion is called kinematics, but kinematics only describes the way objects move — their velocity and their acceleration. Dynamics is the study of how forces affect the motion of objects and systems. It considers the causes of motion of objects and systems of interest, where a system is anything being analyzed. The foundation of dynamics are the laws of motion stated by Isaac Newton (1642–1727). These laws provide an example of the breadth and simplicity of principles under which nature functions. They are also universal laws in that they apply to situations on Earth and in space.\n\nNewton's laws of motion produce a good description of motion only when objects are moving at speeds much less than the speed of light and are larger than the size of most molecules (about 10⁻⁹ m in diameter). These constraints define the realm of Newtonian mechanics. At the beginning of the twentieth century, Albert Einstein (1879–1955) developed the theory of relativity, and quantum mechanics was developed alongside it, neither of which share the constraints of Newtonian physics. All situations considered in this chapter are within the realm of Newtonian physics.\n\n*Figure 5.2: Isaac Newton (1642–1727) published Philosophiae Naturalis Principia Mathematica in 1687, proposing the laws of motion that still apply today. Newton also discovered the law of gravity, invented calculus, and contributed to the theories of light and color.*",
+    "word_count": 229
+  },
+  {
+    "chunk_id": "5.1_forces__chunk03",
+    "source_file": "5.1_forces.md",
+    "chapter_title": "5.1 Forces",
+    "section": "Working Definition of Force",
+    "text": "Dynamics is the study of the forces that cause objects and systems to move. An intuitive definition of force — a push or a pull — is a good starting point. A push or a pull has both magnitude and direction, making it a vector quantity. Force can be represented by vectors or expressed as a multiple of a standard force.\n\nThe push or pull on an object can vary considerably in magnitude or direction. For example, a cannon exerts a strong force on a cannonball launched into the air, while Earth exerts only a tiny downward pull on a flea. Since force is a vector, it adds like other vectors — using the head-to-tail method or trigonometric methods.\n\n*Figure 5.3: (a) An overhead view of two ice skaters pushing on a third skater with forces F1 and F2, perpendicular to each other. The resultant vector F_total forms the hypotenuse of the triangle formed by placing F1 and F2 head to tail. (b) A free-body diagram representing the forces acting on the third skater, with F1 and F2 originating from the same point.*\n\nFigure 5.3(b) is the first example of a **free-body diagram**: a sketch showing all external forces acting on an object or system. The object or system is represented by a single isolated point (the free body), and only external forces — those originating outside the object or system — are shown. Internal forces within the body are ignored, since only external forces acting on the free body affect its motion. Forces are represented by vectors extending outward from the free body.",
+    "word_count": 264
+  },
+  {
+    "chunk_id": "5.1_forces__chunk04",
+    "source_file": "5.1_forces.md",
+    "chapter_title": "5.1 Forces",
+    "section": "Working Definition of Force — Problem-Solving Strategy: Drawing Free-Body Diagrams",
+    "text": "1. Draw the object under consideration. If treating the object as a particle, represent it as a point at the origin of an xy-coordinate system.\n2. Include all forces that act on the object, representing them as vectors. Do not include the net force on the object or forces the object exerts on its environment.\n3. Resolve all force vectors into x- and y-components.\n4. Draw a separate free-body diagram for each object in the problem.\n\n*Figure 5.4: Two examples of free-body diagrams. (a) A box at rest on a horizontal surface, with the normal force vector pointing upward and the weight vector pointing downward. (b) A box on an inclined plane, with the weight vector pointing straight down, the normal force perpendicular to the plane, and a friction force vector pointing up along the plane. N is the normal force, w is the weight of the object, and f is the friction.*",
+    "word_count": 153
+  },
+  {
+    "chunk_id": "5.1_forces__chunk05",
+    "source_file": "5.1_forces.md",
+    "chapter_title": "5.1 Forces",
+    "section": "Development of the Force Concept (part 1)",
+    "text": "A quantitative definition of force can be based on a standard force, just as distance is measured relative to a standard length. One possibility: stretch a spring a fixed distance and use the restoring force it exerts to pull itself back to its relaxed shape as a standard. The magnitude of all other forces can then be considered as multiples of this standard unit of force.\n\n*Figure 5.5: The force exerted by a stretched spring used as a standard unit of force. (a) A spring at undistorted length x. (b) When stretched a distance Δx, the spring exerts a reproducible restoring force F_restore. (c) A spring scale uses a spring to measure force; here the force has a magnitude of six units of the force standard.*\n\nConsider a physics student sitting at a table, working on his homework. What external forces act on him?\n\n*Figure 5.6: (a) The forces acting on the student are due to the chair, the table, the floor, and Earth's gravitational attraction — force C (chair, upward) and W (weight, downward) act along the line of his torso; force T (table, upward) acts near his forearms; force F (floor, upward) acts near his feet. (b) A free-body diagram considering only the forces C and W acting along the line running through his torso.*\n\nIn most situations, forces are grouped into two categories:\n\n- **Contact forces**: due to direct physical contact between objects. In the example above, these are forces C, F, and T — exerted by the chair on the student's posterior, the floor on his feet, and the table on his forearms.\n- **Field forces**: act without physical contact between objects, depending on the presence of a \"field\" in the surrounding region of space. Since the student is in Earth's gravitational field, he feels a gravitational force w — he has weight.\n\nThere are only four fundamental force fields in nature: gravitational, electromagnetic, strong nuclear, and weak. The gravitational field is responsible for weight. Electromagnetic field forces include static electricity and magnetism, and are responsible for the attraction among atoms in bulk matter. The strong nuclear and weak force fields are effective only over distances roughly equal to the scale of an atomic nucleus (10⁻¹⁵ m), so neither has influence in the macroscopic world of Newtonian mechanics.",
+    "word_count": 382
+  },
+  {
+    "chunk_id": "5.1_forces__chunk06",
+    "source_file": "5.1_forces.md",
+    "chapter_title": "5.1 Forces",
+    "section": "Development of the Force Concept (part 2)",
+    "text": "Contact forces are fundamentally electromagnetic in origin — e.g., when an elbow contacts a tabletop, atomic charges in the skin interact electromagnetically with charges in the table's surface, producing the net contact force. However, in the context of Newtonian mechanics, this electromagnetic origin is not an important concern.",
+    "word_count": 48
+  },
+  {
+    "chunk_id": "5.1_forces__chunk07",
+    "source_file": "5.1_forces.md",
+    "chapter_title": "5.1 Forces",
+    "section": "Vector Notation for Force",
+    "text": "Force is a vector — it has both magnitude and direction. The SI unit of force is the **newton** (N), where:\n\n**1 N = 1 kg·m/s²**\n\n(the force needed to accelerate a 1 kg object at a rate of 1 m/s²). A useful way to remember the size of a newton: a small apple weighs about 1 N.\n\nA two-dimensional force can be written as **F = a·î + b·ĵ**, and a three-dimensional force as **F = Fx·î + Fy·ĵ + Fz·k̂**, where î, ĵ, k̂ are unit vectors along the x, y, and z axes.\n\n**Worked Example — Adding forces (Figure 5.3 scenario):**\nIf skater 1 pushes horizontally with 30.0 N to the right: **F1 = 30.0î N**\nIf skater 2 pushes with 40.0 N in the positive vertical direction: **F2 = 40.0ĵ N**\n\nThe net external force is the vector sum of all external forces:\n\n**F_net = ΣF = F1 + F2 + ...**  (Eq. 5.1)\n\nFor this example: **F_net = F1 + F2 = 30.0î + 40.0ĵ N**\n\nMagnitude of the resultant (using the Pythagorean rule):\n\n**F_net = √[(30.0 N)² + (40.0 N)²] = 50.0 N**\n\nDirection, measured from the positive x-axis:\n\n**θ = tan⁻¹(F2 / F1) = tan⁻¹(40.0 / 30.0) = 53.1°**\n\n**Second example:** If **F1 = 3.0î + 8.0ĵ N** and **F2 = 5.0î + 4.0ĵ N**, adding component-wise:\n\n**F_net = F1 + F2 = (3.0î + 8.0ĵ) + (5.0î + 4.0ĵ) = 8.0î + 12ĵ N**",
+    "word_count": 242
+  },
+  {
+    "chunk_id": "5.2_newtons_first_law__chunk01",
+    "source_file": "5.2_newtons_first_law.md",
+    "chapter_title": "5.2 Newton's First Law",
+    "section": "Learning Objectives (part 1)",
+    "text": "By the end of this section, you will be able to:\n- Describe Newton's first law of motion\n- Recognize friction as an external force\n- Define inertia\n- Identify inertial reference frames\n- Calculate equilibrium for a system\n\n---\n\nExperience suggests that an object at rest remains at rest if left alone and that an object in motion tends to slow down and stop unless some effort is made to keep it moving. However, Newton’s first law gives a deeper explanation of this observation.\n\n> **Newton’s First Law of Motion**  \n> A body at rest remains at rest or, if in motion, remains in motion at constant velocity unless acted on by a net external force.\n\nNote the repeated use of the verb *“remains.”* We can think of this law as preserving the status quo of motion. Also note the expression *“constant velocity;”* this means that the object maintains a path along a straight line, since neither the magnitude nor the direction of the velocity vector changes. We can use **Figure 5.7** to consider the two parts of Newton’s first law.\n\n*Figure 5.7 (a) A hockey puck is shown at rest; it remains at rest until an outside force such as a hockey stick changes its state of rest; (b) a hockey puck is shown in motion; it continues in motion in a straight line until an outside force causes it to change its state of motion. Although it is slick, an ice surface provides some friction that slows the puck.*\n\nRather than contradicting our experience, Newton’s first law says that there must be a cause for any change in velocity (a change in either magnitude or direction) to occur. This cause is a **net external force**, which we defined earlier in the chapter. An object sliding across a table or floor slows down due to the net force of friction acting on the object. If friction disappears, will the object still slow down?",
+    "word_count": 325
+  },
+  {
+    "chunk_id": "5.2_newtons_first_law__chunk02",
+    "source_file": "5.2_newtons_first_law.md",
+    "chapter_title": "5.2 Newton's First Law",
+    "section": "Learning Objectives (part 2)",
+    "text": "The idea of cause and effect is crucial in accurately describing what happens in various situations. For example, consider what happens to an object sliding along a rough horizontal surface. The object quickly grinds to a halt. If we spray the surface with talcum powder to make the surface smoother, the object slides farther. If we make the surface even smoother by rubbing lubricating oil on it, the object slides farther yet. Extrapolating to a frictionless surface and ignoring air resistance, we can imagine the object sliding in a straight line indefinitely. Friction is thus the cause of slowing (consistent with Newton’s first law). The object would not slow down if friction were eliminated.\n\nConsider an air hockey table (**Figure 5.8**). When the air is turned off, the puck slides only a short distance before friction slows it to a stop. However, when the air is turned on, it creates a nearly frictionless surface, and the puck glides long distances without slowing down. Additionally, if we know enough about the friction, we can accurately predict how quickly the object slows down.\n\n*Figure 5.8 An air hockey table is useful in illustrating Newton’s laws. When the air is off, friction quickly slows the puck; but when the air is on, it minimizes contact between the puck and the hockey table, and the puck glides far down the table.*",
+    "word_count": 227
+  },
+  {
+    "chunk_id": "5.2_newtons_first_law__chunk03",
+    "source_file": "5.2_newtons_first_law.md",
+    "chapter_title": "5.2 Newton's First Law",
+    "section": "Learning Objectives (part 3)",
+    "text": "Newton’s first law is general and can be applied to anything from an object sliding on a table to a satellite in orbit to blood pumped from the heart. Experiments have verified that any change in velocity (speed or direction) must be caused by an external force. The idea of generally applicable or universal laws is important—it is a basic feature of all laws of physics. Identifying these laws is like recognizing patterns in nature from which further patterns can be discovered. The genius of Galileo, who first developed the idea for the first law of motion, and Newton, who clarified it, was to ask the fundamental question: *“What is the cause?”* Thinking in terms of cause and effect is fundamentally different from the typical ancient Greek approach, when questions such as *“Why does a tiger have stripes?”* would have been answered in Aristotelian fashion, such as *“That is the nature of the beast.”* The ability to think in terms of cause and effect is the ability to make a connection between an observed behavior and the surrounding world.\n\n---",
+    "word_count": 180
+  },
+  {
+    "chunk_id": "5.2_newtons_first_law__chunk04",
+    "source_file": "5.2_newtons_first_law.md",
+    "chapter_title": "5.2 Newton's First Law",
+    "section": "Gravitation and Inertia",
+    "text": "Regardless of the scale of an object, whether a molecule or a subatomic particle, two properties remain valid and thus of interest to physics: **gravitation** and **inertia**. Both are connected to mass. Roughly speaking, **mass** is a measure of the amount of matter in something. Gravitation is the attraction of one mass to another, such as the attraction between yourself and Earth that holds your feet to the floor. The magnitude of this attraction is your weight, and it is a force.\n\nMass is also related to **inertia**, the ability of an object to resist changes in its motion—in other words, to resist acceleration. Newton’s first law is often called the *law of inertia*. As we know from experience, some objects have more inertia than others. It is more difficult to change the motion of a large boulder than that of a basketball, for example, because the boulder has more mass than the basketball. In other words, the inertia of an object is measured by its mass. The relationship between mass and weight is explored later in this chapter.\n\n---",
+    "word_count": 180
+  },
+  {
+    "chunk_id": "5.2_newtons_first_law__chunk05",
+    "source_file": "5.2_newtons_first_law.md",
+    "chapter_title": "5.2 Newton's First Law",
+    "section": "Inertial Reference Frames (part 1)",
+    "text": "Earlier, we stated Newton’s first law as *“A body at rest remains at rest or, if in motion, remains in motion at constant velocity unless acted on by a net external force.”* It can also be stated as *“Every body remains in its state of uniform motion in a straight line unless it is compelled to change that state by forces acting on it.”* To Newton, “uniform motion in a straight line” meant constant velocity, which includes the case of zero velocity, or rest. Therefore, the first law says that the velocity of an object remains constant if the net force on it is zero.\n\nNewton’s first law is usually considered to be a statement about reference frames. It provides a method for identifying a special type of reference frame: the **inertial reference frame**. In principle, we can make the net force on a body zero. If its velocity relative to a given frame is constant, then that frame is said to be inertial. So by definition, an inertial reference frame is a reference frame in which Newton’s first law is valid. Newton’s first law applies to objects with constant velocity. From this fact, we can infer the following statement:\n\n> **Inertial Reference Frame**  \n> A reference frame moving at constant velocity relative to an inertial frame is also inertial. A reference frame accelerating relative to an inertial frame is not inertial.\n\nAre inertial frames common in nature? It turns out that well within experimental error, a reference frame at rest relative to the most distant, or “fixed,” stars is inertial. All frames moving uniformly with respect to this fixed-star frame are also inertial. For example, a nonrotating reference frame attached to the Sun is, for all practical purposes, inertial, because its velocity relative to the fixed stars does not vary by more than one part in $10^{10}$.\n\nEarth accelerates relative to the fixed stars because it rotates on its axis and revolves around the Sun; hence, a reference frame attached to its surface is not inertial. For most problems, however, such a frame serves as a sufficiently accurate approximation to an inertial frame, because the acceleration of a point on Earth’s surface relative to the fixed stars is rather small ($< 3.4 \\times 10^{-2} \\text{ m/s}^2$). Thus, unless indicated otherwise, we consider reference frames fixed on Earth to be inertial.",
+    "word_count": 391
+  },
+  {
+    "chunk_id": "5.2_newtons_first_law__chunk06",
+    "source_file": "5.2_newtons_first_law.md",
+    "chapter_title": "5.2 Newton's First Law",
+    "section": "Inertial Reference Frames (part 2)",
+    "text": "Finally, no particular inertial frame is more special than any other. As far as the laws of nature are concerned, all inertial frames are equivalent. In analyzing a problem, we choose one inertial frame over another simply on the basis of convenience.\n\n---",
+    "word_count": 43
+  },
+  {
+    "chunk_id": "5.2_newtons_first_law__chunk07",
+    "source_file": "5.2_newtons_first_law.md",
+    "chapter_title": "5.2 Newton's First Law",
+    "section": "Newton’s First Law and Equilibrium",
+    "text": "Newton’s first law tells us about the **equilibrium** of a system, which is the state in which the forces on the system are balanced. Returning to Forces and the ice skaters in Figure 5.3, we know that the forces $\\vec{\\mathbf{F}}_1$ and $\\vec{\\mathbf{F}}_2$ combine to form a resultant force, or the net external force:\n\n$$\\vec{\\mathbf{F}}_R = \\vec{\\mathbf{F}}_{\\text{net}} = \\vec{\\mathbf{F}}_1 + \\vec{\\mathbf{F}}_2$$\n\nTo create equilibrium, we require a balancing force that will produce a net force of zero. This force must be equal in magnitude but opposite in direction to $\\vec{\\mathbf{F}}_R$, which means the vector must be $-\\vec{\\mathbf{F}}_R$. Referring to the ice skaters, for which we found $\\vec{\\mathbf{F}}_R$ to be $30.0\\hat{\\mathbf{i}} + 40.0\\hat{\\mathbf{j}}\\text{ N}$, we can determine the balancing force by simply finding:\n\n$$-\\vec{\\mathbf{F}}_R = -30.0\\hat{\\mathbf{i}} - 40.0\\hat{\\mathbf{j}}\\text{ N}$$\n\nWe can give Newton’s first law in vector form:\n\n$$\\vec{\\mathbf{v}} = \\text{constant} \\quad \\text{when} \\quad \\vec{\\mathbf{F}}_{\\text{net}} = \\vec{\\mathbf{0}}\\text{ N}$$\n\nThis equation says that a net force of zero implies that the velocity $\\vec{\\mathbf{v}}$ of the object is constant. (The word “constant” can indicate zero velocity.)\n\nNewton’s first law is deceptively simple. If a car is at rest, the only forces acting on the car are weight and the contact force of the pavement pushing up on the car (**Figure 5.9**). It is easy to understand that a nonzero net force is required to change the state of motion of the car. As a car moves with constant velocity, the friction force propels the car forward and opposes the drag force against it.\n\n*Figure 5.9 A car is shown (a) parked and (b) moving at constant velocity. How do Newton’s laws apply to the parked car? What does the knowledge that the car is moving at constant velocity tell us about the net horizontal force on the car?*\n\n---",
+    "word_count": 295
+  },
+  {
+    "chunk_id": "5.2_newtons_first_law__chunk08",
+    "source_file": "5.2_newtons_first_law.md",
+    "chapter_title": "5.2 Newton's First Law",
+    "section": "Newton’s First Law and Equilibrium — Example 5.1: When Does Newton’s First Law Apply to Your Car?",
+    "text": "Newton’s laws can be applied to all physical processes involving force and motion, including something as mundane as driving a car.\n\n**(a)** Your car is parked outside your house. Does Newton’s first law apply in this situation? Why or why not?  \n**(b)** Your car moves at constant velocity down the street. Does Newton’s first law apply in this situation? Why or why not?\n\n#### Strategy\nIn (a), we are considering the first part of Newton’s first law, dealing with a body at rest; in (b), we look at the second part of Newton’s first law for a body in motion.\n\n#### Solution\n- **(a)** When your car is parked, all forces on the car must be balanced; the vector sum is $0\\text{ N}$. Thus, the net force is zero, and Newton’s first law applies. The acceleration of the car is zero, and in this case, the velocity is also zero.\n- **(b)** When your car is moving at constant velocity down the street, the net force must also be zero according to Newton’s first law. The car’s frictional force between the road and tires opposes the drag force on the car with the same magnitude, producing a net force of zero. The body continues in its state of constant velocity until the net force becomes nonzero. Realize that a net force of zero means that an object is either at rest or moving with constant velocity, that is, it is not accelerating. What do you suppose happens when the car accelerates? We explore this idea in the next section.\n\n#### Significance\nAs this example shows, there are two kinds of equilibrium. In (a), the car is at rest; we say it is in **static equilibrium**. In (b), the forces on the car are balanced, but the car is moving; we say that it is in **dynamic equilibrium**. Again, it is possible for two (or more) forces to act on an object yet for the object to move. In addition, a net force of zero cannot produce acceleration.",
+    "word_count": 337
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk01",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Learning Objectives",
+    "text": "By the end of this section, you will be able to:\n- Distinguish between external and internal forces\n- Describe Newton's second law of motion\n- Explain the dependence of acceleration on net force and mass\n\n---\n\nNewton’s second law is closely related to his first law. It mathematically gives the cause-and-effect relationship between force and changes in motion. Newton’s second law is quantitative and is used extensively to calculate what happens in situations involving a force. Before we can write down Newton’s second law as a simple equation that gives the exact relationship of force, mass, and acceleration, we need to sharpen some ideas we mentioned earlier.\n\n---",
+    "word_count": 109
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk02",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Force and Acceleration (part 1)",
+    "text": "First, what do we mean by a change in motion? The answer is that a change in motion is equivalent to a change in velocity. A change in velocity means, by definition, that there is acceleration. Newton’s first law says that a net external force causes a change in motion; thus, we see that a net external force causes nonzero acceleration.\n\nWe defined external force in Forces as force acting on an object or system that originates outside of the object or system. Let’s consider this concept further. An intuitive notion of external is correct—it is outside the system of interest. For example, in **Figure 5.10(a)**, the system of interest is the car plus the person within it. The two forces exerted by the two students are external forces. In contrast, an internal force acts between elements of the system. Thus, the force the person in the car exerts to hang on to the steering wheel is an internal force between elements of the system of interest. Only external forces affect the motion of a system, according to Newton’s first law. (The internal forces cancel each other out, as explained in the next section.) Therefore, we must define the boundaries of the system before we can determine which forces are external. Sometimes, the system is obvious, whereas at other times, identifying the boundaries of a system is more subtle. The concept of a system is fundamental to many areas of physics, as is the correct application of Newton’s laws. This concept is revisited many times in the study of physics.\n\n*Figure 5.10 Different forces exerted on the same mass produce different accelerations. (a) Two students push a stalled car. All external forces acting on the car are shown. (b) The forces acting on the car are transferred to a coordinate plane (free-body diagram) for simpler analysis. (c) The tow truck can produce greater external force on the same mass, and thus greater acceleration.*",
+    "word_count": 323
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk03",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Force and Acceleration (part 2)",
+    "text": "From this example, you can see that different forces exerted on the same mass produce different accelerations. In **Figure 5.10(a)**, the two students push a car with a driver in it. Arrows representing all external forces are shown. The system of interest is the car and its driver. The weight $\\vec{\\mathbf{w}}$ of the system and the support of the ground $\\vec{\\mathbf{N}}$ are also shown for completeness and are assumed to cancel (because there was no vertical motion and no imbalance of forces in the vertical direction to create a change in motion). The vector $\\vec{\\mathbf{f}}$ represents the friction acting on the car, and it acts to the left, opposing the motion of the car. In **Figure 5.10(b)**, all external forces acting on the system add together to produce the net force $\\vec{\\mathbf{F}}_{\\text{net}}$. The free-body diagram shows all of the forces acting on the system of interest. The dot represents the center of mass of the system. Each force vector extends from this dot. Because there are two forces acting to the right, the vectors are shown collinearly. Finally, in **Figure 5.10(c)**, a larger net external force produces a larger acceleration ($\\vec{\\mathbf{a}}' > \\vec{\\mathbf{a}}$) when the tow truck pulls the car.\n\nIt seems reasonable that acceleration would be directly proportional to and in the same direction as the net external force acting on a system. This assumption has been verified experimentally and is illustrated in **Figure 5.10**. To obtain an equation for Newton’s second law, we first write the relationship of acceleration $\\vec{\\mathbf{a}}$ and net external force $\\vec{\\mathbf{F}}_{\\text{net}}$ as the proportionality:\n\n$$\\vec{\\mathbf{a}} \\propto \\vec{\\mathbf{F}}_{\\text{net}}$$\n\nwhere the symbol $\\propto$ means “proportional to.” (Recall that the net external force is the vector sum of all external forces and is sometimes indicated as $\\sum \\vec{\\mathbf{F}}$.) This proportionality shows what we have said in words—acceleration is directly proportional to net external force. Once the system of interest is chosen, identify the external forces and ignore the internal ones. It is a tremendous simplification to disregard the numerous internal forces acting between objects within the system, such as muscular forces within the students’ bodies, let alone the myriad forces between the atoms in the objects. Still, this simplification helps us solve some complex problems.",
+    "word_count": 368
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk04",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Force and Acceleration (part 3)",
+    "text": "It also seems reasonable that acceleration should be inversely proportional to the mass of the system. In other words, the larger the mass (the inertia), the smaller the acceleration produced by a given force. As illustrated in **Figure 5.11**, the same net external force applied to a basketball produces a much smaller acceleration when it is applied to an SUV. The proportionality is written as:\n\n$$a \\propto \\frac{1}{m}$$\n\nwhere $m$ is the mass of the system and $a$ is the magnitude of the acceleration. Experiments have shown that acceleration is exactly inversely proportional to mass, just as it is directly proportional to net external force.\n\n*Figure 5.11 The same force exerted on systems of different masses produces different accelerations. (a) A basketball player pushes on a basketball to make a pass. (Ignore the effect of gravity on the ball.) (b) The same player exerts an identical force on a stalled SUV and produces far less acceleration. (c) The free-body diagrams are identical, permitting direct comparison of the two situations.*\n\nIt has been found that the acceleration of an object depends only on the net external force and the mass of the object. Combining the two proportionalities just given yields Newton’s second law.\n\n> **Newton’s Second Law of Motion**  \n> The acceleration of a system is directly proportional to and in the same direction as the net external force acting on the system and is inversely proportional to its mass. In equation form, Newton’s second law is:\n>\n> $$\\vec{\\mathbf{a}} = \\frac{\\vec{\\mathbf{F}}_{\\text{net}}}{m}$$\n>\n> where $\\vec{\\mathbf{a}}$ is the acceleration, $\\vec{\\mathbf{F}}_{\\text{net}}$ is the net force, and $m$ is the mass. This is often written in the more familiar form:\n>\n> $$\\vec{\\mathbf{F}}_{\\text{net}} = \\sum \\vec{\\mathbf{F}} = m\\vec{\\mathbf{a}} \\tag{5.3}$$\n>\n> When only the magnitude of force and acceleration are considered, this equation can be written in the scalar form:\n>\n> $$F_{\\text{net}} = ma \\tag{5.4}$$\n\nThe law is a cause-and-effect relationship among three quantities that is not simply based on their definitions. The validity of the second law is based on experimental verification. The free-body diagram is the basis for writing Newton’s second law.\n\n---",
+    "word_count": 353
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk05",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Force and Acceleration — Example 5.2: What Acceleration Can a Person Produce When Pushing a Lawn Mower?",
+    "text": "Suppose that the net external force (push minus friction) exerted on a lawn mower is $51\\text{ N}$ (about $11\\text{ lb}$) parallel to the ground (**Figure 5.12**). The mass of the mower is $24\\text{ kg}$. What is its acceleration?\n\n*Figure 5.12 (a) The net force on a lawn mower is 51 N to the right. At what rate does the lawn mower accelerate to the right? (b) The free-body diagram for this problem is shown.*\n\n#### Strategy\nThis problem involves only motion in the horizontal direction; we are also given the net force, indicated by the single vector, but we can suppress the vector nature and concentrate on applying Newton’s second law. Since $F_{\\text{net}}$ and $m$ are given, the acceleration can be calculated directly from Newton’s second law as $F_{\\text{net}} = ma$.\n\n#### Solution\nThe magnitude of the acceleration $a$ is $a = F_{\\text{net}} / m$. Entering known values gives:\n\n$$a = \\frac{51\\text{ N}}{24\\text{ kg}}$$\n\nSubstituting the unit of kilograms times meters per square second for newtons yields:\n\n$$a = \\frac{51\\text{ kg}\\cdot\\text{m/s}^2}{24\\text{ kg}} = 2.1\\text{ m/s}^2$$\n\n#### Significance\nThe direction of the acceleration is the same direction as that of the net force, which is parallel to the ground. This is a result of the vector relationship expressed in Newton’s second law, that is, the vector representing net force is the scalar multiple of the acceleration vector.\n\n> **Check Your Understanding 5.3**  \n> At the time of its launch, the HMS Titanic was the most massive mobile object ever built, with a mass of $6.0 \\times 10^7\\text{ kg}$. If a force of $6\\text{ MN}$ ($6 \\times 10^6\\text{ N}$) was applied to the ship, what acceleration would it experience?\n\n---\n\nIn the preceding example, we dealt with net force only for simplicity. However, several forces act on the lawn mower. The weight $\\vec{\\mathbf{w}}$ pulls down on the mower, toward the center of Earth; this produces a contact force on the ground. The ground must exert an upward force on the lawn mower, known as the normal force $\\vec{\\mathbf{N}}$. These forces are balanced and therefore do not produce vertical acceleration.\n\n---",
+    "word_count": 348
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk06",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Force and Acceleration — Example 5.3: Which Force Is Bigger?",
+    "text": "**(a)** The car shown in **Figure 5.13** is moving at a constant speed. Which force is bigger, $\\vec{\\mathbf{F}}_{\\text{friction}}$ or $\\vec{\\mathbf{F}}_{\\text{drag}}$? Explain.  \n**(b)** The same car is now accelerating to the right. Which force is bigger, $\\vec{\\mathbf{F}}_{\\text{friction}}$ or $\\vec{\\mathbf{F}}_{\\text{drag}}$? Explain.\n\n*Figure 5.13 A car is shown (a) moving at constant speed and (b) accelerating.*\n\n#### Strategy\nWe must consider Newton’s first and second laws to analyze the situation. We need to decide which law applies; this, in turn, will tell us about the relationship between the forces.\n\n#### Solution\n- **(a)** The forces are equal. According to Newton’s first law, if the net force is zero, the velocity is constant.\n- **(b)** In this case, $\\vec{\\mathbf{F}}_{\\text{friction}}$ must be larger than $\\vec{\\mathbf{F}}_{\\text{drag}}$. According to Newton’s second law, a net force is required to cause acceleration.\n\n#### Significance\nFor a car or any other object to move, it must be accelerated from rest to the desired speed; this requires that the friction force be greater than the drag force. Once the car is moving at constant velocity, the net force must be zero; otherwise, the car will accelerate (gain speed).\n\n---",
+    "word_count": 188
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk07",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Force and Acceleration — Example 5.4: What Rocket Thrust Accelerates This Sled?",
+    "text": "Calculate the magnitude of force exerted by each rocket, called its thrust $T$, for the four-rocket propulsion system shown in **Figure 5.14**. The sled’s initial acceleration is $49\\text{ m/s}^2$, the mass of the system is $2100\\text{ kg}$, and the force of friction opposing the motion is $650\\text{ N}$.\n\n*Figure 5.14 A sled experiences a rocket thrust that accelerates it to the right. Each rocket creates an identical thrust T.*\n\n#### Strategy\nAlthough forces are acting both vertically and horizontally, we assume the vertical forces cancel because there is no vertical acceleration. This leaves us with only horizontal forces and a simpler one-dimensional problem. Directions are indicated with plus or minus signs, with right taken as the positive direction.\n\n#### Solution\nSince acceleration, mass, and the force of friction are given, we start with Newton’s second law:\n\n$$F_{\\text{net}} = ma$$\n\nwhere $F_{\\text{net}}$ is the net force along the horizontal direction. The engine thrusts add, whereas friction opposes the thrust:\n\n$$F_{\\text{net}} = 4T - f$$\n\nSubstituting this into Newton’s second law gives:\n\n$$4T - f = ma \\implies 4T = ma + f$$\n\nSubstituting known values yields:\n\n$$4T = (2100\\text{ kg})(49\\text{ m/s}^2) + 650\\text{ N}$$\n$$4T = 1.0 \\times 10^5\\text{ N}$$\n\nTherefore, the individual thrust is:\n\n$$T = \\frac{1.0 \\times 10^5\\text{ N}}{4} = 2.5 \\times 10^4\\text{ N}$$\n\n#### Significance\nSpeeds of $1000\\text{ km/h}$ were obtained, with accelerations of $45\\text{ g}$'s ($45 \\times 9.8\\text{ m/s}^2 \\approx 440\\text{ m/s}^2$).\n\n> **Check Your Understanding 5.4**  \n> A $550\\text{-kg}$ sports car collides with a $2200\\text{-kg}$ truck, and during the collision, the net force on each vehicle is the force exerted by the other. If the magnitude of the truck’s acceleration is $10\\text{ m/s}^2$, what is the magnitude of the sports car’s acceleration?\n\n---",
+    "word_count": 287
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk08",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Component Form of Newton’s Second Law",
+    "text": "We have developed Newton’s second law and presented it as a vector equation in Equation 5.3. This vector equation can be written as three component equations:\n\n$$\\sum F_x = m a_x, \\quad \\sum F_y = m a_y, \\quad \\text{and} \\quad \\sum F_z = m a_z \\tag{5.5}$$\n\n---",
+    "word_count": 47
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk09",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Component Form of Newton’s Second Law — Example 5.5: Force on a Soccer Ball",
+    "text": "A $0.400\\text{-kg}$ soccer ball is kicked across the field by a player; it undergoes acceleration given by $\\vec{\\mathbf{a}} = 3.00\\hat{\\mathbf{i}} + 7.00\\hat{\\mathbf{j}}\\text{ m/s}^2$. Find (a) the resultant force acting on the ball and (b) the magnitude and direction of the resultant force.\n\n#### Strategy\nThe vectors in $\\hat{\\mathbf{i}}$ and $\\hat{\\mathbf{j}}$ format are involved, so we apply Newton’s second law in vector form.\n\n#### Solution\n**(a)** We apply Newton’s second law:\n\n$$\\vec{\\mathbf{F}}_{\\text{net}} = m\\vec{\\mathbf{a}} = (0.400\\text{ kg})(3.00\\hat{\\mathbf{i}} + 7.00\\hat{\\mathbf{j}}\\text{ m/s}^2) = 1.20\\hat{\\mathbf{i}} + 2.80\\hat{\\mathbf{j}}\\text{ N}$$\n\n**(b)** Magnitude and direction are found using the components of $\\vec{\\mathbf{F}}_{\\text{net}}$:\n\n$$F_{\\text{net}} = \\sqrt{(1.20\\text{ N})^2 + (2.80\\text{ N})^2} = 3.05\\text{ N}$$\n\n$$\\theta = \\tan^{-1}\\left(\\frac{2.80}{1.20}\night) = 66.8^\\circ$$\n\n---",
+    "word_count": 112
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk10",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Component Form of Newton’s Second Law — Example 5.6: Mass of a Car",
+    "text": "Find the mass of a car if a net force of $-600.0\\hat{\\mathbf{j}}\\text{ N}$ produces an acceleration of $-0.2\\hat{\\mathbf{j}}\\text{ m/s}^2$.\n\n#### Solution\nUsing $m = F_{\\text{net}} / a$ with magnitudes $F_{\\text{net}} = 600.0\\text{ N}$ and $a = 0.2\\text{ m/s}^2$:\n\n$$m = \\frac{600.0\\text{ N}}{0.2\\text{ m/s}^2} = 3000\\text{ kg}$$\n\n---",
+    "word_count": 47
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk11",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Component Form of Newton’s Second Law — Example 5.7: Several Forces on a Particle",
+    "text": "A particle of mass $m = 4.0\\text{ kg}$ is acted upon by four forces of magnitudes $F_1 = 10.0\\text{ N}$, $F_2 = 40.0\\text{ N}$, $F_3 = 5.0\\text{ N}$, and $F_4 = 2.0\\text{ N}$, with directions shown in **Figure 5.15**. What is the acceleration of the particle?\n\n*Figure 5.15 Four forces in the xy-plane are applied to a 4.0-kg particle.*\n\n#### Solution\nWe resolve vectors into x- and y-components:\n\n| x-components | y-components |\n| :--- | :--- |\n| $\\sum F_x = m a_x$ | $\\sum F_y = m a_y$ |\n| $F_{1x} - F_{3x} = m a_x$ | $F_{1y} + F_{4y} - F_{2y} = m a_y$ |\n| $F_1 \\cos 30^\\circ - F_{3x} = m a_x$ | $F_1 \\sin 30^\\circ + F_{4y} - F_{2y} = m a_y$ |\n| $(10.0\\text{ N})(\\cos 30^\\circ) - 5.0\\text{ N} = (4.0\\text{ kg})a_x$ | $(10.0\\text{ N})(\\sin 30^\\circ) + 2.0\\text{ N} - 40.0\\text{ N} = (4.0\\text{ kg})a_y$ |\n| $a_x = 0.92\\text{ m/s}^2$ | $a_y = -8.3\\text{ m/s}^2$ |\n\nThus, the net acceleration is:\n\n$$\\vec{\\mathbf{a}} = (0.92\\hat{\\mathbf{i}} - 8.3\\hat{\\mathbf{j}})\\text{ m/s}^2$$\n\nwhich is a vector of magnitude $8.4\\text{ m/s}^2$ directed at $276^\\circ$ to the positive x-axis.\n\n> **Check Your Understanding 5.5**  \n> A car has forces acting on it. The mass of the car is $1000.0\\text{ kg}$. Friction can be ignored.  \n> (a) What is the net force on the car?  \n> (b) What is the acceleration of the car?\n\n---",
+    "word_count": 235
+  },
+  {
+    "chunk_id": "5.3_newtons_second_law__chunk12",
+    "source_file": "5.3_newtons_second_law.md",
+    "chapter_title": "5.3 Newton's Second Law",
+    "section": "Newton’s Second Law and Momentum",
+    "text": "Newton actually stated his second law in terms of **momentum**: *“The instantaneous rate at which a body’s momentum changes is equal to the net force acting on the body.”*\n\n$$\\vec{\\mathbf{F}}_{\\text{net}} = \\frac{d\\vec{\\mathbf{p}}}{dt} \\tag{5.6}$$\n\nMomentum $\\vec{\\mathbf{p}}$ is defined as the product of mass $m$ and velocity $\\vec{\\mathbf{v}}$:\n\n$$\\vec{\\mathbf{p}} = m\\vec{\\mathbf{v}} \\tag{5.7}$$\n\nSubstituting Equation 5.7 into Equation 5.6:\n\n$$\\vec{\\mathbf{F}}_{\\text{net}} = \\frac{d(m\\vec{\\mathbf{v}})}{dt}$$\n\nWhen $m$ is constant, this simplifies to:\n\n$$\\vec{\\mathbf{F}}_{\\text{net}} = m\\frac{d\\vec{\\mathbf{v}}}{dt} = m\\vec{\\mathbf{a}}$$",
+    "word_count": 71
+  },
+  {
+    "chunk_id": "5.4_mass_and_weight__chunk01",
+    "source_file": "5.4_mass_and_weight.md",
+    "chapter_title": "5.4 Mass and Weight",
+    "section": "Learning Objectives",
+    "text": "By the end of this section, you will be able to:\n- Explain the difference between mass and weight\n- Explain why objects falling through the air are never truly in free fall\n- Describe the concept of weightlessness\n\n---\n\nMass and weight are often used interchangeably in everyday conversation. For example, our medical records often show our weight in kilograms but never in the correct units of newtons. In physics, however, there is an important distinction. Weight is the pull of Earth on an object. It depends on the distance from the center of Earth. Unlike weight, mass does not vary with location. The mass of an object is the same on Earth, in orbit, or on the surface of the Moon.\n\n---",
+    "word_count": 124
+  },
+  {
+    "chunk_id": "5.4_mass_and_weight__chunk02",
+    "source_file": "5.4_mass_and_weight.md",
+    "chapter_title": "5.4 Mass and Weight",
+    "section": "Units of Force",
+    "text": "The equation $F_{\\text{net}} = ma$ is used to define net force in terms of mass, length, and time. As explained earlier, the SI unit of force is the newton. Since $F_{\\text{net}} = ma$,\n\n$$1\\text{ N} = 1\\text{ kg}\\cdot\\text{m/s}^2$$\n\nAlthough almost the entire world uses the newton for the unit of force, in the United States, the most familiar unit of force is the pound ($\\text{lb}$), where $1\\text{ N} = 0.225\\text{ lb}$. Thus, a $225\\text{-lb}$ person weighs $1000\\text{ N}$.\n\n---",
+    "word_count": 79
+  },
+  {
+    "chunk_id": "5.4_mass_and_weight__chunk03",
+    "source_file": "5.4_mass_and_weight.md",
+    "chapter_title": "5.4 Mass and Weight",
+    "section": "Weight and Gravitational Force (part 1)",
+    "text": "When an object is dropped, it accelerates toward the center of Earth. Newton’s second law says that a net force on an object is responsible for its acceleration. If air resistance is negligible, the net force on a falling object is the gravitational force, commonly called its weight $\\vec{\\mathbf{w}}$, or its force due to gravity acting on an object of mass $m$. Weight can be denoted as a vector because it has a direction; down is, by definition, the direction of gravity, and hence, weight is a downward force. The magnitude of weight is denoted as $w$. Galileo was instrumental in showing that, in the absence of air resistance, all objects fall with the same acceleration $g$. Using Galileo’s result and Newton’s second law, we can derive an equation for weight.\n\nConsider an object with mass $m$ falling toward Earth. It experiences only the downward force of gravity, which is the weight $\\vec{\\mathbf{w}}$. Newton’s second law says that the magnitude of the net external force on an object is $\\vec{\\mathbf{F}}_{\\text{net}} = m\\vec{\\mathbf{a}}$. We know that the acceleration of an object due to gravity is $\\vec{\\mathbf{g}}$, or $\\vec{\\mathbf{a}} = \\vec{\\mathbf{g}}$. Substituting these into Newton’s second law gives us the following equations.\n\n> **Weight**  \n> The gravitational force on a mass is its weight. We can write this in vector form, where $\\vec{\\mathbf{w}}$ is weight and $m$ is mass, as:\n>\n> $$\\vec{\\mathbf{w}} = m\\vec{\\mathbf{g}} \\tag{5.8}$$\n>\n> In scalar form, we can write:\n>\n> $$w = mg \\tag{5.9}$$\n\nSince $g = 9.80\\text{ m/s}^2$ on Earth, the weight of a $1.00\\text{-kg}$ object on Earth is $9.80\\text{ N}$:\n\n$$w = mg = (1.00\\text{ kg})(9.80\\text{ m/s}^2) = 9.80\\text{ N}$$\n\nWhen the net external force on an object is its weight, we say that it is in free fall, that is, the only force acting on the object is gravity. However, when objects on Earth fall downward through the air, they are never truly in free fall because there is always some upward resistance force from the air acting on the object.",
+    "word_count": 338
+  },
+  {
+    "chunk_id": "5.4_mass_and_weight__chunk04",
+    "source_file": "5.4_mass_and_weight.md",
+    "chapter_title": "5.4 Mass and Weight",
+    "section": "Weight and Gravitational Force (part 2)",
+    "text": "Acceleration due to gravity $g$ varies slightly over the surface of Earth, so the weight of an object depends on its location and is not an intrinsic property of the object. Weight varies dramatically if we leave Earth’s surface. On the Moon, for example, acceleration due to gravity is only $1.62\\text{ m/s}^2$. A $1.0\\text{-kg}$ mass thus has a weight of $9.8\\text{ N}$ on Earth and only about $1.6\\text{ N}$ on the Moon.\n\nThe broadest definition of weight in this sense is that the weight of an object is the gravitational force on it from the nearest large body, such as Earth, the Moon, or the Sun. This is the most common and useful definition of weight in physics. It differs dramatically, however, from the definition of weight used by NASA and the popular media in relation to space travel and exploration. When they speak of “weightlessness” and “microgravity,” they are referring to the phenomenon we call “free fall” in physics. We use the preceding definition of weight, force $\\vec{\\mathbf{w}}$ due to gravity acting on an object of mass $m$, and we make careful distinctions between free fall and actual weightlessness.\n\nBe aware that weight and mass are different physical quantities, although they are closely related. Mass is an intrinsic property of an object: It is a quantity of matter. The quantity or amount of matter of an object is determined by the numbers of atoms and molecules of various types it contains. Because these numbers do not vary, in Newtonian physics, mass does not vary; therefore, its response to an applied force does not vary. In contrast, weight is the gravitational force acting on an object, so it does vary depending on gravity. For example, a person closer to the center of Earth, at a low elevation such as New Orleans, weighs slightly more than a person who is located in the higher elevation of Denver, even though they may have the same mass.",
+    "word_count": 324
+  },
+  {
+    "chunk_id": "5.4_mass_and_weight__chunk05",
+    "source_file": "5.4_mass_and_weight.md",
+    "chapter_title": "5.4 Mass and Weight",
+    "section": "Weight and Gravitational Force (part 3)",
+    "text": "It is tempting to equate mass to weight, because most of our examples take place on Earth, where the weight of an object varies only a little with the location of the object. In addition, it is difficult to count and identify all of the atoms and molecules in an object, so mass is rarely determined in this manner. If we consider situations in which $\\vec{\\mathbf{g}}$ is a constant on Earth, we see that weight $\\vec{\\mathbf{w}}$ is directly proportional to mass $m$, since $\\vec{\\mathbf{w}} = m\\vec{\\mathbf{g}}$, that is, the more massive an object is, the more it weighs. Operationally, the masses of objects are determined by comparison with the standard kilogram. But by comparing an object on Earth with one on the Moon, we can easily see a variation in weight but not in mass. For instance, on Earth, a $5.0\\text{-kg}$ object weighs $49\\text{ N}$; on the Moon, where $g$ is $1.67\\text{ m/s}^2$, the object weighs $8.4\\text{ N}$. However, the mass of the object is still $5.0\\text{-kg}$ on the Moon.\n\n---",
+    "word_count": 171
+  },
+  {
+    "chunk_id": "5.4_mass_and_weight__chunk06",
+    "source_file": "5.4_mass_and_weight.md",
+    "chapter_title": "5.4 Mass and Weight",
+    "section": "Weight and Gravitational Force — Example 5.8: Clearing a Field",
+    "text": "A farmer is lifting some moderately heavy rocks from a field to plant crops. He lifts a stone that weighs $40.0\\text{ lb}$ (about $180\\text{ N}$). What force does he apply if the stone accelerates at a rate of $1.5\\text{ m/s}^2$?\n\n*Figure 5.16 Free-body diagram for the rock being lifted. Vector w equals 180 N pointing downwards and vector F points upwards with acceleration a = 1.5 m/s².*\n\n#### Strategy\nWe were given the weight of the stone, which we use in finding the net force on the stone. However, we also need to know its mass to apply Newton’s second law, so we must apply the equation for weight, $w = mg$, to determine the mass.\n\n#### Solution\nNo forces act in the horizontal direction, so we can concentrate on vertical forces. \n\nFirst, calculate mass:\n\n$$w = mg \\implies m = \\frac{w}{g} = \\frac{180\\text{ N}}{9.8\\text{ m/s}^2} = 18\\text{ kg}$$\n\nNext, apply Newton’s second law:\n\n$$\\sum F = ma$$\n$$F - w = ma$$\n$$F - 180\\text{ N} = (18\\text{ kg})(1.5\\text{ m/s}^2)$$\n$$F - 180\\text{ N} = 27\\text{ N}$$\n$$F = 207\\text{ N} = 210\\text{ N} \\quad \\text{(to two significant figures)}$$\n\n#### Significance\nTo apply Newton’s second law as the primary equation in solving a problem, we sometimes have to rely on other equations, such as the one for weight or one of the kinematic equations, to complete the solution.",
+    "word_count": 229
+  },
+  {
+    "chunk_id": "5.5_newtons_third_law__chunk01",
+    "source_file": "5.5_newtons_third_law.md",
+    "chapter_title": "5.5 Newton’s Third Law",
+    "section": "Learning Objectives",
+    "text": "By the end of this section, you will be able to:\n- State Newton’s third law of motion\n- Identify the action and reaction forces in different situations\n- Apply Newton’s third law to define systems and solve problems of motion\n\n---\n\nWe have thus far considered force as a push or a pull; however, if you think about it, you realize that no push or pull ever occurs by itself. When you push on a wall, the wall pushes back on you. This brings us to Newton’s third law.\n\n---",
+    "word_count": 91
+  },
+  {
+    "chunk_id": "5.5_newtons_third_law__chunk02",
+    "source_file": "5.5_newtons_third_law.md",
+    "chapter_title": "5.5 Newton’s Third Law",
+    "section": "Newton’s Third Law of Motion",
+    "text": "> **Newton’s Third Law of Motion**  \n> Whenever one body exerts a force on a second body, the first body experiences a force that is equal in magnitude and opposite in direction to the force that it exerts. Mathematically, if body A exerts a force $\\vec{\\mathbf{F}}_{\\text{AB}}$ on body B, then body B simultaneously exerts a force $\\vec{\\mathbf{F}}_{\\text{BA}}$ on body A, expressed in vector form as:\n>\n> $$\\vec{\\mathbf{F}}_{\\text{AB}} = -\\vec{\\mathbf{F}}_{\\text{BA}} \\tag{5.10}$$\n\nNewton’s third law represents a certain symmetry in nature: Forces always occur in pairs, and one body cannot exert a force on another without experiencing a force itself. We sometimes refer to this law loosely as “action-reaction,” where the force exerted is the action and the force experienced as a consequence is the reaction. Newton’s third law has practical uses in analyzing the origin of forces and understanding which forces are external to a system.\n\nWe can readily see Newton’s third law at work by taking a look at how people move about. Consider a swimmer pushing off the side of a pool (**Figure 5.16**). She pushes against the wall of the pool with her feet and accelerates in the direction opposite that of her push. The wall has exerted an equal and opposite force on the swimmer. You might think that two equal and opposite forces would cancel, but they do not because they act on different systems. \n\n*Figure 5.16 When the swimmer exerts a force on the wall, she accelerates in the opposite direction; in other words, the net external force on her is in the direction opposite of $F_{\\text{feet on wall}}$. The free-body diagram shows only $F_{\\text{wall on feet}}$, $\\vec{\\mathbf{w}}$ (gravitational force), and $BF$ (buoyant force).*\n\nIn this case, there are two systems that we could investigate: the swimmer and the wall. If we select the swimmer to be the system of interest, then $F_{\\text{wall on feet}}$ is an external force on this system and affects its motion. The swimmer moves in the direction of this force. In contrast, $F_{\\text{feet on wall}}$ acts on the wall, not on our system of interest. Thus, $F_{\\text{feet on wall}}$ does not directly affect the motion of the system and does not cancel $F_{\\text{wall on feet}}$. In a free-body diagram, we never include both forces of an action-reaction pair.\n\n---",
+    "word_count": 380
+  },
+  {
+    "chunk_id": "5.5_newtons_third_law__chunk03",
+    "source_file": "5.5_newtons_third_law.md",
+    "chapter_title": "5.5 Newton’s Third Law",
+    "section": "Newton’s Third Law of Motion — Examples of Newton’s Third Law",
+    "text": "- **Walking/Pacing**: As a professor paces in front of a whiteboard, he exerts a force backward on the floor. The floor exerts a reaction force forward on the professor that causes him to accelerate forward.\n- **Car Acceleration**: A car accelerates forward because the ground pushes forward on the drive wheels, in reaction to the drive wheels pushing backward on the ground.\n- **Rocket Propulsion**: Rockets move forward by expelling gas backward at high velocity. The rocket exerts a large backward force on the gas in its combustion chamber; therefore, the gas exerts a large reaction force forward on the rocket (thrust). Rockets work better in a vacuum where they can more readily expel exhaust gases.\n- **Helicopters, Birds, and Airplanes**: Helicopters create lift by pushing air down, thereby experiencing an upward reaction force. Birds and airplanes force air downward and backward to get lift and move forward.\n- **Marine Propulsion**: An octopus propels itself in the water by ejecting water through a funnel from its body.\n- **Ropes & Climbing**: When a person pulls down on a vertical rope, the rope pulls up on the person (**Figure 5.17**).\n\n*Figure 5.17 When the mountain climber pulls down on the rope, the rope pulls up on the mountain climber.*\n\nThere are two important features of Newton’s third law:\n1. **Equal and Opposite**: The forces exerted (action and reaction) are always equal in magnitude but opposite in direction.\n2. **Different Bodies**: These forces act on different bodies or systems ($A$'s force acts on $B$, and $B$'s force acts on $A$). Thus, they do not cancel each other.\n\n*Figure 5.18 The runner experiences Newton’s third law. (a) Force exerted by runner on the ground. (b) Reaction force of ground on runner pushing him forward.*\n\n---",
+    "word_count": 292
+  },
+  {
+    "chunk_id": "5.5_newtons_third_law__chunk04",
+    "source_file": "5.5_newtons_third_law.md",
+    "chapter_title": "5.5 Newton’s Third Law",
+    "section": "Newton’s Third Law of Motion — Example 5.9: Forces on a Stationary Object",
+    "text": "The package in **Figure 5.19** is sitting on a scale. For the scale and package at rest (i.e., not accelerating), show that the scale indicates the weight of the package.\n\n*Figure 5.19 (a) Forces on a package sitting on a scale along with their reaction forces. (b) Isolation of the package-scale system and the package-Earth system.*\n\n#### Strategy\nThe forces on the package are $\\vec{\\mathbf{S}}$ (due to the scale) and $-\\vec{\\mathbf{w}}$ (due to Earth's gravitational field). The reaction forces that the package exerts are $-\\vec{\\mathbf{S}}$ on the scale and $\\vec{\\mathbf{w}}$ on Earth. Because the package is not accelerating, we apply Newton's second law.\n\n#### Solution\n$$\\vec{\\mathbf{S}} - \\vec{\\mathbf{w}} = m\\vec{\\mathbf{a}} = \\vec{\\mathbf{0}}$$\n$$\\vec{\\mathbf{S}} = \\vec{\\mathbf{w}}$$\n\nThe scale reading indicates the magnitude of the force $\\vec{\\mathbf{S}}$, which is equal to the magnitude of the package’s weight.\n\n#### Significance\nThe scale does not measure the weight of the package directly; it measures the force $-\\vec{\\mathbf{S}}$ on its surface. If the system were accelerating, $\\vec{\\mathbf{S}}$ and $-\\vec{\\mathbf{w}}$ would not be equal.\n\n---",
+    "word_count": 169
+  },
+  {
+    "chunk_id": "5.5_newtons_third_law__chunk05",
+    "source_file": "5.5_newtons_third_law.md",
+    "chapter_title": "5.5 Newton’s Third Law",
+    "section": "Newton’s Third Law of Motion — Example 5.10: Getting Up to Speed: Choosing the Correct System",
+    "text": "A physics professor pushes a cart of demonstration equipment to a lecture hall (**Figure 5.20**). Her mass is $65.0\\text{ kg}$, the cart’s mass is $12.0\\text{ kg}$, and the equipment’s mass is $7.0\\text{ kg}$. Calculate the acceleration produced when the professor exerts a backward force of $150\\text{ N}$ on the floor. All forces opposing the motion, such as friction on the cart’s wheels and air resistance, total $24.0\\text{ N}$.\n\n*Figure 5.20 A professor pushes the cart with her demonstration equipment.*\n\n#### Strategy\nDefine the system as the professor, cart, and equipment (**System 1**). The floor exerts a forward reaction force $F_{\\text{floor}} = 150\\text{ N}$ on System 1. Friction $f = 24.0\\text{ N}$ opposes the motion. Internal forces ($F_{\\text{prof}}$ or $F_{\\text{cart}}$) are not included because they act within the system and cancel out.\n\n#### Solution\nCalculate net external force:\n\n$$F_{\\text{net}} = F_{\\text{floor}} - f = 150\\text{ N} - 24.0\\text{ N} = 126\\text{ N}$$\n\nCalculate total mass of System 1:\n\n$$m = 65.0\\text{ kg} + 12.0\\text{ kg} + 7.0\\text{ kg} = 84.0\\text{ kg}$$\n\nApply Newton’s second law:\n\n$$a = \\frac{F_{\\text{net}}}{m} = \\frac{126\\text{ N}}{84.0\\text{ kg}} = 1.5\\text{ m/s}^2$$\n\n#### Significance\nInternal forces between components of a system cancel out because they are equal in magnitude and opposite in direction. Choosing System 1 simplifies finding the acceleration of the entire group.\n\n---",
+    "word_count": 217
+  },
+  {
+    "chunk_id": "5.5_newtons_third_law__chunk06",
+    "source_file": "5.5_newtons_third_law.md",
+    "chapter_title": "5.5 Newton’s Third Law",
+    "section": "Newton’s Third Law of Motion — Example 5.11: Force on the Cart: Choosing a New System",
+    "text": "Calculate the force the professor exerts on the cart in **Figure 5.20**, using data from the previous example if needed.\n\n#### Strategy\nDefine the system as the cart plus the equipment (**System 2**). The force the professor exerts on the cart, $F_{\\text{prof}}$, is an external force acting on System 2.\n\n#### Solution\nNet external force on System 2 is:\n\n$$F_{\\text{net}} = F_{\\text{prof}} - f \\implies F_{\\text{prof}} = F_{\\text{net}} + f$$\n\nCalculate $F_{\\text{net}}$ using mass of System 2 ($m = 12.0\\text{ kg} + 7.0\\text{ kg} = 19.0\\text{ kg}$) and acceleration ($a = 1.5\\text{ m/s}^2$):\n\n$$F_{\\text{net}} = ma = (19.0\\text{ kg})(1.5\\text{ m/s}^2) = 28.5\\text{ N} \\approx 29\\text{ N}$$\n\nSolve for $F_{\\text{prof}}$:\n\n$$F_{\\text{prof}} = F_{\\text{net}} + f = 28.5\\text{ N} + 24.0\\text{ N} = 52.5\\text{ N} \\approx 53\\text{ N}$$\n\n#### Significance\nThis force ($53\\text{ N}$) is significantly less than the $150\\text{-N}$ force exerted backward on the floor because some of the total force accelerates the professor herself.",
+    "word_count": 154
+  },
+  {
+    "chunk_id": "5.6_common_forces__chunk01",
+    "source_file": "5.6_common_forces.md",
+    "chapter_title": "5.6 Common Forces",
+    "section": "Learning Objectives",
+    "text": "By the end of this section, you will be able to:\n- Define normal and tension forces\n- Distinguish between real and fictitious forces\n- Apply Newton’s laws of motion to solve problems involving a variety of forces\n\n---\n\nForces are given many names, such as push, pull, thrust, and weight. Traditionally, forces have been grouped into several categories and given names relating to their source, how they are transmitted, or their effects.\n\n---",
+    "word_count": 74
+  },
+  {
+    "chunk_id": "5.6_common_forces__chunk02",
+    "source_file": "5.6_common_forces.md",
+    "chapter_title": "5.6 Common Forces",
+    "section": "A Catalog of Forces: Normal, Tension, and Other Examples — Normal Force",
+    "text": "The force supporting the weight of an object, or a load, that is perpendicular to the surface of contact between the load and its support is defined as a **normal force** ($\\vec{\\mathbf{N}}$). The word *normal* means perpendicular to a surface.\n\n- **On a Horizontal Surface**:\n  - Vector Form: $\\vec{\\mathbf{N}} = -m\\vec{\\mathbf{g}}$\n  - Scalar Form: $N = mg$\n- **On an Incline**:\n  - The normal force is perpendicular to the inclined surface and equals the perpendicular component of weight:\n    $$N = mg \\cos\\theta$$\n\n---",
+    "word_count": 83
+  },
+  {
+    "chunk_id": "5.6_common_forces__chunk03",
+    "source_file": "5.6_common_forces.md",
+    "chapter_title": "5.6 Common Forces",
+    "section": "A Catalog of Forces: Normal, Tension, and Other Examples — Example 5.12: Weight on an Incline",
+    "text": "Consider a skier on a slope inclined at $25^\\circ$. Her total mass including equipment is $60.0\\text{ kg}$.  \n(a) What is her acceleration if friction is negligible?  \n(b) What is her acceleration if friction is $45.0\\text{ N}$?\n\n*Figure 5.22 Free-body diagram for a skier on an incline.*\n\n#### Strategy\nChoose a coordinate system with the x-axis parallel to the slope (downslope positive) and the y-axis perpendicular to the slope.  \nDecompose the weight into components:\n- Parallel component: $w_x = w \\sin 25^\\circ = mg \\sin 25^\\circ$\n- Perpendicular component: $w_y = w \\cos 25^\\circ = mg \\cos 25^\\circ$\n\n#### Solution\n\n**(a) Neglecting Friction ($f = 0$):**\n$$a_x = \\frac{F_{\\text{net},x}}{m} = \\frac{mg \\sin 25^\\circ}{m} = g \\sin 25^\\circ$$\n$$a_x = (9.80\\text{ m/s}^2)(0.4226) = 4.14\\text{ m/s}^2$$\n\n**(b) Including Friction ($f = 45.0\\text{ N}$):**\n$$a_x = \\frac{F_{\\text{net},x}}{m} = \\frac{mg \\sin 25^\\circ - f}{m}$$\n$$a_x = \\frac{(60.0\\text{ kg})(9.80\\text{ m/s}^2)(0.4226) - 45.0\\text{ N}}{60.0\\text{ kg}} = 3.39\\text{ m/s}^2$$\n\n#### Significance\nIn the absence of friction, all objects slide down an incline of angle $\\theta$ with acceleration $a = g \\sin\\theta$, regardless of mass.\n\n---",
+    "word_count": 177
+  },
+  {
+    "chunk_id": "5.6_common_forces__chunk04",
+    "source_file": "5.6_common_forces.md",
+    "chapter_title": "5.6 Common Forces",
+    "section": "A Catalog of Forces: Normal, Tension, and Other Examples — Weight Components on an Incline",
+    "text": "When an object rests on an incline at angle $\\theta$ to the horizontal:\n\n$$\begin{aligned}\nw_x &= w \\sin\\theta = mg \\sin\\theta \\quad \\text{(Parallel to incline, causes downslope motion)} \\\nw_y &= w \\cos\\theta = mg \\cos\\theta \\quad \\text{(Perpendicular to incline)}\n\\end{aligned}$$\n\n> **Check Your Understanding 5.8**  \n> A force of $1150\\text{ N}$ acts parallel to a ramp to push a $250\\text{-kg}$ gun safe into a moving van ($17^\\circ$ ramp).  \n> - **(a)** Without friction:  \n>   $$F_{\\text{net}} = 1150\\text{ N} - mg \\sin 17^\\circ = 1150 - (250)(9.80)(0.2924) = 1150 - 716.3 = 433.7\\text{ N}$$  \n>   $$a = \\frac{433.7\\text{ N}}{250\\text{ kg}} = 1.73\\text{ m/s}^2$$\n> - **(b)** With friction ($f = 120\\text{ N}$):  \n>   $$F_{\\text{net}} = 433.7\\text{ N} - 120\\text{ N} = 313.7\\text{ N}$$  \n>   $$a = \\frac{313.7\\text{ N}}{250\\text{ kg}} = 1.25\\text{ m/s}^2$$\n\n---",
+    "word_count": 133
+  },
+  {
+    "chunk_id": "5.6_common_forces__chunk05",
+    "source_file": "5.6_common_forces.md",
+    "chapter_title": "5.6 Common Forces",
+    "section": "A Catalog of Forces: Normal, Tension, and Other Examples — Tension",
+    "text": "**Tension** is a pulling force that acts along the length of a stretched flexible connector (such as a rope, cable, or tendon).\n\n- Flexible connectors can only exert a pull parallel to their length (\"you can't push a rope\").\n- For a mass $m$ suspended at rest:  \n  $$T = w = mg$$\n\n#### Transmitting Forces Around Corners\nFlexible connectors transmit force magnitude undiminished (if frictionless), changing only its direction (e.g., tendons in fingers, bicycle brake cables).\n\n---",
+    "word_count": 77
+  },
+  {
+    "chunk_id": "5.6_common_forces__chunk06",
+    "source_file": "5.6_common_forces.md",
+    "chapter_title": "5.6 Common Forces",
+    "section": "A Catalog of Forces: Normal, Tension, and Other Examples — Example 5.13: What Is the Tension in a Tightrope?",
+    "text": "Calculate the tension in a wire supporting a $70.0\\text{-kg}$ tightrope walker where the wire sags by $\\theta = 5.0^\\circ$.\n\n*Figure 5.26 Tightrope walker causing a wire to sag by $5.0^\\circ$.*\n\n#### Solution\nFor a centered load sagging at angle $\\theta$:\n\n$$F_{\\text{net},y} = 2T \\sin\\theta - w = 0 \\implies T = \\frac{w}{2\\sin\\theta} = \\frac{mg}{2\\sin\\theta}$$\n\nSubstituting values:\n\n$$T = \\frac{(70.0\\text{ kg})(9.80\\text{ m/s}^2)}{2 \\sin 5.0^\\circ} = \\frac{686\\text{ N}}{2(0.08716)} = 3935\\text{ N} \\approx 3930\\text{ N}$$\n\n#### Significance\nBecause $\\theta$ is small, the tension in the wire ($3930\\text{ N}$) is almost six times the walker's weight ($686\\text{ N}$).\n\n> **General Formula for Perpendicular Force on a Flexible Connector:**  \n> $$T = \\frac{F_\\perp}{2\\sin\\theta}$$\n\n> **Check Your Understanding 5.9**  \n> A $3.0\\text{-m}$ rope is pulled at its midpoint by $F_\\perp = 200.0\\text{ N}$, displacing it $0.25\\text{ m}$.  \n> - Half-length $L = 1.5\\text{ m}$, displacement $y = 0.25\\text{ m} \\implies \\sin\\theta = \\frac{0.25}{1.5} = 0.1667$.  \n> - Force on car (Tension $T$):  \n>   $$T = \\frac{F_\\perp}{2\\sin\\theta} = \\frac{200.0\\text{ N}}{2(0.1667)} = 600\\text{ N}$$\n\n---",
+    "word_count": 167
+  },
+  {
+    "chunk_id": "5.6_common_forces__chunk07",
+    "source_file": "5.6_common_forces.md",
+    "chapter_title": "5.6 Common Forces",
+    "section": "A Catalog of Forces: Normal, Tension, and Other Examples — Friction & Spring Force",
+    "text": "- **Friction**: A resistive force opposing motion or its tendency.\n- **Spring Force**: A restoring force proportional to displacement from the relaxed state (Hooke's Law):\n  $$\\vec{\\mathbf{F}} = -k\\vec{\\mathbf{x}} \\tag{5.11}$$\n  where $k$ is the spring stiffness constant and $\\vec{\\mathbf{x}}$ is displacement ($x = 0$ at relaxed position).\n\n---",
+    "word_count": 47
+  },
+  {
+    "chunk_id": "5.6_common_forces__chunk08",
+    "source_file": "5.6_common_forces.md",
+    "chapter_title": "5.6 Common Forces",
+    "section": "Real Forces and Inertial Frames",
+    "text": "- **Real Forces**: Forces with a physical origin (e.g., gravitational pull, electromagnetic force).\n- **Fictitious Forces**: Apparent forces arising because the observer is in an accelerating or noninertial frame of reference (e.g., rotating frame).  \n  *Test*: If you cannot identify an equal and opposite reaction force, the force is fictitious.\n- **Inertial Frame**: A frame of reference where all forces are real and Newton's laws hold without modification. Earth is approximately an inertial frame, though large-scale phenomena (e.g., hurricanes, Coriolis effect) demonstrate noninertial characteristics.",
+    "word_count": 83
+  },
+  {
+    "chunk_id": "5.7_free_body_diagrams__chunk01",
+    "source_file": "5.7_free_body_diagrams.md",
+    "chapter_title": "5.7 Drawing Free-Body Diagrams",
+    "section": "Learning Objectives",
+    "text": "By the end of this section, you will be able to:\n- Explain the rules for drawing a free-body diagram\n- Construct free-body diagrams for different situations\n\n---\n\nThe first step in describing and analyzing most phenomena in physics involves the careful drawing of a free-body diagram[cite: 11]. Remember that a free-body diagram must **only include the external forces acting on the body of interest**[cite: 11]. Once we have drawn an accurate free-body diagram, we can apply:\n* **Newton’s First Law**: If the body is in equilibrium (balanced forces; $F_{\\text{net}} = 0$)[cite: 11].\n* **Newton’s Second Law**: If the body is accelerating (unbalanced force; $F_{\\text{net}} \\neq 0$)[cite: 11].\n\n---",
+    "word_count": 109
+  },
+  {
+    "chunk_id": "5.7_free_body_diagrams__chunk02",
+    "source_file": "5.7_free_body_diagrams.md",
+    "chapter_title": "5.7 Drawing Free-Body Diagrams",
+    "section": "Problem-Solving Strategy: Constructing Free-Body Diagrams",
+    "text": "Observe the following rules when constructing a free-body diagram[cite: 11]:\n\n1. **Isolate the Object**: Draw the object under consideration[cite: 11]. You may circle the object of interest to focus strictly on forces acting *on* it[cite: 11]. If treating the object as a particle, represent it as a point (often placed at the origin of an $xy$-coordinate system)[cite: 11].\n2. **Identify External Forces**: Include all forces acting on the object as vectors (e.g., normal force, friction, tension, spring force, weight, applied force)[cite: 11].\n   * **Do NOT** include the net force ($F_{\\text{net}}$)[cite: 11].\n   * **Do NOT** include forces exerted *by* the object on its environment[cite: 11].\n   * **Do NOT** include both forces of an action-reaction pair[cite: 11].\n3. **Resolve Components**: Convert vectors into $x$- and $y$-components when needed[cite: 11]. Place a squiggly line through the original vector to show it has been replaced by its components[cite: 11].\n4. **Multiple Bodies**: Draw a **separate** free-body diagram for each object in the problem[cite: 11].\n\n> **Note on Acceleration**: If the object accelerates, do **not** draw acceleration directly on the free-body diagram as a force vector[cite: 11]. You may indicate acceleration outside the diagram in a separate color[cite: 11].\n\n---",
+    "word_count": 195
+  },
+  {
+    "chunk_id": "5.7_free_body_diagrams__chunk03",
+    "source_file": "5.7_free_body_diagrams.md",
+    "chapter_title": "5.7 Drawing Free-Body Diagrams",
+    "section": "Problem-Solving Strategy: Constructing Free-Body Diagrams — Sled Example Breakdown",
+    "text": "When pulling a sled by force $\\vec{\\mathbf{P}}$ at an angle of $30^\\circ$[cite: 11]:\n- **Step 1 & 2**: Show external vectors $\\vec{\\mathbf{P}}$ (up and right), $\\vec{\\mathbf{N}}$ (up), and $\\vec{\\mathbf{w}}$ (down)[cite: 11].\n- **Step 3**: Resolve $\\vec{\\mathbf{P}}$ into horizontal ($P_x = P \\cos 30^\\circ$) and vertical ($P_y = P \\sin 30^\\circ$) components[cite: 11].\n\n---",
+    "word_count": 53
+  },
+  {
+    "chunk_id": "5.7_free_body_diagrams__chunk04",
+    "source_file": "5.7_free_body_diagrams.md",
+    "chapter_title": "5.7 Drawing Free-Body Diagrams",
+    "section": "Problem-Solving Strategy: Constructing Free-Body Diagrams — Example 5.14: Two Blocks on an Inclined Plane",
+    "text": "Construct free-body diagrams for object A and object B resting on an incline[cite: 11]. Object A is pulled upward along the slope by a rope, while object B slides down the slope underneath object A[cite: 11].\n\n#### Solution\n\n**Object A (Top Block):**\n- **Tension ($\\vec{\\mathbf{T}}$)**: Points up the incline (parallel to slope)[cite: 11].\n- **Weight ($\\vec{\\mathbf{w}}_A$)**: Points vertically downward[cite: 11].\n- **Normal Force ($\\vec{\\mathbf{N}}_{BA}$)**: Exerted by B on A, directed perpendicular and away from the interface[cite: 11].\n- **Friction Force ($\\vec{\\mathbf{f}}_{BA}$)**: Exerted by B on A[cite: 11]. Because object A moves upward relative to B, friction acts **downward** parallel to the plane[cite: 11].\n\n**Object B (Bottom Block):**\n- **Weight ($\\vec{\\mathbf{w}}_B$)**: Points vertically downward[cite: 11].\n- **Ramp Normal Force ($\\vec{\\mathbf{N}}_B$)**: Exerted by incline on B (perpendicular, pointing up/left)[cite: 11].\n- **Ramp Friction ($\\vec{\\mathbf{f}}_B$)**: Exerted by incline on B, acting **upward** parallel to the ramp to oppose sliding down[cite: 11].\n- **Contact Normal Force ($\\vec{\\mathbf{N}}_{AB}$)**: Exerted by A on B (perpendicular, pointing down/right)[cite: 11].\n- **Contact Friction ($\\vec{\\mathbf{f}}_{AB}$)**: Exerted by A on B (Third Law pair to $\\vec{\\mathbf{f}}_{BA}$), acting **upward** parallel to the ramp[cite: 11].\n\n#### Significance\nCircling each object independently ensures internal interface forces (like action-reaction pairs $\\vec{\\mathbf{f}}_{BA}$ and $\\vec{\\mathbf{f}}_{AB}$) are directed correctly[cite: 11].\n\n---",
+    "word_count": 204
+  },
+  {
+    "chunk_id": "5.7_free_body_diagrams__chunk05",
+    "source_file": "5.7_free_body_diagrams.md",
+    "chapter_title": "5.7 Drawing Free-Body Diagrams",
+    "section": "Problem-Solving Strategy: Constructing Free-Body Diagrams — Example 5.15: Two Blocks in Contact",
+    "text": "A horizontal force $\\vec{\\mathbf{F}}$ pushes block $m_1$ to the right, which is in contact with block $m_2$[cite: 11]. Draw the interface reaction forces[cite: 11].\n\n#### Solution\n\n- **Block $m_1$**: Experiences applied force $\\vec{\\mathbf{F}}$ pointing right, weight $m_1\\vec{\\mathbf{g}}$ down, normal force from floor up, and reaction contact force $\\vec{\\mathbf{A}}_{21}$ pointing **left** (action of block 2 on block 1)[cite: 11].\n- **Block $m_2$**: Experiences weight $m_2\\vec{\\mathbf{g}}$ down, normal force from floor up, and contact force $\\vec{\\mathbf{A}}_{12}$ pointing **right** (reaction of block 1 on block 2)[cite: 11].\n\n#### Significance\n$\\vec{\\mathbf{A}}_{21} = -\\vec{\\mathbf{A}}_{12}$ according to Newton's Third Law[cite: 11].\n\n---",
+    "word_count": 96
+  },
+  {
+    "chunk_id": "5.7_free_body_diagrams__chunk06",
+    "source_file": "5.7_free_body_diagrams.md",
+    "chapter_title": "5.7 Drawing Free-Body Diagrams",
+    "section": "Problem-Solving Strategy: Constructing Free-Body Diagrams — Example 5.16: Block on the Table (Coupled Blocks)",
+    "text": "A block $m_1$ rests on a table and is attached via a light rope over a pulley to a suspended block $m_2$[cite: 11].\n\n#### Solution\n\n- **Block $m_1$ (on table)**:\n  - Vertical: Normal force $\\vec{\\mathbf{N}}$ (up), Weight $m_1\\vec{\\mathbf{g}}$ (down)[cite: 11].\n  - Horizontal: Tension $\\vec{\\mathbf{T}}$ (right)[cite: 11].\n  - Acceleration: $\\vec{\\mathbf{a}}_1$ to the right[cite: 11].\n\n- **Block $m_2$ (suspended)**:\n  - Vertical: Tension $\\vec{\\mathbf{T}}$ (up), Weight $m_2\\vec{\\mathbf{g}}$ (down)[cite: 11].\n  - Acceleration: $\\vec{\\mathbf{a}}_2$ downward[cite: 11].\n\n#### Significance\nIf the string is light and inextensible, both blocks share the same tension magnitude $T$ and acceleration magnitude $|\\vec{\\mathbf{a}}_1| = |\\vec{\\mathbf{a}}_2| = a$[cite: 11].\n\n---\n\n> **Check Your Understanding 5.10**  \n> Two carts ($m_1$ on left slope, $m_2$ on right slope) are tied by a rope running over a peak pulley[cite: 11].  \n> - **Cart 1 ($m_1$)**: Free-body diagram includes Tension $\\vec{\\mathbf{T}}$ (up left slope), Normal Force $\\vec{\\mathbf{N}}_1$ (perpendicular to left slope), and Weight $m_1\\vec{\\mathbf{g}}$ (vertically down).  \n> - **Cart 2 ($m_2$)**: Free-body diagram includes Tension $\\vec{\\mathbf{T}}$ (up right slope), Normal Force $\\vec{\\mathbf{N}}_2$ (perpendicular to right slope), and Weight $m_2\\vec{\\mathbf{g}}$ (vertically down).",
+    "word_count": 175
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk01",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Learning Objectives",
+    "text": "By the end of this section, you will be able to:\n- Apply problem-solving techniques to solve for quantities in more complex systems of forces\n- Use concepts from kinematics to solve problems using Newton’s laws of motion\n- Solve more complex equilibrium problems\n- Solve more complex acceleration problems\n- Apply calculus to more advanced dynamics problems\n\n---\n\nSuccess in problem solving is necessary to understand and apply physical principles. We developed a pattern of analyzing and setting up the solutions to problems involving Newton’s laws in Newton’s Laws of Motion; in this chapter, we continue to discuss these strategies and apply a step-by-step process.\n\n---",
+    "word_count": 107
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk02",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Problem-Solving Strategies",
+    "text": "We follow here the basics of problem solving presented earlier in this text, but we emphasize specific strategies that are useful in applying Newton’s laws of motion. Once you identify the physical principles involved in the problem and determine that they include Newton’s laws of motion, you can apply these steps to find a solution.",
+    "word_count": 55
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk03",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Problem-Solving Strategies — Problem-Solving Strategy: Applying Newton’s Laws of Motion",
+    "text": "1. **Identify the physical principles** involved by listing the givens and the quantities to be calculated.\n2. **Sketch the situation**, using arrows to represent all forces.\n3. **Determine the system of interest**. The result is a free-body diagram that is essential to solving the problem.\n4. **Apply Newton’s second law** to solve the problem. If necessary, apply appropriate kinematic equations from the chapter on motion along a straight line.\n5. **Check the solution** to see whether it is reasonable.\n\n---",
+    "word_count": 80
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk04",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Problem-Solving Strategies — Grand Piano Example Breakdown",
+    "text": "When lifting a grand piano:\n- **Identify System of Interest**: The piano itself is circled as the system of interest.\n- **External Forces**: Tension $\\vec{\\mathbf{T}}$ pulling up and Weight $\\vec{\\mathbf{w}}$ pulling down.\n- **Exclusion of Internal Forces**: The downward force $\\vec{\\mathbf{F}}_{\\text{T}}$ exerted *by* the piano on the rope is an external action on the rope/world and is **omitted** from the piano's free-body diagram.\n- **Equilibrium Condition**: If the piano is stationary, $\\vec{\\mathbf{T}} + \\vec{\\mathbf{w}} = 0 \\implies \\vec{\\mathbf{T}} = -\\vec{\\mathbf{w}}$.\n\nWhen resolving two-dimensional forces, Newton's second law is written in component forms:\n$$\\sum F_x = m a_x, \\quad \\sum F_y = m a_y$$\n\n---",
+    "word_count": 104
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk05",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Particle Equilibrium",
+    "text": "A particle in equilibrium experiences balanced external forces ($\\vec{\\mathbf{F}}_{\\text{net}} = 0$).\n\n---",
+    "word_count": 12
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk06",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Particle Equilibrium — Example 6.1: Different Tensions at Different Angles",
+    "text": "Consider a traffic light ($m = 15.0\\text{ kg}$) suspended from two wires. Wire 1 makes an angle of $30^\\circ$ with the horizontal, and Wire 2 makes an angle of $45^\\circ$ with the horizontal. Find the tension in each wire.\n\n*Figure 6.3 A traffic light suspended from two wires and its corresponding free-body diagrams.*\n\n#### Strategy\nChoose a Cartesian coordinate system with $x$ horizontal and $y$ vertical. Apply Newton's second law for static equilibrium ($\\vec{\\mathbf{F}}_{\\text{net}} = 0$).\n\n#### Solution\n\n**1. Horizontal Axis ($x$-axis):**\n$$\\sum F_x = T_{2x} - T_{1x} = 0 \\implies T_1 \\cos 30^\\circ = T_2 \\cos 45^\\circ$$\n$$T_2 = \\frac{\\cos 30^\\circ}{\\cos 45^\\circ} T_1 = \\frac{0.8660}{0.7071} T_1 = 1.225 T_1 \\tag{Equation 1}$$\n\n**2. Vertical Axis ($y$-axis):**\n$$\\sum F_y = T_{1y} + T_{2y} - w = 0 \\implies T_1 \\sin 30^\\circ + T_2 \\sin 45^\\circ = mg$$\n\n**3. Substitute Equation 1 into Vertical Equation:**\n$$T_1 (0.500) + (1.225 T_1)(0.7071) = (15.0\\text{ kg})(9.80\\text{ m/s}^2)$$\n$$1.366 T_1 = 147\\text{ N} \\implies T_1 = 108\\text{ N}$$\n\n**4. Solve for $T_2$:**\n$$T_2 = 1.225 (108\\text{ N}) = 132\\text{ N}$$\n\n#### Significance\n$T_2$ is greater than $T_1$ because Wire 2 is oriented more vertically than Wire 1.\n\n---",
+    "word_count": 192
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk07",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Particle Acceleration",
+    "text": "Particle acceleration problems result from a non-zero net external force ($\\vec{\\mathbf{F}}_{\\text{net}} = m\\vec{\\mathbf{a}}$).\n\n---",
+    "word_count": 14
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk08",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Particle Acceleration — Example 6.2: Drag Force on a Barge",
+    "text": "Two tugboats push a barge ($m = 5.0 \\times 10^6\\text{ kg}$). $F_1 = 2.7 \\times 10^5\\text{ N}$ in the $+x$ direction, and $F_2 = 3.6 \\times 10^5\\text{ N}$ in the $+y$ direction. The observed acceleration is $a = 7.5 \\times 10^{-2}\\text{ m/s}^2$ at an angle of $53.1^\\circ$ relative to the $+x$ axis. What is the drag force $\\vec{\\mathbf{F}}_{\\text{D}}$ of the water?\n\n*Figure 6.4 Top view of tugboats pushing a barge and the corresponding free-body diagram.*\n\n#### Solution\n\n**1. Magnitude and Direction of Applied Force ($\\vec{\\mathbf{F}}_{\\text{app}}$):**\n$$F_{\\text{app}} = \\sqrt{F_1^2 + F_2^2} = \\sqrt{(2.7 \\times 10^5)^2 + (3.6 \\times 10^5)^2} = 4.5 \\times 10^5\\text{ N}$$\n$$\\theta = \\tan^{-1}\\left(\\frac{F_2}{F_1}\night) = \\tan^{-1}\\left(\\frac{3.6 \\times 10^5}{2.7 \\times 10^5}\night) = 53.1^\\circ$$\n\n**2. One-Dimensional Equation Along Motion Line:**\n$$F_{\\text{net}} = F_{\\text{app}} - F_{\\text{D}} = ma$$\n$$F_{\\text{D}} = F_{\\text{app}} - ma$$\n$$F_{\\text{D}} = (4.5 \\times 10^5\\text{ N}) - (5.0 \\times 10^6\\text{ kg})(7.5 \\times 10^{-2}\\text{ m/s}^2) = 7.5 \\times 10^4\\text{ N}$$\n\nThe direction of $\\vec{\\mathbf{F}}_{\\text{D}}$ is directly opposite to motion ($53.1^\\circ$ South of West).\n\n---",
+    "word_count": 167
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk09",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Particle Acceleration — Example 6.3: What Does the Bathroom Scale Read in an Elevator?",
+    "text": "A $75.0\\text{-kg}$ man stands on a scale in an elevator. Calculate the scale reading $F_{\\text{s}}$:\n- **(a)** Elevator accelerates upward at $a = 1.20\\text{ m/s}^2$.\n- **(b)** Elevator moves upward at constant speed ($v = 1.0\\text{ m/s}$).\n\n*Figure 6.5 Forces acting on a person on a scale in an elevator.*\n\n#### Solution\n\n**General Equation:**\n$$F_{\\text{net},y} = F_{\\text{s}} - w = ma \\implies F_{\\text{s}} = m(g + a)$$\n\n**(a) Upward Acceleration ($a = +1.20\\text{ m/s}^2$):**\n$$F_{\\text{s}} = (75.0\\text{ kg})(9.80\\text{ m/s}^2 + 1.20\\text{ m/s}^2) = (75.0)(11.0) = 825\\text{ N}$$\n\n**(b) Constant Velocity ($a = 0$):**\n$$F_{\\text{s}} = m(g + 0) = (75.0\\text{ kg})(9.80\\text{ m/s}^2) = 735\\text{ N}$$\n\n> **Check Your Understanding 6.1**  \n> Calculate the scale reading when accelerating downward at $a = 1.20\\text{ m/s}^2$.  \n> - **Solution**:  \n>   $$F_{\\text{s}} = m(g - a) = (75.0\\text{ kg})(9.80 - 1.20) = (75.0)(8.60) = 645\\text{ N}$$\n\n---",
+    "word_count": 143
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk10",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Particle Acceleration — Example 6.4: Two Attached Blocks",
+    "text": "Block 1 ($m_1$) on a frictionless horizontal table is connected by a string over a frictionless pulley to Block 2 ($m_2$) hanging vertically. Find $a$ and $T$.\n\n*Figure 6.6 Two connected blocks and their respective free-body diagrams.*\n\n#### Solution\n\n**Block 1 (Horizontal):**\n$$\\sum F_x = T = m_1 a$$\n\n**Block 2 (Vertical, downward acceleration $a$):**\n$$\\sum F_y = T - m_2 g = -m_2 a$$\n\n**Solving System of Equations:**\n$$m_1 a - m_2 g = -m_2 a \\implies (m_1 + m_2)a = m_2 g$$\n$$a = \\left(\\frac{m_2}{m_1 + m_2}\night)g$$\n$$T = \\left(\\frac{m_1 m_2}{m_1 + m_2}\night)g$$\n\n> **Check Your Understanding 6.2**  \n> Calculate $a$ and $T$ when $m_1 = 5.00\\text{ kg}$ and $m_2 = 3.00\\text{ kg}$.  \n> - **Solution**:  \n>   $$a = \\left(\\frac{3.00}{5.00 + 3.00}\night)(9.80\\text{ m/s}^2) = \\frac{3}{8}(9.80) = 3.68\\text{ m/s}^2$$  \n>   $$T = (5.00\\text{ kg})(3.675\\text{ m/s}^2) = 18.4\\text{ N}$$\n\n---",
+    "word_count": 143
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk11",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Particle Acceleration — Example 6.5: Atwood Machine",
+    "text": "Two masses $m_1 = 2.00\\text{ kg}$ and $m_2 = 4.00\\text{ kg}$ are connected by a string over a frictionless pulley. Find acceleration $a$ and tension $T$.\n\n*Figure 6.7 Atwood machine diagram.*\n\n#### Solution\n\n**System Equations:**\n1. $T - m_1 g = m_1 a$\n2. $T - m_2 g = -m_2 a$\n\nSubtracting Equation 2 from Equation 1:\n$$(m_2 - m_1)g = (m_1 + m_2)a \\implies a = \\left(\\frac{m_2 - m_1}{m_1 + m_2}\night)g$$\n$$a = \\left(\\frac{4.00 - 2.00}{4.00 + 2.00}\night)(9.80\\text{ m/s}^2) = \\frac{2}{6}(9.80) = 3.27\\text{ m/s}^2$$\n\n**Tension $T$:**\n$$T = m_1(g + a) = (2.00\\text{ kg})(9.80 + 3.27) = 26.1\\text{ N}$$\n\n> **Check Your Understanding 6.3**  \n> General formula for tension $T$ in an Atwood Machine:  \n> - **Solution**:  \n>   $$T = \\frac{2 m_1 m_2}{m_1 + m_2} g$$\n\n---",
+    "word_count": 130
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk12",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Newton’s Laws of Motion and Kinematics — Example 6.6: What Force Must a Soccer Player Exert to Reach Top Speed?",
+    "text": "A $70.0\\text{-kg}$ soccer player accelerates from rest to $8.00\\text{ m/s}$ in $2.50\\text{ s}$.\n- **(a) Average Acceleration:**\n  $$a = \\frac{\\Delta v}{\\Delta t} = \\frac{8.00\\text{ m/s}}{2.50\\text{ s}} = 3.20\\text{ m/s}^2$$\n- **(b) Average Forward Force:**\n  $$F_{\\text{net}} = m a = (70.0\\text{ kg})(3.20\\text{ m/s}^2) = 224\\text{ N}$$\n\n> **Check Your Understanding 6.4**  \n> If the player stops and then experiences a force of $126\\text{ N}$ to cover $x = 2.00\\text{ m}$, how long does it take?  \n> - **Solution**:  \n>   $$a = \\frac{F}{m} = \\frac{126\\text{ N}}{70.0\\text{ kg}} = 1.80\\text{ m/s}^2$$  \n>   $$x = \\frac{1}{2}a t^2 \\implies t = \\sqrt{\\frac{2x}{a}} = \\sqrt{\\frac{2(2.00)}{1.80}} = 1.49\\text{ s}$$\n\n---",
+    "word_count": 103
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk13",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Newton’s Laws of Motion and Kinematics — Example 6.7: What Force Acts on a Model Helicopter?",
+    "text": "$m = 1.50\\text{ kg}$, $\\vec{\\mathbf{v}}_0 = 5.00\\hat{\\mathbf{j}}\\text{ m/s}$ at $t=0$, $\\vec{\\mathbf{v}}_f = (6.00\\hat{\\mathbf{i}} + 12.00\\hat{\\mathbf{j}})\\text{ m/s}$ at $t = 2.00\\text{ s}$.\n\n#### Solution\n$$\\vec{\\mathbf{a}} = \\frac{\\Delta \\vec{\\mathbf{v}}}{\\Delta t} = \\frac{(6.00\\hat{\\mathbf{i}} + 12.00\\hat{\\mathbf{j}}) - 5.00\\hat{\\mathbf{j}}}{2.00} = 3.00\\hat{\\mathbf{i}} + 3.50\\hat{\\mathbf{j}}\\text{ m/s}^2$$\n$$\\sum \\vec{\\mathbf{F}} = m\\vec{\\mathbf{a}} = 1.50(3.00\\hat{\\mathbf{i}} + 3.50\\hat{\\mathbf{j}}) = 4.50\\hat{\\mathbf{i}} + 5.25\\hat{\\mathbf{j}}\\text{ N}$$\n$$F = \\sqrt{(4.50)^2 + (5.25)^2} = 6.91\\text{ N}$$\n\n> **Check Your Understanding 6.5**  \n> Find the direction of the resultant force on the model helicopter.  \n> - **Solution**:  \n>   $$\\theta = \\tan^{-1}\\left(\\frac{5.25}{4.50}\night) = 49.4^\\circ \\text{ above $+x$ axis}$$\n\n---",
+    "word_count": 92
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk14",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Newton’s Laws of Motion and Kinematics — Example 6.8: Baggage Tractor (Time-Dependent Force)",
+    "text": "Tractor ($m_{\\text{tr}} = 650.0\\text{ kg}$), Cart A ($m_{\\text{A}} = 250.0\\text{ kg}$), Cart B ($m_{\\text{B}} = 150.0\\text{ kg}$). Driving force $F(t) = 820.0 t\\text{ N}$.\n\n*Figure 6.8 Baggage tractor pulling carts.*\n\n#### Solution\n\n**(a) Speed after $t = 3.00\\text{ s}$:**\n$$m_{\\text{sys}} = 650.0 + 250.0 + 150.0 = 1050.0\\text{ kg}$$\n$$a(t) = \\frac{F(t)}{m_{\\text{sys}}} = \\frac{820.0 t}{1050.0} = 0.7810 t\\text{ m/s}^2$$\n$$v(t) = \\int_{0}^{3.00} a(t) \\, dt = \\int_{0}^{3.00} 0.7810 t \\, dt = \\left[ 0.3905 t^2 \night]_0^{3.00} = 0.3905 (9.00) = 3.51\\text{ m/s}$$\n\n**(b) Tension $T$ in Cable to Cart A at $t = 3.00\\text{ s}$:**  \nConsider the tractor alone:\n$$\\sum F_x = 820.0 t - T = m_{\\text{tr}} a(t)$$\n$$(820.0)(3.00) - T = (650.0)(0.7810 \\times 3.00)$$\n$$2460 - T = 1523 \\implies T = 937\\text{ N} \\approx 938\\text{ N}$$\n\n---",
+    "word_count": 130
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk15",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Newton’s Laws of Motion and Kinematics — Calculus Relation for Acceleration vs. Position",
+    "text": "Using $dt = \\frac{ds}{v}$ and $dt = \\frac{dv}{a}$, we get the fundamental calculus differential identity:\n$$a \\, ds = v \\, dv \\quad \\text{or} \\quad a \\, dy = v \\, dv$$\n\n---",
+    "word_count": 33
+  },
+  {
+    "chunk_id": "6.1_solving_problems__chunk16",
+    "source_file": "6.1_solving_problems.md",
+    "chapter_title": "6.1 Solving Problems with Newton’s Laws",
+    "section": "Newton’s Laws of Motion and Kinematics — Example 6.9: Motion of a Projectile Fired Vertically",
+    "text": "A $10.0\\text{-kg}$ mortar shell is fired vertically upward at $v_0 = 50.0\\text{ m/s}$. Air resistance is $F_{\\text{D}} = 0.0100 v^2\\text{ N}$. Find maximum height $h$.\n\n*Figure 6.9 Free-body diagram for vertical projectile with drag force.*\n\n#### Solution\n$$\\sum F_y = -F_{\\text{D}} - w = m a_y$$\n$$-0.0100 v^2 - (10.0)(9.80) = 10.0 a_y \\implies a_y = -0.00100 v^2 - 9.80$$\n\nUsing $a_y dy = v dv$:\n$$(-0.00100 v^2 - 9.80) dy = v dv \\implies dy = -\\frac{v \\, dv}{0.00100 v^2 + 9.80}$$\n\nIntegrating from $y = 0$ ($v = 50.0\\text{ m/s}$) to $y = h$ ($v = 0$):\n$$\\int_{0}^{h} dy = -\\int_{50.0}^{0} \\frac{v \\, dv}{0.00100 v^2 + 9.80} = \\int_{0}^{50.0} \\frac{v \\, dv}{0.00100 v^2 + 9.80}$$\n$$h = \\left[ 500 \\ln(0.00100 v^2 + 9.80) \night]_0^{50.0} = 500 \\left( \\ln(12.3) - \\ln(9.80) \night) = 500 \\ln(1.255) = 114\\text{ m}$$\n\n> **Check Your Understanding 6.6**  \n> If air resistance is neglected ($F_{\\text{D}} = 0$), find maximum height $h$. Is calculus required?  \n> - **Solution**:  \n>   $$v^2 = v_0^2 - 2gh \\implies 0 = (50.0)^2 - 2(9.80)h \\implies h = \\frac{2500}{19.6} = 128\\text{ m}$$  \n>   No, calculus is not required when acceleration is constant ($a = -g$).",
+    "word_count": 195
+  },
+  {
+    "chunk_id": "6.2_friction__chunk01",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Learning Objectives",
+    "text": "By the end of this section, you will be able to:\n* Describe the general characteristics of friction\n* List the various types of friction\n* Calculate the magnitude of static and kinetic friction, and use these in problems involving Newton’s laws of motion\n\n---\n\nWhen a body is in motion, it has resistance because the body interacts with its surroundings. This resistance is a force of friction. Friction opposes relative motion between systems in contact but also allows us to move, a concept that becomes obvious if you try to walk on ice. Friction is a common yet complex force, and its behavior still not completely understood. Still, it is possible to understand the circumstances in which it behaves.\n\n---",
+    "word_count": 121
+  },
+  {
+    "chunk_id": "6.2_friction__chunk02",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Static and Kinetic Friction (part 1)",
+    "text": "The basic definition of friction is relatively simple to state.\n\n> **Friction**  \n> Friction is a force that opposes relative motion between systems in contact.\n\nThere are several forms of friction. One of the simpler characteristics of sliding friction is that it is parallel to the contact surfaces between systems and is always in a direction that opposes motion or attempted motion of the systems relative to each other. If two systems are in contact and moving relative to one another, then the friction between them is called **kinetic friction**. For example, friction slows a hockey puck sliding on ice. When objects are stationary, **static friction** can act between them; the static friction is usually greater than the kinetic friction between two objects.\n\n> **Static and Kinetic Friction**  \n> If two systems are in contact and stationary relative to one another, then the friction between them is called **static friction**. If two systems are in contact and moving relative to one another, then the friction between them is called **kinetic friction**.\n\nImagine, for example, trying to slide a heavy crate across a concrete floor—you might push very hard on the crate and not move it at all. This means that the static friction responds to what you do—it increases to be equal to and in the opposite direction of your push. If you finally push hard enough, the crate seems to slip suddenly and starts to move. Now static friction gives way to kinetic friction. Once in motion, it is easier to keep it in motion than it was to get it started, indicating that the kinetic frictional force is less than the static frictional force. If you add mass to the crate, say by placing a box on top of it, you need to push even harder to get it started and also to keep it moving. Furthermore, if you oiled the concrete you would find it easier to get the crate started and keep it going (as you might expect).",
+    "word_count": 332
+  },
+  {
+    "chunk_id": "6.2_friction__chunk03",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Static and Kinetic Friction (part 2)",
+    "text": "Figure 6.10 is a crude pictorial representation of how friction occurs at the interface between two objects. Close-up inspection of these surfaces shows them to be rough. Thus, when you push to get an object moving (in this case, a crate), you must raise the object until it can skip along with just the tips of the surface hitting, breaking off the points, or both. A considerable force can be resisted by friction with no apparent motion. The harder the surfaces are pushed together (such as if another box is placed on the crate), the more force is needed to move them. Part of the friction is due to adhesive forces between the surface molecules of the two objects, which explains the dependence of friction on the nature of the substances. For example, rubber-soled shoes slip less than those with leather soles. Adhesion varies with substances in contact and is a complicated aspect of surface physics. Once an object is moving, there are fewer points of contact (fewer molecules adhering), so less force is required to keep the object moving. At small but nonzero speeds, friction is nearly independent of speed.\n\n*Figure 6.10: Frictional forces, such as $\\mathbf{\\vec{f}}$, always oppose motion or attempted motion between objects in contact. Friction arises in part because of the roughness of the surfaces in contact, as seen in the expanded view. For the object to move, it must rise to where the peaks of the top surface can skip along the bottom surface. Thus, a force is required just to set the object in motion. Some of the peaks will be broken off, also requiring a force to maintain motion. Much of the friction is actually due to attractive forces between molecules making up the two objects, so that even perfectly smooth surfaces are not friction-free. (In fact, perfectly smooth, clean surfaces of similar materials would adhere, forming a bond called a “cold weld.”)*\n\n---\n\nThe magnitude of the frictional force has two forms: one for static situations (static friction), the other for situations involving motion (kinetic friction). What follows is an approximate empirical (experimentally determined) model only. These equations for static and kinetic friction are not vector equations.",
+    "word_count": 365
+  },
+  {
+    "chunk_id": "6.2_friction__chunk04",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Static and Kinetic Friction — Magnitude of Static Friction",
+    "text": "The magnitude of static friction $f_{\\text{s}}$ is\n\n$$f_{\\text{s}} \\le \\mu_{\\text{s}} N \\quad \\text{(Equation 6.1)}$$\n\nwhere $\\mu_{\\text{s}}$ is the coefficient of static friction and $N$ is the magnitude of the normal force.\n\nThe symbol $\\le$ means less than or equal to, implying that static friction can have a maximum value of $\\mu_{\\text{s}} N$. Static friction is a responsive force that increases to be equal and opposite to whatever force is exerted, up to its maximum limit. Once the applied force exceeds $f_{\\text{s}}(\\text{max})$, the object moves. Thus,\n\n$$f_{\\text{s}}(\\text{max}) = \\mu_{\\text{s}} N$$",
+    "word_count": 89
+  },
+  {
+    "chunk_id": "6.2_friction__chunk05",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Static and Kinetic Friction — Magnitude of Kinetic Friction (part 1)",
+    "text": "The magnitude of kinetic friction $f_{\\text{k}}$ is given by\n\n$$f_{\\text{k}} = \\mu_{\\text{k}} N \\quad \\text{(Equation 6.2)}$$\n\nwhere $\\mu_{\\text{k}}$ is the coefficient of kinetic friction.\n\nA system in which $f_{\\text{k}} = \\mu_{\\text{k}} N$ is described as a system in which friction behaves simply. The transition from static friction to kinetic friction is illustrated in Figure 6.11.\n\n*Figure 6.11: (a) The force of friction $\\mathbf{\\vec{f}}$ between the block and the rough surface opposes the direction of the applied force $\\mathbf{\\vec{F}}$. The magnitude of the static friction balances that of the applied force. This is shown in the left side of the graph in (c). (b) At some point, the magnitude of the applied force is greater than the force of kinetic friction, and the block moves to the right. This is shown in the right side of the graph. (c) The graph of the frictional force versus the applied force; note that $f_{\\text{s}}(\\text{max}) > f_{\\text{k}}$. This means that $\\mu_{\\text{s}} > \\mu_{\\text{k}}$.*\n\n---\n\nAs you can see in Table 6.1, the coefficients of kinetic friction are less than their static counterparts. The approximate values of $\\mu$ are stated to only one or two digits to indicate the approximate description of friction given by the preceding two equations.\n\n#### Table 6.1: Approximate Coefficients of Static and Kinetic Friction\n\n| System | Static Friction $\\mu_{\\text{s}}$ | Kinetic Friction $\\mu_{\\text{k}}$ |\n| :--- | :--- | :--- |\n| Rubber on dry concrete | 1.0 | 0.7 |\n| Rubber on wet concrete | 0.5–0.7 | 0.3–0.5 |\n| Wood on wood | 0.5 | 0.3 |\n| Waxed wood on wet snow | 0.14 | 0.1 |\n| Metal on wood | 0.5 | 0.3 |\n| Steel on steel (dry) | 0.6 | 0.3 |\n| Steel on steel (oiled) | 0.05 | 0.03 |\n| Teflon on steel | 0.04 | 0.04 |\n| Bone lubricated by synovial fluid | 0.016 | 0.015 |\n| Shoes on wood | 0.9 | 0.7 |\n| Shoes on ice | 0.1 | 0.05 |\n| Ice on ice | 0.1 | 0.03 |\n| Steel on ice | 0.04 | 0.02 |\n\n---",
+    "word_count": 358
+  },
+  {
+    "chunk_id": "6.2_friction__chunk06",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Static and Kinetic Friction — Magnitude of Kinetic Friction (part 2)",
+    "text": "Equation 6.1 and Equation 6.2 include the dependence of friction on materials and the normal force. The direction of friction is always opposite that of motion, parallel to the surface between objects, and perpendicular to the normal force. For example, if the crate you try to push (with a force parallel to the floor) has a mass of 100 kg, then the normal force is equal to its weight,\n\n$$w = mg = (100\\text{ kg})(9.80\\text{ m/s}^2) = 980\\text{ N},$$\n\nperpendicular to the floor. If the coefficient of static friction is 0.45, you would have to exert a force parallel to the floor greater than\n\n$$f_{\\text{s}}(\\text{max}) = \\mu_{\\text{s}} N = (0.45)(980\\text{ N}) = 440\\text{ N}$$\n\nto move the crate. Once there is motion, friction is less and the coefficient of kinetic friction might be 0.30, so that a force of only\n\n$$f_{\\text{k}} = \\mu_{\\text{k}} N = (0.30)(980\\text{ N}) = 290\\text{ N}$$\n\nkeeps it moving at a constant speed. If the floor is lubricated, both coefficients are considerably less than they would be without lubrication. Coefficient of friction is a unitless quantity with a magnitude usually between 0 and 1.0. The actual value depends on the two surfaces that are in contact.\n\nMany people have experienced the slipperiness of walking on ice. However, many parts of the body, especially the joints, have much smaller coefficients of friction—often three or four times less than ice. A joint is formed by the ends of two bones, which are connected by thick tissues. The knee joint is formed by the lower leg bone (the tibia) and the thighbone (the femur). The hip is a ball (at the end of the femur) and socket (part of the pelvis) joint. The ends of the bones in the joint are covered by cartilage, which provides a smooth, almost-glassy surface. The joints also produce a fluid (synovial fluid) that reduces friction and wear. A damaged or arthritic joint can be replaced by an artificial joint (Figure 6.12). These replacements can be made of metals (stainless steel or titanium) or plastic (polyethylene), also with very small coefficients of friction.\n\n*Figure 6.12: Artificial knee replacement is a procedure that has been performed for more than 20 years. These post-operative X-rays show a right knee joint replacement. (credit: modification of work by Mike Baird)*",
+    "word_count": 382
+  },
+  {
+    "chunk_id": "6.2_friction__chunk07",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Static and Kinetic Friction — Magnitude of Kinetic Friction (part 3)",
+    "text": "Natural lubricants include saliva produced in our mouths to aid in the swallowing process, and the slippery mucus found between organs in the body, allowing them to move freely past each other during heartbeats, during breathing, and when a person moves. Hospitals and doctor’s clinics commonly use artificial lubricants, such as gels, to reduce friction.\n\nThe equations given for static and kinetic friction are empirical laws that describe the behavior of the forces of friction. While these formulas are very useful for practical purposes, they do not have the status of mathematical statements that represent general principles (e.g., Newton’s second law). In fact, there are cases for which these equations are not even good approximations. For instance, neither formula is accurate for lubricated surfaces or for two surfaces sliding across each other at high speeds. Unless specified, we will not be concerned with these exceptions.\n\n---",
+    "word_count": 146
+  },
+  {
+    "chunk_id": "6.2_friction__chunk08",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Static and Kinetic Friction — Example 6.10: Static and Kinetic Friction (part 1)",
+    "text": "A $20.0\\text{-kg}$ crate is at rest on a floor as shown in Figure 6.13. The coefficient of static friction between the crate and floor is $0.700$ and the coefficient of kinetic friction is $0.600$. A horizontal force $\\mathbf{\\vec{P}}$ is applied to the crate. Find the force of friction if:\n* (a) $\\mathbf{\\vec{P}} = 20.0\\text{ N} \\hat{\\mathbf{i}}$\n* (b) $\\mathbf{\\vec{P}} = 30.0\\text{ N} \\hat{\\mathbf{i}}$\n* (c) $\\mathbf{\\vec{P}} = 120.0\\text{ N} \\hat{\\mathbf{i}}$\n* (d) $\\mathbf{\\vec{P}} = 180.0\\text{ N} \\hat{\\mathbf{i}}$\n\n*Figure 6.13: (a) A crate on a horizontal surface is pushed with a force $\\mathbf{\\vec{P}}$. (b) The forces on the crate. Here, $\\mathbf{\\vec{f}}$ may represent either the static or the kinetic frictional force.*\n\n#### Strategy\nThe free-body diagram of the crate is shown in Figure 6.13(b). We apply Newton’s second law in the horizontal and vertical directions, including the friction force in opposition to the direction of motion of the box.\n\n#### Solution\nNewton’s second law gives:\n\n$$\\sum F_x = m a_x \\qquad \\sum F_y = m a_y$$\n$$P - f = m a_x \\qquad N - w = 0$$\n\nHere we are using the symbol $f$ to represent the frictional force since we have not yet determined whether the crate is subject to static friction or kinetic friction. We do this whenever we are unsure what type of friction is acting. Now the weight of the crate is\n\n$$w = (20.0\\text{ kg})(9.80\\text{ m/s}^2) = 196\\text{ N},$$\n\nwhich is also equal to $N$. The maximum force of static friction is therefore\n\n$$f_{\\text{s}}(\\text{max}) = (0.700)(196\\text{ N}) = 137\\text{ N}.$$\n\nAs long as $\\mathbf{\\vec{P}}$ is less than $137\\text{ N}$, the force of static friction keeps the crate stationary and $f_{\\text{s}} = |\\mathbf{\\vec{P}}|$. Thus:\n* (a) $f_{\\text{s}} = 20.0\\text{ N}$\n* (b) $f_{\\text{s}} = 30.0\\text{ N}$\n* (c) $f_{\\text{s}} = 120.0\\text{ N}$\n\n(d) If $\\mathbf{\\vec{P}} = 180.0\\text{ N}$, the applied force is greater than the maximum force of static friction ($137\\text{ N}$), so the crate can no longer remain at rest. Once the crate is in motion, kinetic friction acts. Then\n\n$$f_{\\text{k}} = \\mu_{\\text{k}} N = (0.600)(196\\text{ N}) = 118\\text{ N},$$\n\nand the acceleration is\n\n$$a_x = \\frac{P - f_{\\text{k}}}{m} = \\frac{180.0\\text{ N} - 118\\text{ N}}{20.0\\text{ kg}} = 3.10\\text{ m/s}^2.$$",
+    "word_count": 364
+  },
+  {
+    "chunk_id": "6.2_friction__chunk09",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Static and Kinetic Friction — Example 6.10: Static and Kinetic Friction (part 2)",
+    "text": "#### Significance\nThis example illustrates how we consider friction in a dynamics problem. Notice that static friction has a value that matches the applied force, until we reach the maximum value of static friction. Also, no motion can occur until the applied force equals the force of static friction, but the force of kinetic friction will then become smaller.\n\n> **Check Your Understanding 6.7**  \n> A block of mass $1.0\\text{ kg}$ rests on a horizontal surface. The frictional coefficients for the block and surface are $\\mu_{\\text{s}} = 0.50$ and $\\mu_{\\text{k}} = 0.40$.  \n> (a) What is the minimum horizontal force required to move the block?  \n> (b) What is the block’s acceleration when this force is applied?\n\n---",
+    "word_count": 118
+  },
+  {
+    "chunk_id": "6.2_friction__chunk10",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Friction and the Inclined Plane",
+    "text": "One situation where friction plays an obvious role is that of an object on a slope. It might be a crate being pushed up a ramp to a loading dock or a skateboarder coasting down a mountain, but the basic physics is the same. We usually generalize the sloping surface and call it an inclined plane but then pretend that the surface is flat. Let’s look at an example of analyzing motion on an inclined plane with friction.",
+    "word_count": 78
+  },
+  {
+    "chunk_id": "6.2_friction__chunk11",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Friction and the Inclined Plane — Example 6.11: Downhill Skier (part 1)",
+    "text": "A skier with a mass of $62\\text{ kg}$ is sliding down a snowy slope at a constant acceleration. Find the coefficient of kinetic friction for the skier if friction is known to be $45.0\\text{ N}$.\n\n#### Strategy\nThe magnitude of kinetic friction is given as $45.0\\text{ N}$. Kinetic friction is related to the normal force $N$ by $f_{\\text{k}} = \\mu_{\\text{k}} N$; thus, we can find the coefficient of kinetic friction if we can find the normal force on the skier. The normal force is always perpendicular to the surface, and since there is no motion perpendicular to the surface, the normal force should equal the component of the skier’s weight perpendicular to the slope (See Figure 6.14).\n\n*Figure 6.14: The motion of the skier and friction are parallel to the slope, so it is most convenient to project all forces onto a coordinate system where one axis is parallel to the slope and the other is perpendicular (axes shown to left of skier). The normal force $\\mathbf{\\vec{N}}$ is perpendicular to the slope, and friction $\\mathbf{\\vec{f}}$ is parallel to the slope, but the skier’s weight $\\mathbf{\\vec{w}}$ has components along both axes, namely $\\mathbf{\\vec{w}}_y$ and $\\mathbf{\\vec{w}}_x$. The normal force $\\mathbf{\\vec{N}}$ is equal in magnitude to $\\mathbf{\\vec{w}}_y$, so there is no motion perpendicular to the slope.*\n\nWe have:\n\n$$N = w_y = w \\cos 25^\\circ = mg \\cos 25^\\circ$$\n\nSubstituting this into our expression for kinetic friction, we obtain:\n\n$$f_{\\text{k}} = \\mu_{\\text{k}} mg \\cos 25^\\circ$$\n\nwhich can now be solved for the coefficient of kinetic friction $\\mu_{\\text{k}}$.\n\n#### Solution\nSolving for $\\mu_{\\text{k}}$ gives:\n\n$$\\mu_{\\text{k}} = \\frac{f_{\\text{k}}}{N} = \\frac{f_{\\text{k}}}{w \\cos 25^\\circ} = \\frac{f_{\\text{k}}}{mg \\cos 25^\\circ}$$\n\nSubstituting known values on the right-hand side of the equation:\n\n$$\\mu_{\\text{k}} = \\frac{45.0\\text{ N}}{(62\\text{ kg})(9.80\\text{ m/s}^2)(0.906)} = 0.082$$\n\n#### Significance\nThis result is a little smaller than the coefficient listed in Table 6.1 for waxed wood on snow, but it is still reasonable since values of the coefficients of friction can vary greatly. In situations like this, where an object of mass $m$ slides down a slope that makes an angle $\\theta$ with the horizontal, friction is given by $f_{\\text{k}} = \\mu_{\\text{k}} mg \\cos \\theta$. All objects slide down a slope with constant acceleration under these circumstances.\n\n---",
+    "word_count": 369
+  },
+  {
+    "chunk_id": "6.2_friction__chunk12",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Friction and the Inclined Plane — Example 6.11: Downhill Skier (part 2)",
+    "text": "We have discussed that when an object rests on a horizontal surface, the normal force supporting it is equal in magnitude to its weight. Furthermore, simple friction is always proportional to the normal force. When an object is not on a horizontal surface, as with the inclined plane, we must find the force acting on the object that is directed perpendicular to the surface; it is a component of the weight.\n\nWe now derive a useful relationship for calculating coefficient of friction on an inclined plane. Notice that the result applies only for situations in which the object slides at constant speed down the ramp.\n\nAn object slides down an inclined plane at a constant velocity if the net force on the object is zero. We can use this fact to measure the coefficient of kinetic friction between two objects. As shown in Example 6.11, the kinetic friction on a slope is $f_{\\text{k}} = \\mu_{\\text{k}} mg \\cos \\theta$. The component of the weight down the slope is equal to $mg \\sin \\theta$ (see the free-body diagram in Figure 6.14). These forces act in opposite directions, so when they have equal magnitude, the acceleration is zero. Writing these out:\n\n$$\\mu_{\\text{k}} mg \\cos \\theta = mg \\sin \\theta$$\n\nSolving for $\\mu_{\\text{k}}$, we find that:\n\n$$\\mu_{\\text{k}} = \\frac{mg \\sin \\theta}{mg \\cos \\theta} = \\tan \\theta$$\n\n> Put a coin on a book and tilt it until the coin slides at a constant velocity down the book. You might need to tap the book lightly to get the coin to move. Measure the angle of tilt relative to the horizontal and find $\\mu_{\\text{k}}$. Note that the coin does not start to slide at all until an angle greater than $\\theta$ is attained, since the coefficient of static friction is larger than the coefficient of kinetic friction. Think about how this may affect the value for $\\mu_{\\text{k}}$ and its uncertainty.\n\n---",
+    "word_count": 316
+  },
+  {
+    "chunk_id": "6.2_friction__chunk13",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Atomic-Scale Explanations of Friction (part 1)",
+    "text": "The simpler aspects of friction dealt with so far are its macroscopic (large-scale) characteristics. Great strides have been made in the atomic-scale explanation of friction during the past several decades. Researchers are finding that the atomic nature of friction seems to have several fundamental characteristics. These characteristics not only explain some of the simpler aspects of friction—they also hold the potential for the development of nearly friction-free environments that could save hundreds of billions of dollars in energy which is currently being converted (unnecessarily) into heat.\n\nFigure 6.15 illustrates one macroscopic characteristic of friction that is explained by microscopic (small-scale) research. The equations for kinetic and maximum static friction depend on the normal force and the materials in contact, but not on the amount of area in contact, a somewhat counterintuitive notion. When two rough surfaces are in contact, the actual contact area is a tiny fraction of the total area because only high spots touch. When a greater normal force is exerted, the actual contact area increases, and we find that the friction is proportional to this area.\n\n*Figure 6.15: Two rough surfaces in contact have a much smaller area of actual contact than their total area. When the normal force is larger as a result of a larger applied force, the area of actual contact increases, as does friction.*\n\nHowever, the atomic-scale view promises to explain far more than the simpler features of friction. The mechanism for how heat is generated is now being determined. In other words, why do surfaces get warmer when rubbed? Essentially, atoms are linked with one another to form lattices. When surfaces rub, the surface atoms adhere and cause atomic lattices to vibrate—essentially creating sound waves that penetrate the material. The sound waves diminish with distance, and their energy is converted into heat. Chemical reactions that are related to frictional wear can also occur between atoms and molecules on the surfaces. Figure 6.16 shows how the tip of a probe drawn across another material is deformed by atomic-scale friction. The force needed to drag the tip can be measured and is found to be related to shear stress, which is discussed in Static Equilibrium and Elasticity. The variation in shear stress is remarkable (more than a factor of $10^{12}$) and difficult to predict theoretically, but shear stress is yielding a fundamental understanding of a large-scale phenomenon known since ancient times—friction.",
+    "word_count": 397
+  },
+  {
+    "chunk_id": "6.2_friction__chunk14",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Atomic-Scale Explanations of Friction (part 2)",
+    "text": "*Figure 6.16: The tip of a probe is deformed sideways by frictional force as the probe is dragged across a surface. Measurements of how the force varies for different materials are yielding fundamental insights into the atomic nature of friction.*\n\n> **Interactive**  \n> Engaging the simulation below, describe a model for friction on a molecular level. Describe matter in terms of molecular motion. The description should include diagrams to support the description; how the temperature affects the image; what are the differences and similarities between solid, liquid, and gas particle motion; and how the size and speed of gas molecules relate to everyday objects.\n\n---",
+    "word_count": 105
+  },
+  {
+    "chunk_id": "6.2_friction__chunk15",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Atomic-Scale Explanations of Friction — Example 6.12: Sliding Blocks (part 1)",
+    "text": "The two blocks of Figure 6.17 are attached to each other by a massless string that is wrapped around a frictionless pulley. When the bottom $4.00\\text{-kg}$ block is pulled to the left by the constant force $\\mathbf{\\vec{P}}$, the top $2.00\\text{-kg}$ block slides across it to the right. Find the magnitude of the force necessary to move the blocks at constant speed. Assume that the coefficient of kinetic friction between all surfaces is $0.400$.\n\n*Figure 6.17: (a) Each block moves at constant velocity. (b) Free-body diagrams for the blocks.*\n\n#### Strategy\nWe analyze the motions of the two blocks separately. The top block is subjected to a contact force exerted by the bottom block. The components of this force are the normal force $N_1$ and the frictional force $-0.400 N_1$. Other forces on the top block are the tension $T$ in the string and the weight of the top block itself, $19.6\\text{ N}$. The bottom block is subjected to contact forces due to the top block and due to the floor. The first contact force has components $-N_1$ and $0.400 N_1$, which are simply reaction forces to the contact forces that the bottom block exerts on the top block. The components of the contact force of the floor are $N_2$ and $0.400 N_2$. Other forces on this block are $-P$, the tension $T$, and the weight $-39.2\\text{ N}$.\n\n#### Solution\nSince the top block is moving horizontally to the right at constant velocity, its acceleration is zero in both the horizontal and the vertical directions. From Newton’s second law:\n\n$$\\sum F_x = m_1 a_x \\qquad \\sum F_y = m_1 a_y$$\n$$T - 0.400 N_1 = 0 \\qquad N_1 - 19.6\\text{ N} = 0$$\n\nSolving for the two unknowns, we obtain $N_1 = 19.6\\text{ N}$ and $T = 0.400 N_1 = 7.84\\text{ N}$.\n\nThe bottom block is also not accelerating, so the application of Newton’s second law to this block gives:\n\n$$\\sum F_x = m_2 a_x \\qquad \\sum F_y = m_2 a_y$$\n$$T - P + 0.400 N_1 + 0.400 N_2 = 0 \\qquad N_2 - 39.2\\text{ N} - N_1 = 0$$\n\nThe values of $N_1$ and $T$ were found with the first set of equations. When these values are substituted into the second set of equations, we can determine $N_2$ and $P$. They are:\n\n$$N_2 = 58.8\\text{ N} \\quad \\text{and} \\quad P = 39.2\\text{ N}$$",
+    "word_count": 394
+  },
+  {
+    "chunk_id": "6.2_friction__chunk16",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Atomic-Scale Explanations of Friction — Example 6.12: Sliding Blocks (part 2)",
+    "text": "#### Significance\nUnderstanding what direction in which to draw the friction force is often troublesome. Notice that each friction force labeled in Figure 6.17 acts in the direction opposite the motion of its corresponding block.\n\n---",
+    "word_count": 36
+  },
+  {
+    "chunk_id": "6.2_friction__chunk17",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Atomic-Scale Explanations of Friction — Example 6.13: A Crate on an Accelerating Truck",
+    "text": "A $50.0\\text{-kg}$ crate rests on the bed of a truck as shown in Figure 6.18. The coefficients of friction between the surfaces are $\\mu_{\\text{k}} = 0.300$ and $\\mu_{\\text{s}} = 0.400$. Find the frictional force on the crate when the truck is accelerating forward relative to the ground at (a) $2.00\\text{ m/s}^2$, and (b) $5.00\\text{ m/s}^2$.\n\n*Figure 6.18: (a) A crate rests on the bed of the truck that is accelerating forward. (b) The free-body diagram of the crate.*\n\n#### Strategy\nThe forces on the crate are its weight and the normal and frictional forces due to contact with the truck bed. We start by assuming that the crate is not slipping. In this case, the static frictional force $f_{\\text{s}}$ acts on the crate. Furthermore, the accelerations of the crate and the truck are equal.\n\n#### Solution\nApplication of Newton’s second law to the crate, using the reference frame attached to the ground, yields:\n\n$$\\sum F_x = m a_x \\qquad \\sum F_y = m a_y$$\n$$f_{\\text{s}} = (50.0\\text{ kg})(2.00\\text{ m/s}^2) = 1.00 \\times 10^2\\text{ N}$$\n$$N - 4.90 \\times 10^2\\text{ N} = (50.0\\text{ kg})(0) \\implies N = 4.90 \\times 10^2\\text{ N}$$\n\nWe can now check the validity of our no-slip assumption. The maximum value of the force of static friction is\n\n$$f_{\\text{s}}(\\text{max}) = \\mu_{\\text{s}} N = (0.400)(4.90 \\times 10^2\\text{ N}) = 196\\text{ N},$$\n\nwhereas the actual force of static friction that acts when the truck accelerates forward at $2.00\\text{ m/s}^2$ is only $1.00 \\times 10^2\\text{ N}$. Thus, the assumption of no slipping is valid.\n\nIf the crate is to move with the truck when it accelerates at $5.00\\text{ m/s}^2$, the force of static friction must be\n\n$$f_{\\text{s}} = m a_x = (50.0\\text{ kg})(5.00\\text{ m/s}^2) = 250\\text{ N}.$$\n\nSince this exceeds the maximum of $196\\text{ N}$, the crate must slip. The frictional force is therefore kinetic and is\n\n$$f_{\\text{k}} = \\mu_{\\text{k}} N = (0.300)(4.90 \\times 10^2\\text{ N}) = 147\\text{ N}.$$\n\nThe horizontal acceleration of the crate relative to the ground is now found from:\n\n$$\\sum F_x = m a_x$$\n$$147\\text{ N} = (50.0\\text{ kg}) a_x \\implies a_x = 2.94\\text{ m/s}^2$$\n\n#### Significance\nRelative to the ground, the truck is accelerating forward at $5.00\\text{ m/s}^2$ and the crate is accelerating forward at $2.94\\text{ m/s}^2$. Hence the crate is sliding backward relative to the bed of the truck with an acceleration $2.94\\text{ m/s}^2 - 5.00\\text{ m/s}^2 = -2.06\\text{ m/s}^2$.\n\n---",
+    "word_count": 396
+  },
+  {
+    "chunk_id": "6.2_friction__chunk18",
+    "source_file": "6.2_friction.md",
+    "chapter_title": "6.2 Friction",
+    "section": "Atomic-Scale Explanations of Friction — Example 6.14: Snowboarding",
+    "text": "Earlier, we analyzed the situation of a downhill skier moving at constant velocity to determine the coefficient of kinetic friction. Now let’s do a similar analysis to determine acceleration. The snowboarder of Figure 6.19 glides down a slope that is inclined at $13^\\circ$ to the horizontal. The coefficient of kinetic friction between the board and the snow is $\\mu_{\\text{k}} = 0.20$. What is the acceleration of the snowboarder?\n\n*Figure 6.19: (a) A snowboarder glides down a slope inclined at 13° to the horizontal. (b) The free-body diagram of the snowboarder.*\n\n#### Strategy\nThe forces acting on the snowboarder are her weight and the contact force of the slope, which has a component normal to the incline and a component along the incline (force of kinetic friction). Because she moves along the slope, the most convenient reference frame for analyzing her motion is one with the x-axis along and the y-axis perpendicular to the incline. In this frame, both the normal and the frictional forces lie along coordinate axes, the components of the weight are $mg \\sin \\theta$ along the slope and $mg \\cos \\theta$ at right angles into the slope, and the only acceleration is along the x-axis ($a_y = 0$).\n\n#### Solution\nWe can now apply Newton’s second law to the snowboarder:\n\n$$\\sum F_x = m a_x \\qquad \\sum F_y = m a_y$$\n$$m g \\sin \\theta - \\mu_{\\text{k}} N = m a_x \\qquad N - m g \\cos \\theta = m(0)$$\n\nFrom the second equation, $N = m g \\cos \\theta$. Upon substituting this into the first equation, we find:\n\n$$a_x = g (\\sin \\theta - \\mu_{\\text{k}} \\cos \\theta)$$\n$$a_x = g (\\sin 13^\\circ - 0.20 \\cos 13^\\circ) = 0.29\\text{ m/s}^2$$\n\n#### Significance\nNotice from this equation that if $\\theta$ is small enough or $\\mu_{\\text{k}}$ is large enough, $a_x$ is negative, that is, the snowboarder slows down.\n\n> **Check Your Understanding 6.8**  \n> The snowboarder is now moving down a hill with incline $10.0^\\circ$. What is the snowboarder's acceleration?",
+    "word_count": 331
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk01",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Learning Objectives (part 1)",
+    "text": "By the end of this section, you will be able to:\n* Explain the equation for centripetal acceleration\n* Apply Newton’s second law to develop the equation for centripetal force\n* Use circular motion concepts in solving problems involving Newton’s laws of motion\n\n---\n\nIn *Motion in Two and Three Dimensions*, we examined the basic concepts of circular motion. An object undergoing circular motion, like one of the race cars shown at the beginning of this chapter, must be accelerating because it is changing the direction of its velocity. We proved that this centrally directed acceleration, called **centripetal acceleration**, is given by the formula:\n\n$$a_{\\text{c}} = \\frac{v^2}{r}$$\n\nwhere $v$ is the velocity of the object, directed along a tangent line to the curve at any instant. If we know the angular velocity $\\omega$, then we can use:\n\n$$a_{\\text{c}} = r\\omega^2$$\n\nAngular velocity gives the rate at which the object is turning through the curve, in units of rad/s. This acceleration acts along the radius of the curved path and is thus also referred to as a **radial acceleration**.\n\nAn acceleration must be produced by a force. Any force or combination of forces can cause a centripetal or radial acceleration. Just a few examples are the tension in the rope on a tether ball, the force of Earth’s gravity on the Moon, friction between roller skates and a rink floor, a banked roadway’s force on a car, and forces on the tube of a spinning centrifuge. Any net force causing uniform circular motion is called a **centripetal force**. The direction of a centripetal force is toward the center of curvature, the same as the direction of centripetal acceleration. According to Newton’s second law of motion, net force is mass times acceleration: $F_{\\text{net}} = ma$. For uniform circular motion, the acceleration is the centripetal acceleration: $a = a_{\\text{c}}$. Thus, the magnitude of centripetal force $F_{\\text{c}}$ is:\n\n$$F_{\\text{c}} = m a_{\\text{c}}$$\n\nBy substituting the expressions for centripetal acceleration $a_{\\text{c}}$ ($a_{\\text{c}} = \\frac{v^2}{r}$; $a_{\\text{c}} = r\\omega^2$), we get two expressions for the centripetal force $F_{\\text{c}}$ in terms of mass, velocity, angular velocity, and radius of curvature:\n\n$$F_{\\text{c}} = m \\frac{v^2}{r} \\quad \\text{and} \\quad F_{\\text{c}} = m r \\omega^2$$",
+    "word_count": 364
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk02",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Learning Objectives (part 2)",
+    "text": "You may use whichever expression for centripetal force is more convenient. Centripetal force $\\vec{\\mathbf{F}}_{\\text{c}}$ is always perpendicular to the path and points to the center of curvature, because $\\vec{\\mathbf{a}}_{\\text{c}}$ is perpendicular to the velocity and points to the center of curvature. Note that if you solve the first expression for $r$, you get:\n\n$$r = \\frac{m v^2}{F_{\\text{c}}}$$\n\nThis implies that for a given mass and velocity, a large centripetal force causes a small radius of curvature—that is, a tight curve, as in **Figure 6.20**.\n\n> **Figure 6.20** The frictional force supplies the centripetal force and is numerically equal to it. Centripetal force is perpendicular to velocity and causes uniform circular motion. The larger the $F_{\\text{c}}$, the smaller the radius of curvature $r$ and the sharper the curve. The second curve has the same $v$, but a larger $F_{\\text{c}}$ produces a smaller $r'$.\n\n---",
+    "word_count": 143
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk03",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Learning Objectives — Example 6.15: What Coefficient of Friction Do Cars Need on a Flat Curve? (part 1)",
+    "text": "**(a)** Calculate the centripetal force exerted on a $900.0\\text{ kg}$ car that negotiates a $500.0\\text{ m}$ radius curve at $25.00\\text{ m/s}$.  \n**(b)** Assuming an unbanked curve, find the minimum static coefficient of friction between the tires and the road, static friction being the reason that keeps the car from slipping (**Figure 6.21**).\n\n> **Figure 6.21** This car on level ground is moving away and turning to the left. The centripetal force causing the car to turn in a circular path is due to friction between the tires and the road. A minimum coefficient of friction is needed, or the car will move in a larger-radius curve and leave the roadway.\n\n#### Strategy\nWe know that $F_{\\text{c}} = \\frac{m v^2}{r}$. Thus,\n\n$$F_{\\text{c}} = \\frac{m v^2}{r} = \\frac{(900.0\\text{ kg})(25.00\\text{ m/s})^2}{500.0\\text{ m}} = 1125\\text{ N}$$\n\nFigure 6.21 shows the forces acting on the car on an unbanked (level ground) curve. Friction is to the left, keeping the car from slipping, and because it is the only horizontal force acting on the car, the friction is the centripetal force in this case. We know that the maximum static friction (at which the tires roll but do not slip) is $\\mu_{\\text{s}} N$, where $\\mu_{\\text{s}}$ is the static coefficient of friction and $N$ is the normal force. The normal force equals the car’s weight on level ground, so $N = mg$. Thus the centripetal force in this situation is:\n\n$$F_{\\text{c}} \\equiv f = \\mu_{\\text{s}} N = \\mu_{\\text{s}} m g$$\n\nNow we have a relationship between centripetal force and the coefficient of friction. Using the equation $F_{\\text{c}} = m \\frac{v^2}{r}$, we obtain:\n\n$$m \\frac{v^2}{r} = \\mu_{\\text{s}} m g$$\n\nWe solve this for $\\mu_{\\text{s}}$, noting that mass cancels, and obtain:\n\n$$\\mu_{\\text{s}} = \\frac{v^2}{r g}$$\n\nSubstituting the knowns:\n\n$$\\mu_{\\text{s}} = \\frac{(25.00\\text{ m/s})^2}{(500.0\\text{ m})(9.80\\text{ m/s}^2)} = 0.13$$\n\n*(Because coefficients of friction are approximate, the answer is given to only two digits.)*",
+    "word_count": 311
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk04",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Learning Objectives — Example 6.15: What Coefficient of Friction Do Cars Need on a Flat Curve? (part 2)",
+    "text": "#### Significance\nThe coefficient of friction found in Figure 6.21(b) is much smaller than is typically found between tires and roads. The car still negotiates the curve if the coefficient is greater than $0.13$, because static friction is a responsive force, able to assume a value less than but no more than $\\mu_{\\text{s}} N$. A higher coefficient would also allow the car to negotiate the curve at a higher speed, but if the coefficient of friction is less, the safe speed would be less than $25\\text{ m/s}$. Note that mass cancels, implying that, in this example, it does not matter how heavily loaded the car is to negotiate the turn. Mass cancels because friction is assumed proportional to the normal force, which in turn is proportional to mass. If the surface of the road were banked, the normal force would be greater, as discussed next.\n\n---\n\n#### Check Your Understanding 6.9\nA car moving at $96.8\\text{ km/h}$ travels around a circular curve of radius $182.9\\text{ m}$ on a flat country road. What must be the minimum coefficient of static friction to keep the car from slipping?\n\n---",
+    "word_count": 187
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk05",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Banked Curves (part 1)",
+    "text": "Let us now consider banked curves, where the slope of the road helps you negotiate the curve (**Figure 6.22**). The greater the angle $\\theta$, the faster you can take the curve. Race tracks for bikes as well as cars, for example, often have steeply banked curves. In an “ideally banked curve,” the angle $\\theta$ is such that you can negotiate the curve at a certain speed without the aid of friction between the tires and the road. We will derive an expression for $\\theta$ for an ideally banked curve and consider an example related to it.\n\n> **Figure 6.22** The car on this banked curve is moving away and turning to the left. For ideal banking, the net external force equals the horizontal centripetal force in the absence of friction. The components of the normal force $N$ in the horizontal and vertical directions must equal the centripetal force and the weight of the car, respectively.\n\nIn cases in which forces are not parallel, it is most convenient to consider components along perpendicular axes—in this case, the vertical and horizontal directions.\n\nFigure 6.22 shows a free-body diagram for a car on a frictionless banked curve. If the angle $\\theta$ is ideal for the speed and radius, then the net external force equals the necessary centripetal force. The only two external forces acting on the car are its weight $\\vec{\\mathbf{w}}$ and the normal force of the road $\\vec{\\mathbf{N}}$. (A frictionless surface can only exert a force perpendicular to the surface—that is, a normal force.) These two forces must add to give a net external force that is horizontal toward the center of curvature and has magnitude $m v^2 / r$. Because this is the crucial force and it is horizontal, we use a coordinate system with vertical and horizontal axes. Only the normal force has a horizontal component, so this must equal the centripetal force, that is:\n\n$$N \\sin\\theta = \\frac{m v^2}{r}$$\n\nBecause the car does not leave the surface of the road, the net vertical force must be zero, meaning that the vertical components of the two external forces must be equal in magnitude and opposite in direction. From Figure 6.22, we see that the vertical component of the normal force is $N \\cos\\theta$, and the only other vertical force is the car’s weight. These must be equal in magnitude; thus:\n\n$$N \\cos\\theta = mg$$",
+    "word_count": 394
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk06",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Banked Curves (part 2)",
+    "text": "Now we can combine these two equations to eliminate $N$ and get an expression for $\\theta$, as desired. Solving the second equation for $N = \\frac{mg}{\\cos\\theta}$ and substituting this into the first yields:\n\n$$\begin{aligned}\n\\frac{mg \\sin\\theta}{\\cos\\theta} &= \\frac{m v^2}{r} \\[8pt]\nmg \\tan\\theta &= \\frac{m v^2}{r} \\[8pt]\n\\tan\\theta &= \\frac{v^2}{rg}\n\\end{aligned}$$\n\nTaking the inverse tangent gives:\n\n$$\\theta = \\tan^{-1}\\left(\\frac{v^2}{rg}\night)$$\n\nThis expression can be understood by considering how $\\theta$ depends on $v$ and $r$. A large $\\theta$ is obtained for a large $v$ and a small $r$. That is, roads must be steeply banked for high speeds and sharp curves. Friction helps, because it allows you to take the curve at greater or lower speed than if the curve were frictionless. Note that $\\theta$ does not depend on the mass of the vehicle.\n\n---",
+    "word_count": 133
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk07",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Banked Curves — Example 6.16: What Is the Ideal Speed to Take a Steeply Banked Tight Curve?",
+    "text": "Curves on some test tracks and race courses, such as Daytona International Speedway in Florida, are very steeply banked. This banking, with the aid of tire friction and very stable car configurations, allows the curves to be taken at very high speed. To illustrate, calculate the speed at which a $100.0\\text{ m}$ radius curve banked at $31.0^\\circ$ should be driven if the road were frictionless.\n\n#### Strategy\nWe first note that all terms in the expression for the ideal angle of a banked curve except for speed are known; thus, we need only rearrange it so that speed appears on the left-hand side and then substitute known quantities.\n\n#### Solution\nStarting with:\n\n$$\\tan\\theta = \\frac{v^2}{rg}$$\n\nwe get:\n\n$$v = \\sqrt{rg \\tan\\theta}$$\n\nNoting that $\\tan(31.0^\\circ) = 0.6009$, we obtain:\n\n$$v = \\sqrt{(100.0\\text{ m})(9.80\\text{ m/s}^2)(0.6009)} = 24.3\\text{ m/s}$$\n\n#### Significance\nThis is just about $87.5\\text{ km/h}$, consistent with a very steeply banked and rather sharp curve. Tire friction enables a vehicle to take the curve at significantly higher speeds.\n\n---\n\nAirplanes also make turns by banking. The lift force, due to the force of the air on the wing, acts at right angles to the wing. When the airplane banks, the pilot is obtaining greater lift than necessary for level flight. The vertical component of lift balances the airplane’s weight, and the horizontal component accelerates the plane. The banking angle shown in **Figure 6.23** is given by $\\theta$. We analyze the forces in the same way we treat the case of the car rounding a banked curve.\n\n> **Figure 6.23** In a banked turn, the horizontal component of lift is unbalanced and accelerates the plane. The normal component of lift balances the plane’s weight. The banking angle is given by $\\theta$. Compare the vector diagram with that shown in Figure 6.22.\n\n---",
+    "word_count": 300
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk08",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Inertial Forces and Noninertial (Accelerated) Frames: The Coriolis Force (part 1)",
+    "text": "What do taking off in a jet airplane, turning a corner in a car, riding a merry-go-round, and the circular motion of a tropical cyclone have in common? Each exhibits **inertial forces**—fictitious forces that merely seem to arise from motion, because the observer’s frame of reference is accelerating or rotating.\n\nWhen taking off in a jet, most people would agree it feels as if you are being pushed back into the seat as the airplane accelerates down the runway. Yet a physicist would say that you tend to remain stationary while the seat pushes forward on you. An even more common experience occurs when you make a tight curve in your car—say, to the right (**Figure 6.24**). You feel as if you are thrown (that is, forced) toward the left relative to the car. Again, a physicist would say that you are going in a straight line (recall Newton’s first law) but the car moves to the right, not that you are experiencing a force from the left.\n\n> **Figure 6.24** **(a)** The car driver feels herself forced to the left relative to the car when she makes a right turn. This is a fictitious inertial force arising from the use of the car as a frame of reference. **(b)** In Earth’s frame of reference, the driver moves in a straight line, obeying Newton’s first law, and the car moves to the right. There is no force to the left on the driver relative to Earth. Instead, there is a force to the right on the car to make it turn.\n\nWe can reconcile these points of view by examining the frames of reference used. Passengers instinctively use the car as a frame of reference, whereas a physicist might use Earth. The physicist might make this choice because Earth is nearly an inertial frame of reference, in which all forces have an identifiable physical origin. In such a frame of reference, Newton’s laws of motion take their standard form. The car is a noninertial frame of reference because it is accelerated to the side. The force to the left sensed by car passengers is an inertial force having no physical origin (it is due purely to the inertia of the passenger, not to some physical cause such as tension, friction, or gravitation). The car, as well as the driver, is actually accelerating to the right.",
+    "word_count": 395
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk09",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Inertial Forces and Noninertial (Accelerated) Frames: The Coriolis Force (part 2)",
+    "text": "A physicist will choose whatever reference frame is most convenient for the situation being analyzed. There is no problem to a physicist in including inertial forces and Newton’s second law, as usual, if that is more convenient, for example, on a merry-go-round or on a rotating planet. Noninertial (accelerated) frames of reference are used when it is useful to do so.\n\nLet us now take a mental ride on a merry-go-round—specifically, a rapidly rotating playground merry-go-round (**Figure 6.25**). You take the merry-go-round to be your frame of reference because you rotate together. When rotating in that noninertial frame of reference, you feel an inertial force that tends to throw you off; this is often referred to as a **centrifugal force** (not to be confused with centripetal force). Centrifugal force is a commonly used term, but it does not actually exist. You must hang on tightly to counteract your inertia. In Earth’s frame of reference, there is no force trying to throw you off; centrifugal force is a fiction. You must hang on to make yourself go in a circle because otherwise you would go in a straight line, right off the merry-go-round, in keeping with Newton’s first law. The force you exert acts toward the center of the circle.\n\n> **Figure 6.25** **(a)** A rider on a merry-go-round feels as if he is being thrown off. This inertial force is sometimes mistakenly called the centrifugal force in an effort to explain the rider’s motion in the rotating frame of reference. **(b)** In an inertial frame of reference and according to Newton’s laws, it is his inertia that carries him off (the unshaded rider has $F_{\\text{net}} = 0$ and heads in a straight line). A force, $F_{\\text{centripetal}}$, is needed to cause a circular path.\n\nThis inertial effect, carrying you away from the center of rotation if there is no centripetal force to cause circular motion, is put to good use in centrifuges (**Figure 6.26**). A centrifuge spins a sample very rapidly. Viewed from the rotating frame of reference, the inertial force throws particles outward, hastening their sedimentation. The greater the angular velocity, the greater the centrifugal force. But what really happens is that the inertia of the particles carries them along a line tangent to the circle while the test tube is forced in a circular path by a centripetal force.",
+    "word_count": 390
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk10",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Inertial Forces and Noninertial (Accelerated) Frames: The Coriolis Force (part 3)",
+    "text": "> **Figure 6.26** Centrifuges use inertia to perform their task. Particles in the fluid sediment settle out because their inertia carries them away from the center of rotation. The large angular velocity of the centrifuge quickens the sedimentation. Ultimately, the particles come into contact with the test tube walls, which then supply the centripetal force needed to make them move in a circle of constant radius.\n\nLet us now consider what happens if something moves in a rotating frame of reference. For example, what if you slide a ball directly away from the center of the merry-go-round, as shown in **Figure 6.27**? The ball follows a straight path relative to Earth (assuming negligible friction) and a path curved to the right on the merry-go-round’s surface. A person standing next to the merry-go-round sees the ball moving straight and the merry-go-round rotating underneath it. In the merry-go-round’s frame of reference, we explain the apparent curve to the right by using an inertial force, called the **Coriolis force**, which causes the ball to curve to the right. The Coriolis force can be used by anyone in that frame of reference to explain why objects follow curved paths and allows us to apply Newton’s laws in noninertial frames of reference.\n\n> **Figure 6.27** Looking down on the counterclockwise rotation of a merry-go-round, we see that a ball slid straight toward the edge follows a path curved to the right. The person slides the ball toward point B, starting at point A. Both points rotate to the shaded positions (A’ and B’) shown in the time that the ball follows the curved path in the rotating frame and a straight path in Earth’s frame.",
+    "word_count": 280
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk11",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Inertial Forces and Noninertial (Accelerated) Frames: The Coriolis Force (part 4)",
+    "text": "Up until now, we have considered Earth to be an inertial frame of reference with little or no worry about effects due to its rotation. Yet such effects do exist—in the rotation of weather systems, for example. Most consequences of Earth’s rotation can be qualitatively understood by analogy with the merry-go-round. Viewed from above the North Pole, Earth rotates counterclockwise, as does the merry-go-round in Figure 6.27. As on the merry-go-round, any motion in Earth’s Northern Hemisphere experiences a Coriolis force to the right. Just the opposite occurs in the Southern Hemisphere; there, the force is to the left. Because Earth’s angular velocity is small, the Coriolis force is usually negligible, but for large-scale motions, such as wind patterns, it has substantial effects.\n\nThe Coriolis force causes hurricanes in the Northern Hemisphere to rotate in the counterclockwise direction, whereas tropical cyclones in the Southern Hemisphere rotate in the clockwise direction. Figure 6.28 helps show how these rotations take place. Air flows toward any region of low pressure, and tropical cyclones contain particularly low pressures. Thus winds flow toward the center of a tropical cyclone or a low-pressure weather system at the surface. In the Northern Hemisphere, these inward winds are deflected to the right, as shown in the figure, producing a counterclockwise circulation at the surface for low-pressure zones of any type. Low pressure at the surface is associated with rising air, which also produces cooling and cloud formation, making low-pressure patterns quite visible from space. Conversely, wind circulation around high-pressure zones is clockwise in the Southern Hemisphere but is less visible because high pressure is associated with sinking air, producing clear skies.\n\n> **Figure 6.28** **(a)** The counterclockwise rotation of this Northern Hemisphere hurricane is a major consequence of the Coriolis force. **(b)** Without the Coriolis force, air would flow straight into a low-pressure zone, such as that found in tropical cyclones. **(c)** The Coriolis force deflects the winds to the right, producing a counterclockwise rotation. **(d)** Wind flowing away from a high-pressure zone is also deflected to the right, producing a clockwise rotation. **(e)** The opposite direction of rotation is produced by the Coriolis force in the Southern Hemisphere, leading to tropical cyclones. *(credit a and credit e: modifications of work by NASA)*",
+    "word_count": 375
+  },
+  {
+    "chunk_id": "6.3_centripetal_force__chunk12",
+    "source_file": "6.3_centripetal_force.md",
+    "chapter_title": "6.3 Centripetal Force",
+    "section": "Inertial Forces and Noninertial (Accelerated) Frames: The Coriolis Force (part 5)",
+    "text": "The rotation of tropical cyclones and the path of a ball on a merry-go-round can just as well be explained by inertia and the rotation of the system underneath. When noninertial frames are used, inertial forces, such as the Coriolis force, must be invented to explain the curved path. There is no identifiable physical source for these inertial forces. In an inertial frame, inertia explains the path, and no force is found to be without an identifiable source. Either view allows us to describe nature, but a view in an inertial frame is the simplest in the sense that all forces have origins and explanations.",
+    "word_count": 105
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk01",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "Learning Objectives",
+    "text": "By the end of this section, you will be able to:\n* Express the drag force mathematically\n* Describe applications of the drag force\n* Define terminal velocity\n* Determine an object’s terminal velocity given its mass\n\n---\n\nAnother interesting force in everyday life is the force of drag on an object when it is moving in a fluid (either a gas or a liquid). You feel the drag force when you move your hand through water. You might also feel it if you move your hand during a strong wind. The faster you move your hand, the harder it is to move. You feel a smaller drag force when you tilt your hand so only the side goes through the air—you have decreased the area of your hand that faces the direction of motion.\n\n---",
+    "word_count": 136
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk02",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "Drag Forces (part 1)",
+    "text": "Like friction, the drag force always opposes the motion of an object. Unlike simple friction, the drag force is proportional to some function of the velocity of the object in that fluid. This functionality is complicated and depends upon the shape of the object, its size, its velocity, and the fluid it is in. For most large objects such as cyclists, cars, and baseballs not moving too slowly, the magnitude of the drag force $F_{\\text{D}}$ is proportional to the square of the speed of the object. We can write this relationship mathematically as $F_{\\text{D}} \\propto v^2$. When taking into account other factors, this relationship becomes:\n\n$$F_{\\text{D}} = \\frac{1}{2} C \nho A v^2$$\n\nwhere $C$ is the drag coefficient, $A$ is the area of the object facing the fluid, and $\nho$ is the density of the fluid. (Recall that density is mass per unit volume.) This equation can also be written in a more generalized fashion as $F_{\\text{D}} = b v^n$, where $b$ is a constant equivalent to $0.5 C \nho A$. We have set the exponent $n$ for these equations as $2$ because when an object is moving at high velocity through air, the magnitude of the drag force is proportional to the square of the speed. As we shall see in *Fluid Mechanics*, for small particles moving at low speeds in a fluid, the exponent $n$ is equal to $1$.\n\n> **Drag Force**  \n> Drag force $F_{\\text{D}}$ is proportional to the square of the speed of the object. Mathematically,\n>\n> $$F_{\\text{D}} = \\frac{1}{2} C \nho A v^2$$\n>\n> where $C$ is the drag coefficient, $A$ is the area of the object facing the fluid, and $\nho$ is the density of the fluid.\n\nAthletes as well as car designers seek to reduce the drag force to lower their race times (**Figure 6.29**). Aerodynamic shaping of an automobile can reduce the drag force and thus increase a car’s gas mileage.\n\n> **Figure 6.29** From racing cars to bobsled racers, aerodynamic shaping is crucial to achieving top speeds. Bobsleds are designed for speed and are shaped like a bullet with tapered fins. *(credit: “U.S. Army”/Wikimedia Commons)*\n\nThe value of the drag coefficient $C$ is determined empirically, usually with the use of a wind tunnel (**Figure 6.30**).\n\n> **Figure 6.30** NASA researchers test a model plane in a wind tunnel. *(credit: NASA/Ames)*",
+    "word_count": 393
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk03",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "Drag Forces (part 2)",
+    "text": "The drag coefficient can depend upon velocity, but we assume that it is a constant here. **Table 6.2** lists some typical drag coefficients for a variety of objects. Notice that the drag coefficient is a dimensionless quantity. At highway speeds, over 50% of the power of a car is used to overcome air drag. The most fuel-efficient cruising speed is about $70\\text{–}80\\text{ km/h}$ (about $45\\text{–}50\\text{ mi/h}$). For this reason, during the 1970s oil crisis in the United States, maximum speeds on highways were set at about $90\\text{ km/h}$ ($55\\text{ mi/h}$).\n\n| Object | $C$ |\n| :--- | :--- |\n| Airfoil | $0.05$ |\n| Toyota Camry | $0.28$ |\n| Ford Focus | $0.32$ |\n| Honda Civic | $0.36$ |\n| Ferrari Testarossa | $0.37$ |\n| Dodge Ram Pickup | $0.43$ |\n| Sphere | $0.45$ |\n| Hummer H2 SUV | $0.64$ |\n| Skydiver (feet first) | $0.70$ |\n| Bicycle | $0.90$ |\n| Skydiver (horizontal) | $1.0$ |\n| Circular flat plate | $1.12$ |\n\n**Table 6.2** Typical Values of Drag Coefficient $C$\n\nSubstantial research is under way in the sporting world to minimize drag. The dimples on golf balls are being redesigned, as are the clothes that athletes wear. Bicycle racers and some swimmers and runners wear full bodysuits. Australian Cathy Freeman wore a full body suit in the 2000 Sydney Olympics and won a gold medal in the 400-m race. Many swimmers in the 2008 Beijing Olympics wore (Speedo) body suits; it might have made a difference in breaking many world records (**Figure 6.31**). Most elite swimmers (and cyclists) shave their body hair. Such innovations can have the effect of slicing away milliseconds in a race, sometimes making the difference between a gold and a silver medal. One consequence is that careful and precise guidelines must be continuously developed to maintain the integrity of the sport.\n\n> **Figure 6.31** Body suits, such as this LZR Racer Suit, have been credited with aiding in many world records after their release in 2008. Smoother “skin” and more compression forces on a swimmer’s body provide at least 10% less drag. *(credit: NASA/Kathy Barnstorff)*\n\n---",
+    "word_count": 361
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk04",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "Terminal Velocity",
+    "text": "Some interesting situations connected to Newton’s second law occur when considering the effects of drag forces upon a moving object. For instance, consider a skydiver falling through air under the influence of gravity. The two forces acting on him are the force of gravity and the drag force (ignoring the small buoyant force). The downward force of gravity remains constant regardless of the velocity at which the person is moving. However, as the person’s velocity increases, the magnitude of the drag force increases until the magnitude of the drag force is equal to the gravitational force, thus producing a net force of zero. A zero net force means that there is no acceleration, as shown by Newton’s second law. At this point, the person’s velocity remains constant and we say that the person has reached his **terminal velocity** ($v_{\\text{T}}$). Since $F_{\\text{D}}$ is proportional to the speed squared, a heavier skydiver must go faster for $F_{\\text{D}}$ to equal his weight. Let’s see how this works out more quantitatively.\n\nAt the terminal velocity,\n\n$$F_{\\text{net}} = m g - F_{\\text{D}} = m a = 0$$\n\nThus,\n\n$$m g = F_{\\text{D}}$$\n\nUsing the equation for drag force, we have:\n\n$$m g = \\frac{1}{2} C \nho A v_{\\text{T}}^2$$\n\nSolving for the velocity, we obtain:\n\n$$v_{\\text{T}} = \\sqrt{\\frac{2 m g}{\nho C A}}$$\n\nAssume the density of air is $\nho = 1.21\\text{ kg/m}^3$. A $75\\text{-kg}$ skydiver descending head first has a cross-sectional area of approximately $A = 0.18\\text{ m}^2$ and a drag coefficient of approximately $C = 0.70$. We find that:\n\n$$v_{\\text{T}} = \\sqrt{\\frac{2 (75\\text{ kg})(9.80\\text{ m/s}^2)}{(1.21\\text{ kg/m}^3)(0.70)(0.18\\text{ m}^2)}} = 98\\text{ m/s} = 350\\text{ km/h}$$\n\nThis means a skydiver with a mass of $75\\text{ kg}$ achieves a terminal velocity of about $350\\text{ km/h}$ while traveling in a headfirst position, minimizing the area and his drag. In a spread-eagle position, that terminal velocity may decrease to about $200\\text{ km/h}$ as the area increases. This terminal velocity becomes much smaller after the parachute opens.\n\n---",
+    "word_count": 328
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk05",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "Terminal Velocity — Example 6.17: Terminal Velocity of a Skydiver (part 1)",
+    "text": "Find the terminal velocity of an $85\\text{-kg}$ skydiver falling in a spread-eagle position. Assume that in the spread-eagle position, the diver has a cross-sectional area of $0.70\\text{ m}^2$.\n\n#### Strategy\nAt terminal velocity, $F_{\\text{net}} = 0$. Thus, the drag force on the skydiver must equal the force of gravity (the person’s weight). Using the equation of drag force, we find $m g = \\frac{1}{2} \nho C A v^2$.\n\n#### Solution\nThe terminal velocity $v_{\\text{T}}$ can be written as:\n\n$$v_{\\text{T}} = \\sqrt{\\frac{2 m g}{\nho C A}} = \\sqrt{\\frac{2 (85\\text{ kg})(9.80\\text{ m/s}^2)}{(1.21\\text{ kg/m}^3)(1.0)(0.70\\text{ m}^2)}} = 44\\text{ m/s}$$\n\n#### Significance\nThis result is consistent with the value for $v_{\\text{T}}$ mentioned earlier. The $75\\text{-kg}$ skydiver going feet first had a terminal velocity of $v_{\\text{T}} = 98\\text{ m/s}$. He weighed less but had a smaller frontal area and so a smaller drag due to the air.\n\n---\n\n#### Check Your Understanding 6.10\nFind the terminal velocity of a $50\\text{-kg}$ skydiver falling in spread-eagle fashion.\n\n---\n\nThe size of the object that is falling through air presents another interesting application of air drag. If you fall from a $5\\text{-m}$-high branch of a tree, you will likely get hurt—possibly fracturing a bone. However, a small squirrel does this all the time, without getting hurt. You do not reach a terminal velocity in such a short distance, but the squirrel does.\n\nThe following interesting quote on animal size and terminal velocity is from a 1928 essay by a British biologist, J. B. S. Haldane, titled “On Being the Right Size.”\n\n> “To the mouse and any smaller animal, [gravity] presents practically no dangers. You can drop a mouse down a thousand-yard mine shaft; and, on arriving at the bottom, it gets a slight shock and walks away, provided that the ground is fairly soft. A rat is killed, a man is broken, and a horse splashes. For the resistance presented to movement by the air is proportional to the surface of the moving object. Divide an animal’s length, breadth, and height each by ten; its weight is reduced to a thousandth, but its surface only to a hundredth. So the resistance to falling in the case of the small animal is relatively ten times greater than the driving force.”",
+    "word_count": 372
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk06",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "Terminal Velocity — Example 6.17: Terminal Velocity of a Skydiver (part 2)",
+    "text": "The above quadratic dependence of air drag upon velocity does not hold if the object is very small, is going very slow, or is in a denser medium than air. Then we find that the drag force is proportional just to the velocity. This relationship is given by **Stokes’ law**.\n\n> **Stokes’ Law**  \n> For a spherical object falling in a medium, the drag force is:\n>\n> $$F_{\\text{s}} = 6 \\pi r \\eta v$$\n>\n> where $r$ is the radius of the object, $\\eta$ is the viscosity of the fluid, and $v$ is the object’s velocity.\n\nGood examples of Stokes’ law are provided by microorganisms, pollen, and dust particles. Because each of these objects is so small, we find that many of these objects travel unaided only at a constant (terminal) velocity. Terminal velocities for bacteria (size about $1\\text{ }\\mu\\text{m}$) can be about $2\\text{ }\\mu\\text{m/s}$. To move at a greater speed, many bacteria swim using flagella (organelles shaped like little tails) that are powered by little motors embedded in the cell.\n\nSediment in a lake can move at a greater terminal velocity (about $5\\text{ }\\mu\\text{m/s}$), so it can take days for it to reach the bottom of the lake after being deposited on the surface.\n\nIf we compare animals living on land with those in water, you can see how drag has influenced evolution. Fish, dolphins, and even massive whales are streamlined in shape to reduce drag forces. Birds are streamlined and migratory species that fly large distances often have particular features such as long necks. Flocks of birds fly in the shape of a spearhead as the flock forms a streamlined pattern (**Figure 6.32**). In humans, one important example of streamlining is the shape of sperm, which need to be efficient in their use of energy.\n\n> **Figure 6.32** Geese fly in a V formation during their long migratory travels. This shape reduces drag and energy consumption for individual birds, and also allows them a better way to communicate. *(credit: modification of work by “Julo”/Wikimedia Commons)*\n\n---",
+    "word_count": 340
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk07",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "The Calculus of Velocity-Dependent Frictional Forces (part 1)",
+    "text": "When a body slides across a surface, the frictional force on it is approximately constant and given by $\\mu_{\\text{k}} N$. Unfortunately, the frictional force on a body moving through a liquid or a gas does not behave so simply. This drag force is generally a complicated function of the body’s velocity. However, for a body moving in a straight line at moderate speeds through a liquid such as water, the frictional force can often be approximated by:\n\n$$f_{\\text{R}} = -b v$$\n\nwhere $b$ is a constant whose value depends on the dimensions and shape of the body and the properties of the liquid, and $v$ is the velocity of the body. Two situations for which the frictional force can be represented by this equation are a motorboat moving through water and a small object falling slowly through a liquid.\n\nLet’s consider the object falling through a liquid. The free-body diagram of this object with the positive direction downward is shown in **Figure 6.33**. Newton’s second law in the vertical direction gives the differential equation:\n\n$$m g - b v = m \\frac{d v}{d t}$$\n\nwhere we have written the acceleration as $d v / d t$. As $v$ increases, the frictional force $-b v$ increases until it matches $m g$. At this point, there is no acceleration and the velocity remains constant at the terminal velocity $v_{\\text{T}}$. From the previous equation:\n\n$$m g - b v_{\\text{T}} = 0$$\n\nso\n\n$$v_{\\text{T}} = \\frac{m g}{b}$$\n\n> **Figure 6.33** Free-body diagram of an object falling through a resistive medium.\n\nWe can find the object’s velocity by integrating the differential equation for $v$. First, we rearrange terms in this equation to obtain:\n\n$$\\frac{d v}{g - (b / m) v} = d t$$\n\nAssuming that $v = 0$ at $t = 0$, integration of this equation yields:\n\n$$\\int_0^v \\frac{d v'}{g - (b / m) v'} = \\int_0^t d t'$$\n\nor\n\n$$-\\frac{m}{b} \\ln\\left(g - \\frac{b}{m} v'\night)\\Bigg|_0^v = t'\\Bigg|_0^t$$\n\nwhere $v'$ and $t'$ are dummy variables of integration. With the limits given, we find:\n\n$$-\\frac{m}{b} \\left[ \\ln\\left(g - \\frac{b}{m} v\night) - \\ln g \night] = t$$\n\nSince $\\ln A - \\ln B = \\ln(A / B)$, and $\\ln(A / B) = x \\implies e^x = A / B$, we obtain:\n\n$$\\frac{g - (b v / m)}{g} = e^{-b t / m}$$\n\nand\n\n$$v = \\frac{m g}{b} \\left(1 - e^{-b t / m}\night)$$",
+    "word_count": 398
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk08",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "The Calculus of Velocity-Dependent Frictional Forces (part 2)",
+    "text": "Notice that as $t \to \\infty$, $v \to m g / b = v_{\\text{T}}$, which is the terminal velocity.\n\nThe position at any time may be found by integrating the equation for $v$. With $v = d y / d t$:\n\n$$d y = \\frac{m g}{b} \\left(1 - e^{-b t / m}\night) d t$$\n\nAssuming $y = 0$ when $t = 0$:\n\n$$\\int_0^y d y' = \\frac{m g}{b} \\int_0^t \\left(1 - e^{-b t' / m}\night) d t'$$\n\nwhich integrates to:\n\n$$y = \\frac{m g}{b} t + \\frac{m^2 g}{b^2} \\left(e^{-b t / m} - 1\night)$$\n\n---",
+    "word_count": 98
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk09",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "The Calculus of Velocity-Dependent Frictional Forces — Example 6.18: Effect of the Resistive Force on a Motorboat (part 1)",
+    "text": "A motorboat is moving across a lake at a speed $v_0$ when its motor suddenly freezes up and stops. The boat then slows down under the frictional force $f_{\\text{R}} = -b v$. **(a)** What are the velocity and position of the boat as functions of time? **(b)** If the boat slows down from $4.0$ to $1.0\\text{ m/s}$ in $10\\text{ s}$, how far does it travel before stopping?\n\n#### Solution\nWith the motor stopped, the only horizontal force on the boat is $f_{\\text{R}} = -b v$, so from Newton’s second law:\n\n$$m \\frac{d v}{d t} = -b v$$\n\nwhich we can write as:\n\n$$\\frac{d v}{v} = -\\frac{b}{m} d t$$\n\nIntegrating this equation between the time zero when the velocity is $v_0$ and the time $t$ when the velocity is $v$, we have:\n\n$$\\int_{v_0}^v \\frac{d v'}{v'} = -\\frac{b}{m} \\int_0^t d t'$$\n\nThus,\n\n$$\\ln\\left(\\frac{v}{v_0}\night) = -\\frac{b}{m} t$$\n\nwhich, since $\\ln A = x \\implies e^x = A$, we can write this as:\n\n$$v = v_0 e^{-b t / m}$$\n\nNow from the definition of velocity:\n\n$$\\frac{d x}{d t} = v_0 e^{-b t / m}$$\n\nso we have:\n\n$$d x = v_0 e^{-b t / m} d t$$\n\nWith the initial position zero, we have:\n\n$$\\int_0^x d x' = v_0 \\int_0^t e^{-b t' / m} d t'$$\n\nand\n\n$$x = -\\frac{m v_0}{b} e^{-b t' / m}\\Bigg|_0^t = \\frac{m v_0}{b} \\left(1 - e^{-b t / m}\night)$$\n\nAs time increases, $e^{-b t / m} \to 0$, and the position of the boat approaches a limiting value:\n\n$$x_{\\text{max}} = \\frac{m v_0}{b}$$\n\nAlthough this tells us that the boat takes an infinite amount of time to reach $x_{\\text{max}}$, the boat effectively stops after a reasonable time. For example, at $t = 10 m / b$, we have:\n\n$$v = v_0 e^{-10} \\approx 4.5 \\times 10^{-5} v_0$$\n\nwhereas we also have:\n\n$$x = x_{\\text{max}} (1 - e^{-10}) \\approx 0.99995 x_{\\text{max}}$$\n\nTherefore, the boat’s velocity and position have essentially reached their final values.\n\nWith $v_0 = 4.0\\text{ m/s}$ and $v = 1.0\\text{ m/s}$, we have $1.0\\text{ m/s} = (4.0\\text{ m/s}) e^{-(b / m)(10\\text{ s})}$, so:\n\n$$\\ln 0.25 = -\\ln 4.0 = -\\frac{b}{m} (10\\text{ s})$$\n\nand\n\n$$\\frac{b}{m} = \\frac{1}{10} \\ln 4.0\\text{ s}^{-1} = 0.14\\text{ s}^{-1}$$\n\nNow the boat’s limiting position is:\n\n$$x_{\\text{max}} = \\frac{m v_0}{b} = \\frac{4.0\\text{ m/s}}{0.14\\text{ s}^{-1}} = 29\\text{ m}$$",
+    "word_count": 383
+  },
+  {
+    "chunk_id": "6.4_drag_terminal_speed__chunk10",
+    "source_file": "6.4_drag_terminal_speed.md",
+    "chapter_title": "6.4 Drag Force and Terminal Speed",
+    "section": "The Calculus of Velocity-Dependent Frictional Forces — Example 6.18: Effect of the Resistive Force on a Motorboat (part 2)",
+    "text": "#### Significance\nIn the both of the previous examples, we found “limiting” values. The terminal velocity is the same as the limiting velocity, which is the velocity of the falling object after a (relatively) long time has passed. Similarly, the limiting distance of the boat is the distance the boat will travel after a long amount of time has passed. Due to the properties of exponential decay, the time involved to reach either of these values is actually not too long (certainly not an infinite amount of time!) but they are quickly found by taking the limit to infinity.\n\n---\n\n#### Check Your Understanding 6.11\nSuppose the resistive force of the air on a skydiver can be approximated by $f = -b v^2$. If the terminal velocity of a $100\\text{-kg}$ skydiver is $60\\text{ m/s}$, what is the value of $b$?",
+    "word_count": 140
+  }
+]

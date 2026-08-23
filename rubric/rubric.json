@@ -1,0 +1,47 @@
+{
+  "exam_id": "physics_newtons_laws_quiz1",
+  "reference_source": "OpenStax University Physics Volume 1, Chapters 5-6 (Newton's Laws of Motion; Applications of Newton's Laws)",
+  "questions": [
+    {
+      "question_id": "Q1",
+      "prompt": "State Newton's First Law of Motion and explain what is meant by an 'inertial frame of reference'. Give one real-world example.",
+      "total_marks": 4,
+      "criteria": [
+        {"criterion_id": "Q1_C1", "description": "Correct statement of the law of inertia (no net force -> no change in velocity)", "marks": 2},
+        {"criterion_id": "Q1_C2", "description": "Correct explanation of inertial reference frame", "marks": 1},
+        {"criterion_id": "Q1_C3", "description": "Valid real-world example correctly tied to the law", "marks": 1}
+      ]
+    },
+    {
+      "question_id": "Q2",
+      "prompt": "A 5 kg block rests on a frictionless horizontal surface. A horizontal force of 20 N is applied. Using Newton's Second Law, find the acceleration of the block. Show your free-body diagram and working.",
+      "total_marks": 6,
+      "criteria": [
+        {"criterion_id": "Q2_C1", "description": "Correct free-body diagram showing applied force, weight, normal force", "marks": 2},
+        {"criterion_id": "Q2_C2", "description": "Correct equation setup: F_net = ma applied along horizontal axis", "marks": 2},
+        {"criterion_id": "Q2_C3", "description": "Correct substitution and final numeric answer (a = 4 m/s^2) with units", "marks": 2}
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "prompt": "Explain Newton's Third Law using the example of a swimmer pushing off a wall. Why do the two equal and opposite forces not cancel each other out?",
+      "total_marks": 4,
+      "criteria": [
+        {"criterion_id": "Q3_C1", "description": "Correct statement: forces are equal in magnitude, opposite in direction", "marks": 1},
+        {"criterion_id": "Q3_C2", "description": "Correct application to swimmer/wall example, correctly identifying action-reaction pair", "marks": 2},
+        {"criterion_id": "Q3_C3", "description": "Correct explanation that forces act on different systems/objects, so they don't cancel", "marks": 1}
+      ]
+    },
+    {
+      "question_id": "Q4",
+      "prompt": "A 10 kg box is pulled along a rough horizontal floor by a rope at a tension of 40 N, with a coefficient of kinetic friction of 0.2. Find the acceleration of the box. (Use g = 9.8 m/s^2)",
+      "total_marks": 8,
+      "criteria": [
+        {"criterion_id": "Q4_C1", "description": "Correct free-body diagram including friction force opposing motion", "marks": 2},
+        {"criterion_id": "Q4_C2", "description": "Correct expression for friction force (f = mu * N, N = mg)", "marks": 2},
+        {"criterion_id": "Q4_C3", "description": "Correct net force equation along direction of motion (F_net = T - f)", "marks": 2},
+        {"criterion_id": "Q4_C4", "description": "Correct final numeric answer for acceleration with correct units", "marks": 2}
+      ]
+    }
+  ]
+}

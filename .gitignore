@@ -1,0 +1,37 @@
+# --- Secrets: NEVER commit these ---
+.env
+**/.env
+*.env
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# --- Node / dashboard ---
+node_modules/
+dist/
+dashboard/.vite/
+
+# --- Generated / regeneratable data (large or binary, not source) ---
+retrieval/chroma_db/
+backend/course_vector_store/
+backend/gradeops.db
+*.db
+*.sqlite
+*.sqlite3
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Editor ---
+.vscode/
+.idea/
+*.swp

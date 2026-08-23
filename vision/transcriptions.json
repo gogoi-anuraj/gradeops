@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "Q1_variantA.jpeg",
+    "question_id": "Q1",
+    "variant": "A",
+    "transcription": "Q1:\nAms: Newton's first law states that an object at rest stays at rest, and an object in motion continues moving at constant velocity, unless acted upon by a net external force. This is also called the law of inertia.\nAn inertial frame of reference in which Newton's 1st law holds true—that is, a frame that is either at rest or moving at constant velocity (not accelerating). In such a frame, an object with no net force acting on it will not appear to accelerate.\nEg: A ball placed on a table in a car moving at constant velocity on a straight road will stay still relative to the car, since the car is approximately an inertial frame. But if the car suddenly brakes, the ball will appear to roll forward—this is because the car's frame is no longer inertial (its accelerating).",
+    "status": "success"
+  },
+  {
+    "filename": "Q1_variantB.jpeg",
+    "question_id": "Q1",
+    "variant": "B",
+    "transcription": "1. Newton's 1st Law says an object will stay at rest or keep moving at the same speed unless a force acts on it. This is called inertia.\nEg: If you slide a book across a table, it eventually stops because of friction acting on it as an external force. Without friction, it would keep sliding forever.",
+    "status": "success"
+  },
+  {
+    "filename": "Q1_variantC.jpeg",
+    "question_id": "Q1",
+    "variant": "C",
+    "transcription": "1. Newton's first law is about force equal to mass times acceleration. If there is more mass, you need more force to move it.\neg: pushing a heavy box is harder than pushing a light box.",
+    "status": "success"
+  },
+  {
+    "filename": "Q2_variantA.jpeg",
+    "question_id": "Q2",
+    "variant": "A",
+    "transcription": "Free body diagram\n\n2.\n   20N\n   5kg\n   mg\n\nSince the surface is frictionless.\n& N = mg [vertical forces balance]\n∴ Using 2nd Newton's law:\nfnet = ma\n\n∴ 20 = 5a\n∴ a = 4 m/s² in direction of applied force.",
+    "status": "success"
+  },
+  {
+    "filename": "Q2_variantB.jpeg",
+    "question_id": "Q2",
+    "variant": "B",
+    "transcription": "2. ẑ_1 z̃ _3 k g ^2 / n c → F = ma   ∴ 20 = 5a   ∴ a = 10m/s²",
+    "status": "success"
+  },
+  {
+    "filename": "Q2_variantC.jpeg",
+    "question_id": "Q2",
+    "variant": "C",
+    "transcription": "2. The block isn't moving because the force pushing it is equal to the force of gravity.\n∴ there's a force of 20N, the acceleration must be related to gravity.\n∴ a = F/m = 20/5 = 4 m/s²\n∴ g = 9.8\n∴ a = 4 x 9.8 = 39.2 m/s²",
+    "status": "success"
+  },
+  {
+    "filename": "Q3_variantA.jpeg",
+    "question_id": "Q3",
+    "variant": "A",
+    "transcription": "3. Newton's third law states that for every action force, there is an equal & opposite reaction force. The two forces are equal in magnitude & opposite in direction.\nWhen a swimmer pushes off a wall, the swimmer exerts a force on the wall (action), and the wall exerts an equal & opposite force back on the swimmer (reaction). This reaction force is what propels the swimmer forward into the water.\nThese 2 forces do not cancel each other out because they act on two different objects - the action force acts on the wall, while the reaction force acts on the swimmer. Forces can only cancel if they act on the same object.",
+    "status": "success"
+  },
+  {
+    "filename": "Q3_variantB.jpeg",
+    "question_id": "Q3",
+    "variant": "B",
+    "transcription": "3. Newton's 3rd law states every action has an equal and opposite reaction.\nWhen the swimmer pushes the wall, the wall pushes back on the swimmer, and that is what makes the swimmer move forward.",
+    "status": "success"
+  },
+  {
+    "filename": "Q3_variantC.jpeg",
+    "question_id": "Q3",
+    "variant": "C",
+    "transcription": "3. Newton's third law is when forces balance out so nothing moves, like the swimmer still against the wall before pushing off.",
+    "status": "success"
+  },
+  {
+    "filename": "Q4_variantA.jpeg",
+    "question_id": "Q4",
+    "variant": "A",
+    "transcription": "4.\nf\nT=40N\nmg\n\nSince there is no vertical accel,\nN=mg = 9.8 x 10 = 9.8 N\n\nFriction force: f = μN = 0.2 x 98 = 19.6 N\n\nNet force eqn (horizontal):\nFnet = T - f = 40 - 19.6 = 20.4 N\n\nUsing Newton's 2nd law:\nFnet = ma\n=> 20.4 = 10 x a\n=> a = 2.04 m/s^2",
+    "status": "success"
+  },
+  {
+    "filename": "Q4_variantB.jpeg",
+    "question_id": "Q4",
+    "variant": "B",
+    "transcription": "$$\\begin{array}{ll}\nf & \\uparrow \\\\\nT & \\rightarrow T=30N \\\\\nmg & \\downarrow \\\\\n\\text{Friction: } f=\\mu \\times m = 0.2 \\times 10 = 2N \\\\\nf_{\\text{net}} = T - f = 40 - 2 = 38N \\\\\na = f_{\\text{net}} / m = 3.8m/s^2\n\\end{array}$$",
+    "status": "success"
+  },
+  {
+    "filename": "Q4_variantC.jpeg",
+    "question_id": "Q4",
+    "variant": "C",
+    "transcription": "4. The box has tension pulling it & friction slowing it down.\ni., a = T/m = 40/10 = 4 m/s².",
+    "status": "success"
+  }
+]
