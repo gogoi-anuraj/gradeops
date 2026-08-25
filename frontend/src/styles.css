@@ -516,3 +516,304 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* --- Auth (login/signup) --- */
+
+.auth-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper);
+}
+
+.auth-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.auth-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.auth-title span {
+  color: var(--accent);
+}
+
+.auth-subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-faint);
+  margin-top: 6px;
+  margin-bottom: 28px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-field label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.auth-field input {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 9px 12px;
+  font-size: 14px;
+  font-family: var(--font-body);
+  background: var(--paper-raised);
+  color: var(--ink);
+}
+
+.auth-field input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.auth-error {
+  background: var(--flag-soft);
+  color: var(--flag);
+  border: 1px solid var(--flag);
+  border-radius: 3px;
+  padding: 9px 12px;
+  font-size: 13px;
+}
+
+.auth-submit {
+  margin-top: 4px;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.auth-toggle {
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-faint);
+  margin-top: 20px;
+}
+
+.auth-toggle button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* --- Course selection --- */
+
+.course-selector-shell {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 56px 28px;
+}
+
+.course-selector-header {
+  margin-bottom: 32px;
+}
+
+.course-selector-header .app-title {
+  justify-content: flex-start;
+}
+
+.course-selector-header .app-subtitle {
+  margin-top: 6px;
+  display: block;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 16px 18px;
+  text-align: left;
+  transition: border-color 120ms ease;
+  width: 100%;
+}
+
+.course-card:hover {
+  border-color: var(--accent);
+}
+
+.course-card-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.course-card-description {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+.course-card-meta {
+  font-size: 11px;
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  margin-top: 8px;
+}
+
+.course-card-new {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 14px;
+  border-style: dashed;
+  text-align: center;
+}
+
+.course-create-form {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* --- Panel sections (rubric, materials, answers -- reused across all) --- */
+
+.panel-section {
+  margin-top: 8px;
+}
+
+.panel-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.panel-section-header h2 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* --- Rubric panel --- */
+
+.rubric-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rubric-edit-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rubric-edit-hint {
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.rubric-textarea {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.5;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 12px 14px;
+  background: var(--paper-raised);
+  color: var(--ink);
+  resize: vertical;
+}
+
+.rubric-textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.rubric-view {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rubric-question-block {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 16px 18px;
+}
+
+.rubric-question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.rubric-question-header .mono {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.rubric-question-prompt {
+  font-size: 14px;
+  color: var(--ink);
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.rubric-criteria-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rubric-criterion-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 50px;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 13px;
+  padding: 6px 0;
+  border-top: 1px solid var(--line);
+}
+
+.rubric-criterion-id {
+  color: var(--ink-faint);
+  font-size: 12px;
+}
+
+.rubric-criterion-desc {
+  color: var(--ink-soft);
+}
+
+.rubric-criterion-marks {
+  text-align: right;
+  font-weight: 600;
+}

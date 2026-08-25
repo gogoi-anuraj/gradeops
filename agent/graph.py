@@ -19,9 +19,11 @@ Usage:
 """
 
 import os
+import sys
 import json
 import re
 import time
+import importlib
 from typing import TypedDict, Optional, List, Dict, Any
 
 from dotenv import load_dotenv
@@ -32,8 +34,17 @@ from langgraph.graph import StateGraph, END
 
 load_dotenv()
 
-# --- Config ---
+# Make backend/database.py and backend/vector_store.py importable from here.
+# This creates a two-way dependency (backend already imports agent/graph.py),
+# which isn't the cleanest layering, but is a pragmatic choice for a project
+# this size rather than introducing a shared third package.
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+BACKEND_DIR = os.path.join(SCRIPT_DIR, "..", "backend")
+sys.path.insert(0, BACKEND_DIR)
+import database
+import vector_store
+
+# --- Config ---
 RETRIEVAL_DIR = os.path.join(SCRIPT_DIR, "..", "retrieval")
 RUBRIC_PATH = os.path.join(SCRIPT_DIR, "..", "rubric", "rubric.json")
 TRANSCRIPTIONS_PATH = os.path.join(SCRIPT_DIR, "..", "vision", "transcriptions.json")
@@ -82,16 +93,32 @@ _transcriptions = None
 
 
 def _load_shared_resources():
-    global _embed_model, _collection, _groq_client, _rubric, _transcriptions
+    """Loads resources needed in BOTH demo and course mode: the embedding
+    model (used for both the fixed demo collection and per-course
+    collections) and the Groq client. Does NOT load the demo-specific
+    rubric/transcriptions/collection -- those are only needed in demo mode,
+    and eagerly loading them here would crash course-only usage (e.g. a
+    fresh install that never ran the Phase 1 demo setup, so the demo
+    ChromaDB collection doesn't exist)."""
+    global _embed_model, _groq_client
     if _embed_model is None:
-        print("Loading embedding model + connecting to ChromaDB...")
+        print("Loading embedding model...")
         _embed_model = SentenceTransformer(EMBEDDING_MODEL)
-        client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
-        _collection = client.get_collection(COLLECTION_NAME)
     if _groq_client is None:
         if not GROQ_API_KEY:
             raise EnvironmentError("GROQ_API_KEY not set. Add it to your .env file.")
         _groq_client = Groq(api_key=GROQ_API_KEY)
+
+
+def _load_demo_resources():
+    """Loads the fixed demo rubric/transcriptions/vector collection. Only
+    called from the demo-mode branch of extract_answer/retrieve_context --
+    never needed, and would fail, in course-only usage."""
+    global _collection, _rubric, _transcriptions
+    if _collection is None:
+        print("Connecting to demo ChromaDB collection...")
+        client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
+        _collection = client.get_collection(COLLECTION_NAME)
     if _rubric is None:
         with open(RUBRIC_PATH, "r", encoding="utf-8") as f:
             _rubric = json.load(f)
@@ -214,16 +241,17 @@ def _call_groq_with_retry(messages, max_retries=3, max_auto_wait_seconds=1800):
 
 
 def get_transcriptions():
-    """Public accessor -- ensures shared resources are loaded, then returns
+    """Public accessor -- ensures demo resources are loaded, then returns
     the transcriptions list. Use this instead of importing _transcriptions
     directly, since 'from graph import _transcriptions' would copy its value
-    (None) at import time, before _load_shared_resources() ever runs."""
-    _load_shared_resources()
+    (None) at import time, before this has ever run."""
+    _load_demo_resources()
     return _transcriptions
+
 
 def get_embed_model():
     """Public accessor for the loaded embedding model, so other parts of the
-    app (e.g. materials upload) can reuse it instead of loading a second
+    app (e.g. plagiarism detection) can reuse it instead of loading a second
     copy of the same model into memory."""
     _load_shared_resources()
     return _embed_model
@@ -231,6 +259,7 @@ def get_embed_model():
 
 # --- State schema ---
 class GradingState(TypedDict):
+    course_id: Optional[int]  # None = demo mode (fixed files); set = course mode (DB-backed)
     filename: str
     question_id: str
     question_data: Optional[Dict[str, Any]]
@@ -249,8 +278,44 @@ class GradingState(TypedDict):
 # --- Nodes ---
 
 def extract_answer(state: GradingState) -> GradingState:
-    """Load the transcribed answer and its rubric question for this filename."""
-    _load_shared_resources()
+    """Load the transcribed answer and its rubric question for this filename.
+
+    Course mode (state['course_id'] is set): reads from the per-course
+    database -- the rubric a professor uploaded, and the transcribed answer
+    from a student upload.
+    Demo mode (state['course_id'] is None): reads from the original fixed
+    demo files (rubric.json, transcriptions.json) -- preserves the exact
+    validated behavior from Phase 1/2 testing, so existing scripts
+    (score_single_example.py, batch_run_agent.py, etc.) keep working
+    unchanged."""
+    course_id = state.get("course_id")
+
+    if course_id is not None:
+        submission = database.get_submission(course_id, state["filename"])
+        if submission is None or not submission.get("student_answer"):
+            return {**state, "error": f"No usable transcription found for '{state['filename']}' in course {course_id}"}
+
+        rubric_record = database.get_rubric(course_id)
+        if rubric_record is None:
+            return {**state, "error": f"No rubric uploaded for course {course_id}"}
+
+        question_data = next(
+            (q for q in rubric_record["rubric_json"]["questions"]
+             if q["question_id"] == submission["question_id"]),
+            None
+        )
+        if question_data is None:
+            return {**state, "error": f"No rubric question '{submission['question_id']}' found in course {course_id}'s rubric"}
+
+        return {
+            **state,
+            "question_id": submission["question_id"],
+            "question_data": question_data,
+            "student_answer": submission["student_answer"],
+        }
+
+    # --- Demo mode (unchanged from Phase 2) ---
+    _load_demo_resources()
     entry = next((t for t in _transcriptions if t["filename"] == state["filename"]), None)
     if entry is None or entry.get("transcription") is None:
         return {**state, "error": f"No usable transcription found for {state['filename']}"}
@@ -270,23 +335,40 @@ def extract_answer(state: GradingState) -> GradingState:
 
 
 def retrieve_context(state: GradingState) -> GradingState:
-    """Retrieve grounding chunks using question + student answer combined."""
+    """Retrieve grounding chunks using question + student answer combined.
+
+    Course mode: queries this course's own uploaded-material vector
+    collection. Demo mode: queries the fixed Phase 1 demo collection
+    (unchanged from before)."""
     if state.get("error"):
         return state
 
+    course_id = state.get("course_id")
     query = f"{state['question_data']['prompt']}\n\nStudent's answer: {state['student_answer']}"
-    query_embedding = _embed_model.encode([query], normalize_embeddings=True).tolist()
-    results = _collection.query(query_embeddings=query_embedding, n_results=TOP_K)
 
-    chunks = []
-    for chunk_id, doc, meta, dist in zip(
-        results["ids"][0], results["documents"][0],
-        results["metadatas"][0], results["distances"][0]
-    ):
-        chunks.append({
-            "chunk_id": chunk_id, "text": doc,
-            "section": meta["section"], "similarity": 1 - dist,
-        })
+    _load_shared_resources()  # ensures _embed_model is loaded either way
+
+    if course_id is not None:
+        chunks = vector_store.query_course_collection(course_id, query, _embed_model, k=TOP_K)
+        if not chunks:
+            return {
+                **state,
+                "error": f"No reference material uploaded for course {course_id} yet -- "
+                         f"upload materials before grading."
+            }
+    else:
+        _load_demo_resources()
+        query_embedding = _embed_model.encode([query], normalize_embeddings=True).tolist()
+        results = _collection.query(query_embeddings=query_embedding, n_results=TOP_K)
+        chunks = []
+        for chunk_id, doc, meta, dist in zip(
+            results["ids"][0], results["documents"][0],
+            results["metadatas"][0], results["distances"][0]
+        ):
+            chunks.append({
+                "chunk_id": chunk_id, "text": doc,
+                "section": meta["section"], "similarity": 1 - dist,
+            })
 
     top_similarity = chunks[0]["similarity"] if chunks else 0.0
     return {**state, "retrieved_chunks": chunks, "top_similarity": top_similarity}
@@ -418,8 +500,9 @@ def build_graph():
     return graph.compile()
 
 
-def run_on_example(graph, filename: str) -> GradingState:
+def run_on_example(graph, filename: str, course_id: int = None) -> GradingState:
     initial_state: GradingState = {
+        "course_id": course_id,
         "filename": filename, "question_id": "", "question_data": None,
         "student_answer": None, "retrieved_chunks": None, "top_similarity": None,
         "initial_grading": None, "final_grading": None,

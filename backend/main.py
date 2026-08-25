@@ -19,7 +19,7 @@ by FastAPI) -- use this to test every endpoint before building the dashboard.
 import os
 import sys
 
-from fastapi import FastAPI, HTTPException, Depends, UploadFile, File
+from fastapi import FastAPI, HTTPException, Depends, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
@@ -28,13 +28,14 @@ import database
 import auth
 import chunking
 import vector_store
+import vlm_transcribe
 
 # Make agent/graph.py importable from here
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 AGENT_DIR = os.path.join(SCRIPT_DIR, "..", "agent")
 sys.path.insert(0, AGENT_DIR)
 
-from graph import build_graph, run_on_example, get_transcriptions, get_embed_model  # noqa: E402
+from graph import build_graph, run_on_example, get_embed_model  # noqa: E402
 
 app = FastAPI(title="GRADEOPS+ API")
 
@@ -237,6 +238,59 @@ def list_materials(course_id: int, current_user: dict = Depends(auth.get_current
     return database.list_materials(course_id)
 
 
+@app.post("/courses/{course_id}/answers")
+async def upload_answer(
+    course_id: int,
+    question_id: str = Form(...),
+    student_identifier: str = Form(None),
+    file: UploadFile = File(...),
+    current_user: dict = Depends(auth.get_current_user),
+):
+    """Upload one student's handwritten answer image. Transcribes it via a
+    vision-capable LLM and saves it as 'ungraded' -- call
+    POST /courses/{course_id}/submissions/{filename}/grade next to score it.
+
+    Like materials upload, this takes ONE file per request (not a list) --
+    Swagger UI/browsers don't reliably render multi-file array inputs as an
+    actual file picker."""
+    _require_course_access(course_id, current_user)
+
+    if not file.filename.lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
+        raise HTTPException(
+            status_code=400,
+            detail=f"'{file.filename}': only image files (.jpg, .jpeg, .png, .webp) are supported."
+        )
+
+    rubric = database.get_rubric(course_id)
+    if rubric is None:
+        raise HTTPException(
+            status_code=400,
+            detail="Upload a rubric for this course before uploading student answers."
+        )
+    valid_question_ids = {q["question_id"] for q in rubric["rubric_json"]["questions"]}
+    if question_id not in valid_question_ids:
+        raise HTTPException(
+            status_code=400,
+            detail=f"question_id '{question_id}' not found in this course's rubric. "
+                   f"Valid options: {sorted(valid_question_ids)}"
+        )
+
+    image_bytes = await file.read()
+    try:
+        transcription = vlm_transcribe.transcribe_image_bytes(image_bytes, file.filename)
+    except Exception as e:
+        raise HTTPException(status_code=502, detail=f"Transcription failed: {e}")
+
+    database.save_transcribed_answer(course_id, file.filename, question_id, student_identifier, transcription)
+    return database.get_submission(course_id, file.filename)
+
+
+@app.get("/courses/{course_id}/answers")
+def list_answers(course_id: int, current_user: dict = Depends(auth.get_current_user)):
+    _require_course_access(course_id, current_user)
+    return database.list_submissions(course_id)
+
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
@@ -244,33 +298,11 @@ def health():
 
 @app.get("/courses/{course_id}/submissions")
 def list_all_submissions(course_id: int, current_user: dict = Depends(auth.get_current_user)):
-    """List every transcribed answer, merging in grading status from the DB
-    for any that have been graded, and showing 'ungraded' for any that haven't.
-
-    NOTE: still reads from the fixed demo transcriptions.json for now -- per-
-    course student answer uploads are a later stage of this build. Right now,
-    creating a course lets you persist grading results under it, but the
-    content being graded is still the shared demo dataset. This will change
-    once per-course uploads are wired in."""
+    """List every submission (uploaded answers) for this course, from the
+    per-course database -- ungraded ones show ta_status='ungraded'. Already
+    sorted flagged-for-review-first by database.list_submissions()."""
     _require_course_access(course_id, current_user)
-
-    transcriptions = get_transcriptions()
-    graded_by_filename = {s["filename"]: s for s in database.list_submissions(course_id)}
-
-    result = []
-    for t in transcriptions:
-        if t["filename"] in graded_by_filename:
-            result.append(graded_by_filename[t["filename"]])
-        else:
-            result.append({
-                "filename": t["filename"],
-                "question_id": t["question_id"],
-                "ta_status": "ungraded",
-                "flagged_for_review": False,
-            })
-
-    result.sort(key=lambda r: (not r.get("flagged_for_review", False), r["filename"]))
-    return result
+    return database.list_submissions(course_id)
 
 
 @app.get("/courses/{course_id}/submissions/{filename}")
@@ -289,12 +321,16 @@ def grade_submission(course_id: int, filename: str, current_user: dict = Depends
     under this course."""
     _require_course_access(course_id, current_user)
 
-    transcriptions = get_transcriptions()
-    if not any(t["filename"] == filename for t in transcriptions):
-        raise HTTPException(status_code=404, detail=f"No transcription found for '{filename}'")
+    existing = database.get_submission(course_id, filename)
+    if existing is None or not existing.get("student_answer"):
+        raise HTTPException(
+            status_code=404,
+            detail=f"No transcribed answer found for '{filename}' in this course. "
+                   f"Upload it first via POST /courses/{course_id}/answers."
+        )
 
     graph = get_graph()
-    state = run_on_example(graph, filename)
+    state = run_on_example(graph, filename, course_id=course_id)
 
     if state.get("error"):
         raise HTTPException(status_code=422, detail=state["error"])

@@ -54,6 +54,7 @@ CREATE TABLE IF NOT EXISTS submissions (
     course_id INTEGER NOT NULL REFERENCES courses(id),
     filename TEXT NOT NULL,
     question_id TEXT,
+    student_identifier TEXT,
     student_answer TEXT,
     initial_grading TEXT,
     final_grading TEXT,
@@ -263,6 +264,25 @@ def set_ta_decision(course_id: int, filename: str, status: str, override_score: 
             WHERE course_id = ? AND filename = ?
             """,
             (status, override_score, notes, datetime.now(timezone.utc).isoformat(), course_id, filename),
+        )
+
+
+def save_transcribed_answer(course_id: int, filename: str, question_id: str, student_identifier: str, transcription: str):
+    """Save a newly-uploaded, freshly-transcribed answer as 'ungraded' --
+    this is the pre-grading state. save_grading_result() later updates this
+    same row once the answer has actually been scored."""
+    with get_connection() as conn:
+        conn.execute(
+            """
+            INSERT INTO submissions (course_id, filename, question_id, student_identifier, student_answer, ta_status)
+            VALUES (?, ?, ?, ?, ?, 'ungraded')
+            ON CONFLICT(course_id, filename) DO UPDATE SET
+                question_id=excluded.question_id,
+                student_identifier=excluded.student_identifier,
+                student_answer=excluded.student_answer,
+                ta_status='ungraded'
+            """,
+            (course_id, filename, question_id, student_identifier, transcription),
         )
 
 

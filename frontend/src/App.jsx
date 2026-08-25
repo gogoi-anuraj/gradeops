@@ -1,69 +1,42 @@
-import { useEffect, useState, useCallback } from 'react'
-import { listSubmissions } from './api.js'
-import SubmissionList from './components/Submissionlist.jsx'
-import SubmissionDetail from './components/SubmissionDetail.jsx'
+import { useState } from 'react'
+import { useAuth } from './AuthContext.jsx'
+import LoginPage from './components/LoginPage.jsx'
+import CourseSelector from './components/CourseSelector.jsx'
+import RubricPanel from './components/RubricPanel.jsx'
 
 export default function App() {
-  const [submissions, setSubmissions] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
-  const [selectedFilename, setSelectedFilename] = useState(null)
+  const { user, loading, logout } = useAuth()
+  const [selectedCourse, setSelectedCourse] = useState(null)
 
-  const refresh = useCallback(async () => {
-    try {
-      const data = await listSubmissions()
-      setSubmissions(data)
-      setError(null)
-    } catch (e) {
-      setError(
-        `Couldn't reach the backend at http://127.0.0.1:8000 (${e.message}). ` +
-        `Make sure it's running: cd backend && uvicorn main:app --reload`
-      )
-    } finally {
-      setLoading(false)
-    }
-  }, [])
+  if (loading) {
+    return <div className="loading-state">Loading…</div>
+  }
 
-  useEffect(() => {
-    const refreshTimer = setTimeout(() => {
-      refresh()
-    }, 0)
+  if (!user) {
+    return <LoginPage />
+  }
 
-    return () => clearTimeout(refreshTimer)
-  }, [refresh])
+  if (!selectedCourse) {
+    return <CourseSelector onSelect={setSelectedCourse} />
+  }
 
   return (
     <div className="app-shell">
       <header className="app-header">
         <div>
           <div className="app-title">GRADEOPS<span>+</span> Review</div>
+          <div className="app-subtitle">{selectedCourse.name}</div>
         </div>
-        <div className="app-subtitle">Newton's Laws — Quiz 1</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          <button className="btn" onClick={() => setSelectedCourse(null)}>Switch course</button>
+          <span className="app-subtitle">{user.name}</span>
+          <button className="btn" onClick={logout}>Log out</button>
+        </div>
       </header>
 
-      {error && <div className="error-banner">{error}</div>}
+      <RubricPanel courseId={selectedCourse.id} />
 
-      {loading ? (
-        <div className="loading-state">Loading submissions…</div>
-      ) : selectedFilename ? (
-        <SubmissionDetail
-          filename={selectedFilename}
-          onBack={() => setSelectedFilename(null)}
-          onReviewed={async () => {
-            await refresh()
-            setSelectedFilename(null)
-          }}
-        />
-      ) : (
-        <SubmissionList
-          submissions={submissions}
-          onSelect={setSelectedFilename}
-          onRefresh={refresh}
-        />
-      )}
+      {/* Materials/answers upload + submissions list goes here next */}
     </div>
   )
 }
-
-
-

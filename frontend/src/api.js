@@ -8,28 +8,64 @@ async function handleResponse(res) {
   return res.json()
 }
 
-export async function listSubmissions() {
-  const res = await fetch(`${API_BASE}/submissions`)
-  return handleResponse(res)
+function authHeaders(token) {
+  return { Authorization: `Bearer ${token}` }
 }
 
-export async function getSubmission(filename) {
-  const res = await fetch(`${API_BASE}/submissions/${encodeURIComponent(filename)}`)
-  return handleResponse(res)
-}
-
-export async function gradeSubmission(filename) {
-  const res = await fetch(`${API_BASE}/submissions/${encodeURIComponent(filename)}/grade`, {
+export async function signup(email, password, name) {
+  const res = await fetch(`${API_BASE}/auth/signup`, {
     method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, password, name }),
   })
   return handleResponse(res)
 }
 
-export async function submitReview(filename, decision) {
-  const res = await fetch(`${API_BASE}/submissions/${encodeURIComponent(filename)}/review`, {
+export async function login(email, password) {
+  const res = await fetch(`${API_BASE}/auth/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(decision),
+    body: JSON.stringify({ email, password }),
+  })
+  return handleResponse(res)
+}
+
+export async function getMe(token) {
+  const res = await fetch(`${API_BASE}/auth/me`, {
+    headers: authHeaders(token),
+  })
+  return handleResponse(res)
+}
+
+export async function listCourses(token) {
+  const res = await fetch(`${API_BASE}/courses`, {
+    headers: authHeaders(token),
+  })
+  return handleResponse(res)
+}
+
+export async function createCourse(token, name, description) {
+  const res = await fetch(`${API_BASE}/courses`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...authHeaders(token) },
+    body: JSON.stringify({ name, description: description || null }),
+  })
+  return handleResponse(res)
+}
+
+export async function getRubric(token, courseId) {
+  const res = await fetch(`${API_BASE}/courses/${courseId}/rubric`, {
+    headers: authHeaders(token),
+  })
+  if (res.status === 404) return null // no rubric uploaded yet -- not an error
+  return handleResponse(res)
+}
+
+export async function uploadRubric(token, courseId, rubric) {
+  const res = await fetch(`${API_BASE}/courses/${courseId}/rubric`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...authHeaders(token) },
+    body: JSON.stringify(rubric),
   })
   return handleResponse(res)
 }
