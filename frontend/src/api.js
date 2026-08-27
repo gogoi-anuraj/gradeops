@@ -69,3 +69,65 @@ export async function uploadRubric(token, courseId, rubric) {
   })
   return handleResponse(res)
 }
+
+export async function listMaterials(token, courseId) {
+  const res = await fetch(`${API_BASE}/courses/${courseId}/materials`, {
+    headers: authHeaders(token),
+  })
+  return handleResponse(res)
+}
+
+export async function uploadMaterial(token, courseId, file) {
+  const formData = new FormData()
+  formData.append('file', file)
+  const res = await fetch(`${API_BASE}/courses/${courseId}/materials`, {
+    method: 'POST',
+    headers: authHeaders(token), // no Content-Type -- browser sets multipart boundary automatically
+    body: formData,
+  })
+  return handleResponse(res)
+}
+
+export async function listAnswers(token, courseId) {
+  const res = await fetch(`${API_BASE}/courses/${courseId}/answers`, {
+    headers: authHeaders(token),
+  })
+  return handleResponse(res)
+}
+
+export async function uploadAnswer(token, courseId, questionId, studentIdentifier, file) {
+  const formData = new FormData()
+  formData.append('question_id', questionId)
+  formData.append('student_identifier', studentIdentifier)
+  formData.append('file', file)
+  const res = await fetch(`${API_BASE}/courses/${courseId}/answers`, {
+    method: 'POST',
+    headers: authHeaders(token),
+    body: formData,
+  })
+  return handleResponse(res)
+}
+
+export async function getSubmissionDetail(token, courseId, filename) {
+  const res = await fetch(`${API_BASE}/courses/${courseId}/submissions/${encodeURIComponent(filename)}`, {
+    headers: authHeaders(token),
+  })
+  return handleResponse(res)
+}
+
+export async function gradeSubmission(token, courseId, filename) {
+  const res = await fetch(`${API_BASE}/courses/${courseId}/submissions/${encodeURIComponent(filename)}/grade`, {
+    method: 'POST',
+    headers: authHeaders(token),
+  })
+  return handleResponse(res)
+}
+
+export async function submitReview(token, courseId, filename, decision) {
+  const res = await fetch(`${API_BASE}/courses/${courseId}/submissions/${encodeURIComponent(filename)}/review`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...authHeaders(token) },
+    body: JSON.stringify(decision),
+  })
+  return handleResponse(res)
+}

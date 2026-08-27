@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getSubmission, submitReview } from '../api.js'
+import { useAuth } from '../AuthContext.jsx'
+import { getSubmissionDetail, submitReview } from '../api.js'
 
 function scoreQuality(awarded, max) {
   if (max === 0) return 'zero'
@@ -13,7 +14,8 @@ function ScoreChip({ awarded, max }) {
   return <span className={`score-chip score-${quality}`}>{awarded}/{max}</span>
 }
 
-export default function SubmissionDetail({ filename, onBack, onReviewed }) {
+export default function SubmissionDetail({ courseId, filename, onBack, onReviewed }) {
+  const { token } = useAuth()
   const [submission, setSubmission] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -24,18 +26,18 @@ export default function SubmissionDetail({ filename, onBack, onReviewed }) {
 
   useEffect(() => {
     let cancelled = false
-    getSubmission(filename)
+    getSubmissionDetail(token, courseId, filename)
       .then((data) => { if (!cancelled) setSubmission(data) })
       .catch((e) => { if (!cancelled) setError(e.message) })
       .finally(() => { if (!cancelled) setLoading(false) })
     return () => { cancelled = true }
-  }, [filename])
+  }, [courseId, filename])
 
   async function handleAccept() {
     setSubmitting(true)
     setError(null)
     try {
-      await submitReview(filename, { status: 'accepted' })
+      await submitReview(token, courseId, filename, { status: 'accepted' })
       onReviewed()
     } catch (e) {
       setError(e.message)
@@ -53,7 +55,7 @@ export default function SubmissionDetail({ filename, onBack, onReviewed }) {
     setSubmitting(true)
     setError(null)
     try {
-      await submitReview(filename, {
+      await submitReview(token, courseId, filename, {
         status: 'overridden',
         override_score: scoreValue,
         notes: overrideNotes || null,
@@ -66,7 +68,7 @@ export default function SubmissionDetail({ filename, onBack, onReviewed }) {
     }
   }
 
-  if (loading || submission?.filename !== filename) return <div className="loading-state">Loading submission…</div>
+  if (loading) return <div className="loading-state">Loading submission…</div>
   if (error && !submission) return <div className="error-banner">{error}</div>
   if (!submission) return null
 
@@ -82,6 +84,7 @@ export default function SubmissionDetail({ filename, onBack, onReviewed }) {
           <div className="detail-filename">{submission.filename}</div>
           <div className="detail-meta">
             Question {submission.question_id}
+            {submission.student_identifier && <> · {submission.student_identifier}</>}
             {submission.top_retrieval_similarity != null && (
               <> · retrieval similarity <span className="mono">{submission.top_retrieval_similarity.toFixed(3)}</span></>
             )}
@@ -99,13 +102,11 @@ export default function SubmissionDetail({ filename, onBack, onReviewed }) {
       {error && <div className="error-banner">{error}</div>}
 
       <div className="detail-columns">
-        {/* Column 1: Student's answer */}
         <div className="detail-panel">
           <div className="panel-title">Student's transcribed answer</div>
           <div className="panel-body answer-text">{submission.student_answer}</div>
         </div>
 
-        {/* Column 2: AI grading breakdown */}
         <div className="detail-panel">
           <div className="panel-title">AI grading</div>
           <div className="panel-body">
@@ -136,7 +137,6 @@ export default function SubmissionDetail({ filename, onBack, onReviewed }) {
           </div>
         </div>
 
-        {/* Column 3: Retrieved evidence */}
         <div className="detail-panel">
           <div className="panel-title">Retrieved evidence</div>
           <div className="panel-body">
@@ -158,7 +158,6 @@ export default function SubmissionDetail({ filename, onBack, onReviewed }) {
         </div>
       </div>
 
-      {/* Review actions */}
       <div className="review-bar">
         {alreadyReviewed ? (
           <div className="review-done">

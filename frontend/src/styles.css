@@ -817,3 +817,122 @@ a:focus-visible {
   text-align: right;
   font-weight: 600;
 }
+
+/* --- Materials panel --- */
+
+.upload-queue {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.upload-queue-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.upload-queue-row:last-child {
+  border-bottom: none;
+}
+
+.upload-status-label {
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.upload-status-uploading .upload-status-label {
+  color: var(--accent);
+}
+
+.upload-status-success .upload-status-label {
+  color: var(--score-full);
+}
+
+.upload-status-error .upload-status-label {
+  color: var(--score-zero);
+}
+
+.material-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 120px;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.material-row:last-child {
+  border-bottom: none;
+}
+
+.material-chunk-count {
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.material-date {
+  color: var(--ink-faint);
+  font-size: 12px;
+  text-align: right;
+}
+
+/* --- Answers panel --- */
+
+.answer-upload-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.answer-question-select {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  background: var(--paper-raised);
+  color: var(--ink);
+}
+
+.answer-upload-hint {
+  font-size: 12px;
+  color: var(--ink-faint);
+  margin: 0 0 16px;
+}
+
+.answer-row {
+  display: grid;
+  grid-template-columns: 1fr 70px 130px 130px 80px;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.answer-row:last-child {
+  border-bottom: none;
+}
+
+.answer-question-id {
+  color: var(--ink-faint);
+}
+
+.answer-student {
+  color: var(--ink-soft);
+}
+
+.answer-score {
+  font-family: var(--font-mono);
+  text-align: right;
+  font-weight: 600;
+}

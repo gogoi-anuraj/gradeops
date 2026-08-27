@@ -3,10 +3,14 @@ import { useAuth } from './AuthContext.jsx'
 import LoginPage from './components/LoginPage.jsx'
 import CourseSelector from './components/CourseSelector.jsx'
 import RubricPanel from './components/RubricPanel.jsx'
+import MaterialsPanel from './components/MaterialsPanel.jsx'
+import AnswersPanel from './components/AnswersPanel.jsx'
+import SubmissionDetail from './components/SubmissionDetail.jsx'
 
 export default function App() {
   const { user, loading, logout } = useAuth()
   const [selectedCourse, setSelectedCourse] = useState(null)
+  const [selectedSubmissionFilename, setSelectedSubmissionFilename] = useState(null)
 
   if (loading) {
     return <div className="loading-state">Loading…</div>
@@ -34,9 +38,21 @@ export default function App() {
         </div>
       </header>
 
-      <RubricPanel courseId={selectedCourse.id} />
-
-      {/* Materials/answers upload + submissions list goes here next */}
+      {selectedSubmissionFilename ? (
+        <SubmissionDetail
+          key={selectedSubmissionFilename}
+          courseId={selectedCourse.id}
+          filename={selectedSubmissionFilename}
+          onBack={() => setSelectedSubmissionFilename(null)}
+          onReviewed={() => setSelectedSubmissionFilename(null)}
+        />
+      ) : (
+        <>
+          <RubricPanel courseId={selectedCourse.id} />
+          <MaterialsPanel courseId={selectedCourse.id} />
+          <AnswersPanel courseId={selectedCourse.id} onSelectSubmission={setSelectedSubmissionFilename} />
+        </>
+      )}
     </div>
   )
 }
