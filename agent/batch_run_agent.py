@@ -1,9 +1,3 @@
-"""
-Run the full LangGraph agent (graph.py) on all transcribed answers, not just
-one. This confirms the complete agent (including self-check and confidence flagging) works end-to-end across
-all question types and answer qualities.
-
-"""
 
 import os
 import json

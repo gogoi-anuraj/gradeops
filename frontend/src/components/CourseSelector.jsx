@@ -50,7 +50,7 @@ export default function CourseSelector({ onSelect }) {
   return (
     <div className="course-selector-shell">
       <div className="course-selector-header">
-        <div className="app-title">GRADEOPS<span>+</span></div>
+        <div className="app-title">GRADEOPS</div>
         <div className="app-subtitle">Select a course to work in</div>
       </div>
 

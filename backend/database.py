@@ -1,25 +1,25 @@
-"""
-SQLite persistence for GRADEOPS+, now multi-tenant: professors/TAs sign up,
-create courses, and each course owns its own rubric, reference material, and
-graded submissions.
-
-NOTE: still SQLite, not PostgreSQL (see earlier note in this project) --
-still a deliberate scope choice for a project this size, though multi-tenancy
-is exactly the kind of thing that would push a real deployment toward
-PostgreSQL for concurrent-write safety.
-"""
-
-import sqlite3
-import json
 import os
+import json
 from datetime import datetime, timezone
 from contextlib import contextmanager
 
-DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gradeops.db")
+import psycopg2
+import psycopg2.extras
+from dotenv import load_dotenv
+
+load_dotenv()
+
+PG_CONFIG = {
+    "host": os.environ.get("PGHOST", "localhost"),
+    "port": os.environ.get("PGPORT", "5432"),
+    "dbname": os.environ.get("PGDATABASE", "gradeops"),
+    "user": os.environ.get("PGUSER", "postgres"),
+    "password": os.environ.get("PGPASSWORD"),
+}
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id SERIAL PRIMARY KEY,
     email TEXT UNIQUE NOT NULL,
     password_hash TEXT NOT NULL,
     name TEXT NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 CREATE TABLE IF NOT EXISTS courses (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id SERIAL PRIMARY KEY,
     owner_id INTEGER NOT NULL REFERENCES users(id),
     name TEXT NOT NULL,
     description TEXT,
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS materials (
 );
 
 CREATE TABLE IF NOT EXISTS submissions (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id SERIAL PRIMARY KEY,
     course_id INTEGER NOT NULL REFERENCES courses(id),
     filename TEXT NOT NULL,
     question_id TEXT,
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS submissions (
     final_grading TEXT,
     top_retrieval_similarity REAL,
     retrieved_chunks TEXT,
-    flagged_for_review INTEGER,
+    flagged_for_review BOOLEAN,
     flag_reason TEXT,
     ta_status TEXT DEFAULT 'ungraded',
     ta_override_score REAL,
@@ -74,72 +74,86 @@ CREATE TABLE IF NOT EXISTS submissions (
 
 @contextmanager
 def get_connection():
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    conn.execute("PRAGMA foreign_keys = ON")
+    conn = psycopg2.connect(cursor_factory=psycopg2.extras.RealDictCursor, **PG_CONFIG)
     try:
         yield conn
         conn.commit()
+    except Exception:
+        conn.rollback()
+        raise
     finally:
         conn.close()
 
 
 def init_db():
     with get_connection() as conn:
-        conn.executescript(SCHEMA)
+        with conn.cursor() as cur:
+            cur.execute(SCHEMA)
 
 
 # --- Users ---
 
 def create_user(email: str, password_hash: str, name: str, role: str = "professor"):
     with get_connection() as conn:
-        cursor = conn.execute(
-            "INSERT INTO users (email, password_hash, name, role, created_at) VALUES (?, ?, ?, ?, ?)",
-            (email, password_hash, name, role, datetime.now(timezone.utc).isoformat()),
-        )
-        # Fetch within the SAME connection/transaction -- opening a second
-        # connection here (e.g. via get_user_by_id) would try to read before
-        # this INSERT has committed, and see nothing yet.
-        row = conn.execute("SELECT * FROM users WHERE id = ?", (cursor.lastrowid,)).fetchone()
-        return dict(row)
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO users (email, password_hash, name, role, created_at)
+                VALUES (%s, %s, %s, %s, %s)
+                RETURNING *
+                """,
+                (email, password_hash, name, role, datetime.now(timezone.utc).isoformat()),
+            )
+            return dict(cur.fetchone())
 
 
 def get_user_by_email(email: str):
     with get_connection() as conn:
-        row = conn.execute("SELECT * FROM users WHERE email = ?", (email,)).fetchone()
-        return dict(row) if row else None
+        with conn.cursor() as cur:
+            cur.execute("SELECT * FROM users WHERE email = %s", (email,))
+            row = cur.fetchone()
+            return dict(row) if row else None
 
 
 def get_user_by_id(user_id: int):
     with get_connection() as conn:
-        row = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
-        return dict(row) if row else None
+        with conn.cursor() as cur:
+            cur.execute("SELECT * FROM users WHERE id = %s", (user_id,))
+            row = cur.fetchone()
+            return dict(row) if row else None
 
 
 # --- Courses ---
 
 def create_course(owner_id: int, name: str, description: str = None):
     with get_connection() as conn:
-        cursor = conn.execute(
-            "INSERT INTO courses (owner_id, name, description, created_at) VALUES (?, ?, ?, ?)",
-            (owner_id, name, description, datetime.now(timezone.utc).isoformat()),
-        )
-        row = conn.execute("SELECT * FROM courses WHERE id = ?", (cursor.lastrowid,)).fetchone()
-        return dict(row)
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO courses (owner_id, name, description, created_at)
+                VALUES (%s, %s, %s, %s)
+                RETURNING *
+                """,
+                (owner_id, name, description, datetime.now(timezone.utc).isoformat()),
+            )
+            return dict(cur.fetchone())
 
 
 def get_course(course_id: int):
     with get_connection() as conn:
-        row = conn.execute("SELECT * FROM courses WHERE id = ?", (course_id,)).fetchone()
-        return dict(row) if row else None
+        with conn.cursor() as cur:
+            cur.execute("SELECT * FROM courses WHERE id = %s", (course_id,))
+            row = cur.fetchone()
+            return dict(row) if row else None
 
 
 def list_courses_for_user(owner_id: int):
     with get_connection() as conn:
-        rows = conn.execute(
-            "SELECT * FROM courses WHERE owner_id = ? ORDER BY created_at DESC", (owner_id,)
-        ).fetchall()
-        return [dict(r) for r in rows]
+        with conn.cursor() as cur:
+            cur.execute(
+                "SELECT * FROM courses WHERE owner_id = %s ORDER BY created_at DESC", (owner_id,)
+            )
+            return [dict(r) for r in cur.fetchall()]
 
 
 def user_owns_course(user_id: int, course_id: int) -> bool:
@@ -151,139 +165,150 @@ def user_owns_course(user_id: int, course_id: int) -> bool:
 
 def save_rubric(course_id: int, rubric_dict: dict):
     with get_connection() as conn:
-        conn.execute(
-            """
-            INSERT INTO rubrics (course_id, rubric_json, uploaded_at) VALUES (?, ?, ?)
-            ON CONFLICT(course_id) DO UPDATE SET
-                rubric_json=excluded.rubric_json,
-                uploaded_at=excluded.uploaded_at
-            """,
-            (course_id, json.dumps(rubric_dict), datetime.now(timezone.utc).isoformat()),
-        )
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO rubrics (course_id, rubric_json, uploaded_at)
+                VALUES (%s, %s, %s)
+                ON CONFLICT (course_id) DO UPDATE SET
+                    rubric_json = EXCLUDED.rubric_json,
+                    uploaded_at = EXCLUDED.uploaded_at
+                """,
+                (course_id, json.dumps(rubric_dict), datetime.now(timezone.utc).isoformat()),
+            )
 
 
 def get_rubric(course_id: int):
     with get_connection() as conn:
-        row = conn.execute(
-            "SELECT * FROM rubrics WHERE course_id = ?", (course_id,)
-        ).fetchone()
-        if row is None:
-            return None
-        d = dict(row)
-        d["rubric_json"] = json.loads(d["rubric_json"])
-        return d
+        with conn.cursor() as cur:
+            cur.execute("SELECT * FROM rubrics WHERE course_id = %s", (course_id,))
+            row = cur.fetchone()
+            if row is None:
+                return None
+            d = dict(row)
+            d["rubric_json"] = json.loads(d["rubric_json"])
+            return d
 
 
 # --- Materials ---
 
 def save_material_record(course_id: int, filename: str, chunk_count: int):
     with get_connection() as conn:
-        conn.execute(
-            """
-            INSERT INTO materials (course_id, filename, chunk_count, uploaded_at) VALUES (?, ?, ?, ?)
-            ON CONFLICT(course_id, filename) DO UPDATE SET
-                chunk_count=excluded.chunk_count,
-                uploaded_at=excluded.uploaded_at
-            """,
-            (course_id, filename, chunk_count, datetime.now(timezone.utc).isoformat()),
-        )
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO materials (course_id, filename, chunk_count, uploaded_at)
+                VALUES (%s, %s, %s, %s)
+                ON CONFLICT (course_id, filename) DO UPDATE SET
+                    chunk_count = EXCLUDED.chunk_count,
+                    uploaded_at = EXCLUDED.uploaded_at
+                """,
+                (course_id, filename, chunk_count, datetime.now(timezone.utc).isoformat()),
+            )
 
 
 def list_materials(course_id: int):
     with get_connection() as conn:
-        rows = conn.execute(
-            "SELECT * FROM materials WHERE course_id = ? ORDER BY filename", (course_id,)
-        ).fetchall()
-        return [dict(r) for r in rows]
+        with conn.cursor() as cur:
+            cur.execute(
+                "SELECT * FROM materials WHERE course_id = %s ORDER BY filename", (course_id,)
+            )
+            return [dict(r) for r in cur.fetchall()]
 
 
-# --- Submissions (now course-scoped) ---
-
-def save_grading_result(course_id: int, state: dict):
-    """Upsert a submission's grading result, scoped to a course."""
-    with get_connection() as conn:
-        conn.execute(
-            """
-            INSERT INTO submissions (
-                course_id, filename, question_id, student_answer, initial_grading, final_grading,
-                top_retrieval_similarity, retrieved_chunks, flagged_for_review,
-                flag_reason, ta_status, graded_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'graded', ?)
-            ON CONFLICT(course_id, filename) DO UPDATE SET
-                question_id=excluded.question_id,
-                student_answer=excluded.student_answer,
-                initial_grading=excluded.initial_grading,
-                final_grading=excluded.final_grading,
-                top_retrieval_similarity=excluded.top_retrieval_similarity,
-                retrieved_chunks=excluded.retrieved_chunks,
-                flagged_for_review=excluded.flagged_for_review,
-                flag_reason=excluded.flag_reason,
-                ta_status='graded',
-                graded_at=excluded.graded_at
-            """,
-            (
-                course_id,
-                state["filename"],
-                state["question_id"],
-                state["student_answer"],
-                json.dumps(state["initial_grading"]),
-                json.dumps(state["final_grading"]),
-                state["top_similarity"],
-                json.dumps(state["retrieved_chunks"] or []),
-                1 if state["flagged_for_review"] else 0,
-                state["flag_reason"],
-                datetime.now(timezone.utc).isoformat(),
-            ),
-        )
-
-
-def get_submission(course_id: int, filename: str):
-    with get_connection() as conn:
-        row = conn.execute(
-            "SELECT * FROM submissions WHERE course_id = ? AND filename = ?", (course_id, filename)
-        ).fetchone()
-        return _row_to_dict(row) if row else None
-
-
-def list_submissions(course_id: int):
-    with get_connection() as conn:
-        rows = conn.execute(
-            "SELECT * FROM submissions WHERE course_id = ? ORDER BY flagged_for_review DESC, filename ASC",
-            (course_id,),
-        ).fetchall()
-        return [_row_to_dict(r) for r in rows]
-
-
-def set_ta_decision(course_id: int, filename: str, status: str, override_score: float = None, notes: str = None):
-    """status should be 'accepted' or 'overridden'."""
-    with get_connection() as conn:
-        conn.execute(
-            """
-            UPDATE submissions
-            SET ta_status = ?, ta_override_score = ?, ta_notes = ?, reviewed_at = ?
-            WHERE course_id = ? AND filename = ?
-            """,
-            (status, override_score, notes, datetime.now(timezone.utc).isoformat(), course_id, filename),
-        )
-
+# --- Submissions ---
 
 def save_transcribed_answer(course_id: int, filename: str, question_id: str, student_identifier: str, transcription: str):
     """Save a newly-uploaded, freshly-transcribed answer as 'ungraded' --
     this is the pre-grading state. save_grading_result() later updates this
     same row once the answer has actually been scored."""
     with get_connection() as conn:
-        conn.execute(
-            """
-            INSERT INTO submissions (course_id, filename, question_id, student_identifier, student_answer, ta_status)
-            VALUES (?, ?, ?, ?, ?, 'ungraded')
-            ON CONFLICT(course_id, filename) DO UPDATE SET
-                question_id=excluded.question_id,
-                student_identifier=excluded.student_identifier,
-                student_answer=excluded.student_answer,
-                ta_status='ungraded'
-            """,
-            (course_id, filename, question_id, student_identifier, transcription),
-        )
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO submissions (course_id, filename, question_id, student_identifier, student_answer, ta_status)
+                VALUES (%s, %s, %s, %s, %s, 'ungraded')
+                ON CONFLICT (course_id, filename) DO UPDATE SET
+                    question_id = EXCLUDED.question_id,
+                    student_identifier = EXCLUDED.student_identifier,
+                    student_answer = EXCLUDED.student_answer,
+                    ta_status = 'ungraded'
+                """,
+                (course_id, filename, question_id, student_identifier, transcription),
+            )
+
+
+def save_grading_result(course_id: int, state: dict):
+    """Upsert a submission's grading result, scoped to a course."""
+    with get_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO submissions (
+                    course_id, filename, question_id, student_answer, initial_grading, final_grading,
+                    top_retrieval_similarity, retrieved_chunks, flagged_for_review,
+                    flag_reason, ta_status, graded_at
+                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, 'graded', %s)
+                ON CONFLICT (course_id, filename) DO UPDATE SET
+                    question_id = EXCLUDED.question_id,
+                    student_answer = EXCLUDED.student_answer,
+                    initial_grading = EXCLUDED.initial_grading,
+                    final_grading = EXCLUDED.final_grading,
+                    top_retrieval_similarity = EXCLUDED.top_retrieval_similarity,
+                    retrieved_chunks = EXCLUDED.retrieved_chunks,
+                    flagged_for_review = EXCLUDED.flagged_for_review,
+                    flag_reason = EXCLUDED.flag_reason,
+                    ta_status = 'graded',
+                    graded_at = EXCLUDED.graded_at
+                """,
+                (
+                    course_id,
+                    state["filename"],
+                    state["question_id"],
+                    state["student_answer"],
+                    json.dumps(state["initial_grading"]),
+                    json.dumps(state["final_grading"]),
+                    state["top_similarity"],
+                    json.dumps(state["retrieved_chunks"] or []),
+                    bool(state["flagged_for_review"]),
+                    state["flag_reason"],
+                    datetime.now(timezone.utc).isoformat(),
+                ),
+            )
+
+
+def get_submission(course_id: int, filename: str):
+    with get_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                "SELECT * FROM submissions WHERE course_id = %s AND filename = %s", (course_id, filename)
+            )
+            row = cur.fetchone()
+            return _row_to_dict(row) if row else None
+
+
+def list_submissions(course_id: int):
+    with get_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                "SELECT * FROM submissions WHERE course_id = %s ORDER BY flagged_for_review DESC, filename ASC",
+                (course_id,),
+            )
+            return [_row_to_dict(r) for r in cur.fetchall()]
+
+
+def set_ta_decision(course_id: int, filename: str, status: str, override_score: float = None, notes: str = None):
+    """status should be 'accepted' or 'overridden'."""
+    with get_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                UPDATE submissions
+                SET ta_status = %s, ta_override_score = %s, ta_notes = %s, reviewed_at = %s
+                WHERE course_id = %s AND filename = %s
+                """,
+                (status, override_score, notes, datetime.now(timezone.utc).isoformat(), course_id, filename),
+            )
 
 
 def _row_to_dict(row):
@@ -291,6 +316,15 @@ def _row_to_dict(row):
     for json_field in ("initial_grading", "final_grading", "retrieved_chunks"):
         if d.get(json_field):
             d[json_field] = json.loads(d[json_field])
-    if "flagged_for_review" in d:
-        d["flagged_for_review"] = bool(d["flagged_for_review"])
+    # NOTE: flagged_for_review no longer needs a manual bool() conversion here
+    # -- it's a native Postgres BOOLEAN now, so psycopg2 already returns a
+    # real Python bool (unlike SQLite's INTEGER 0/1 workaround).
     return d
+
+
+if __name__ == "__main__":
+    # Quick standalone check: run this file directly to verify the
+    # connection works and tables get created, before wiring in the rest.
+    print(f"Connecting to Postgres: {PG_CONFIG['user']}@{PG_CONFIG['host']}:{PG_CONFIG['port']}/{PG_CONFIG['dbname']}")
+    init_db()
+    print("Connected successfully and schema created (or already existed).")

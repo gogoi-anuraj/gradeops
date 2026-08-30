@@ -1,9 +1,3 @@
-"""
-Test the core grading logic on ONE example before wrapping it in a full
-LangGraph agent. This proves retrieval + LLM scoring work together correctly
-on a real transcribed answer before adding more moving parts.
-"""
-
 import os
 import json
 import re

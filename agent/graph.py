@@ -1,5 +1,5 @@
 """
-GRADEOPS+ grading agent, built as a LangGraph state machine.
+grading agent, built as a LangGraph state machine.
 
 Implements the agent design from the project brief:
   extract answer -> retrieve context -> score against rubric ->

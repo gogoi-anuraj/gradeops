@@ -14,9 +14,6 @@ export function AuthProvider({ children }) {
     Boolean(localStorage.getItem(TOKEN_STORAGE_KEY)),
   );
 
-  // On mount (or when the token changes), verify it's still valid and load
-  // the user's info -- this is what keeps someone logged in across a page
-  // refresh, rather than forcing a fresh login every time.
   useEffect(() => {
     if (!token) {
       return;

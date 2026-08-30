@@ -1,19 +1,13 @@
 """
-GRADEOPS+ backend API.
+backend API.
 
 Wraps the LangGraph grading agent (agent/graph.py) and exposes it over HTTP,
 with SQLite persistence for grading results and TA review decisions. This is
-what the Phase 3 React dashboard will call.
-
-Setup:
-    pip install fastapi uvicorn
+what the Phase 3 React dashboard will call
 
 Run:
     cd backend
     uvicorn main:app --reload
-
-Then visit http://127.0.0.1:8000/docs for interactive API docs (auto-generated
-by FastAPI) -- use this to test every endpoint before building the dashboard.
 """
 
 import os

@@ -28,7 +28,7 @@ export default function App() {
     <div className="app-shell">
       <header className="app-header">
         <div>
-          <div className="app-title">GRADEOPS<span>+</span> Review</div>
+          <div className="app-title">GRADEOPS Review</div>
           <div className="app-subtitle">{selectedCourse.name}</div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>

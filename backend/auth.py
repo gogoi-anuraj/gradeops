@@ -1,14 +1,8 @@
 """
-Authentication for GRADEOPS+: password hashing (bcrypt) and JWT-based
+Authentication for GRADEOPS: password hashing (bcrypt) and JWT-based
 sessions. Uses bcrypt directly rather than passlib -- passlib's bcrypt
 wrapper has a known compatibility issue with bcrypt>=4.1, so calling bcrypt
 directly avoids that footgun entirely.
-
-Setup:
-    pip install bcrypt PyJWT
-
-Add to backend/.env:
-    JWT_SECRET_KEY=<a long random string -- generate with: python -c "import secrets; print(secrets.token_hex(32))">
 """
 
 import os
@@ -40,8 +34,8 @@ def verify_password(password: str, password_hash: str) -> bool:
 def create_access_token(user_id: int) -> str:
     if not JWT_SECRET_KEY:
         raise EnvironmentError(
-            "JWT_SECRET_KEY not set. Add it to backend/.env -- generate one with:\n"
-            "  python -c \"import secrets; print(secrets.token_hex(32))\""
+            "JWT_SECRET_KEY not set\n"
+
         )
     payload = {
         "sub": str(user_id),
@@ -63,10 +57,7 @@ def decode_access_token(token: str) -> int:
 
 
 def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)):
-    """FastAPI dependency: protects a route, requiring a valid Bearer token.
-    Using HTTPBearer (rather than a raw Header) registers a proper security
-    scheme with FastAPI's OpenAPI spec, which is what makes Swagger UI show
-    the 'Authorize' button and lock icons on protected routes."""
+
     user_id = decode_access_token(credentials.credentials)
 
     user = database.get_user_by_id(user_id)

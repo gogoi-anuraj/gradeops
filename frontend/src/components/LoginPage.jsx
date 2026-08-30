@@ -30,7 +30,7 @@ export default function LoginPage() {
   return (
     <div className="auth-shell">
       <div className="auth-card">
-        <div className="auth-title">GRADEOPS<span>+</span></div>
+        <div className="auth-title">GRADEOPS</div>
         <div className="auth-subtitle">
           {mode === 'login' ? 'Sign in to your account' : 'Create a professor/TA account'}
         </div>
@@ -45,7 +45,7 @@ export default function LoginPage() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                placeholder="Dr. Jane Smith"
+                placeholder="Your Name"
               />
             </div>
           )}
@@ -58,7 +58,7 @@ export default function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              placeholder="you@university.edu"
+              placeholder="Your email"
             />
           </div>
 

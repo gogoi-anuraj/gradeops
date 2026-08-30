@@ -1,11 +1,3 @@
-"""
-Batch version of score_single_example.py — runs grading on ALL transcribed
-answers (all question types, all variants), not just one. Use this to check
-whether the agent handles numeric/arithmetic questions (Q2, Q4) as well as
-it handles conceptual ones (Q1, Q3), before formalizing into LangGraph.
-
-"""
-
 import os
 import json
 import time

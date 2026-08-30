@@ -1,5 +1,5 @@
 """
-Semantic chunker for GRADEOPS+ reference material.
+Semantic chunker
 
 Strategy:
 - Split primarily on ## headers (major sections/concepts)
@@ -8,7 +8,6 @@ Strategy:
 - If a resulting chunk still exceeds MAX_WORDS, split on blank-line paragraph
   boundaries to keep chunks a reasonable size for embedding + retrieval
 - Each chunk keeps metadata: source file, chapter/section title, chunk index
-  (used later for citations in grading justifications)
 """
 
 import re
