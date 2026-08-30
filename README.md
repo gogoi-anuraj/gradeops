@@ -1,4 +1,4 @@
-# GRADEOPS+
+# GRADEOPS
 
 A multi-tenant, RAG-grounded exam grading pipeline. Professors sign up, create a course, upload their rubric and reference material, upload scanned handwritten student answers, and get AI-generated grades — each one grounded in retrieved course material, self-checked for errors, and flagged for human review when confidence is low.
 
@@ -8,34 +8,38 @@ Built as an extension of the original GRADEOPS problem statement, turning a plai
 
 ## Screenshots
 
-<!-- Add screenshots below. Suggested shots: login/signup screen, course selector,
-     rubric panel (both empty-state upload form and populated view), materials
-     panel mid-upload, answers panel with graded/flagged rows, and the full
-     submission detail/review screen showing the three-column layout. -->
-
-**Login / Signup**
-
-`[screenshots/login_signup.jpg]`
-
-**Course selector**
-
-`[screenshots/course_selector.png]`
-
-**Rubric upload / view**
-
-`[screenshots/rubric.png]`
-
-**Reference material upload**
-
-`[screenshots/reference.png]`
-
-**Student answers list**
-
-`[screenshots/answerlist.png]`
-
-**Grading review (detail view with citations & evidence)**
-
-`[screenshots/grading.png]`
+<table>
+  <tr>
+    <td align="center">
+      <b>Login / Signup</b><br><br>
+      <img src="screenshots/login_signup.jpg" alt="Login / Signup" width="400">
+    </td>
+    <td align="center">
+      <b>Course Selector</b><br><br>
+      <img src="screenshots/course_selector.png" alt="Course Selector" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Rubric Upload / View</b><br><br>
+      <img src="screenshots/rubric.png" alt="Rubric Upload / View" width="400">
+    </td>
+    <td align="center">
+      <b>Reference Material Upload</b><br><br>
+      <img src="screenshots/reference.png" alt="Reference Material Upload" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Student Answers List</b><br><br>
+      <img src="screenshots/answerlist.png" alt="Student Answers List" width="400">
+    </td>
+    <td align="center">
+      <b>Grading Review</b><br><br>
+      <img src="screenshots/grading.png" alt="Grading Review" width="400">
+    </td>
+  </tr>
+</table>
 
 ---
 
